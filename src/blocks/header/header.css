@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-.header__logo {
+.header__logo-link {
     width: 70px;
     height: 70px;
 }

@@ -13,10 +13,10 @@
     <div class="page">
       <header class="header">
         <div class="header__container">
-          <a class="header__logo_link" href="#">
+          <a class="header__logo-link" href="#">
             <img
               src="<%=require('./images/logo.svg')%>"
-              alt="any"
+              alt="Логотип"
               class="header__logo"
             />
           </a>
@@ -31,8 +31,26 @@
       </header>
 
       <main class="content">
-        <section class="section">
-
+        <section class="welcome">
+          <p class="welcome__text">Делись опытом в разработке и&nbsp;получай дополнительный доход</p>
+          <div class="welcome__bars">
+            <img
+                    src="<%=require('./images/jdoo.jpg')%>"
+                    alt="Фото"
+                    class="welcome__photo"
+            />
+            <div class="welcome__aside-bar">
+              <p class="welcome__description">
+                Станьте наставником или ревьюером,
+                осуществите мечту помогать другим людям.
+                Станьте наставником или ревьюером,
+                осуществите мечту помогать другим людям
+              </p>
+            </div>
+          </div>
+          <button class="welcome__button">
+            Хочу делиться знаниями
+          </button>
         </section>
       </main>
 
