@@ -1,5 +1,7 @@
 .header {
     background-color: #8C8C8C;
+    position: fixed;
+    width: 100%;
 }
 
 .header__container {
