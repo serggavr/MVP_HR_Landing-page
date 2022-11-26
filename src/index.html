@@ -5,18 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="will be added later" />
+    <link rel="stylesheet" href="./pages/index.css" type="text/css"/>
     <title>MVP_HR_Landing-page</title>
   </head>
 
   <body class="body">
     <div class="page">
       <header class="header">
-        <!-- Оставил для примера, подключаем изображения через <%=require('./images/logo_theme_dark.svg')%> -->
-        <img
-          src="<%=require('./images/logo_theme_dark.svg')%>"
-          alt="any"
-          class="header__logo"
-        />
+        <div class="header__container">
+          <a class="header__logo_link" href="#">
+            <img
+              src="<%=require('./images/logo.svg')%>"
+              alt="any"
+              class="header__logo"
+            />
+          </a>
+          <nav class="header__navbar">
+            <a class="header__link" href="#">Преимущества</a>
+            <a class="header__link" href="#">Квиз</a>
+            <a class="header__link" href="#">Отзывы</a>
+            <a class="header__link" href="#">Вакансии</a>
+            <a class="header__link" href="#">Контакты</a>
+          </nav>
+        </div>
       </header>
 
       <main class="content">
