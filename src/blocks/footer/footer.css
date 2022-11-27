@@ -1,83 +1,130 @@
 
 .footer {
   padding: 100px 0;
-  display: flex;
-  flex-direction: row;
   background-color: var(--secondary-bg-color);
 }
 
-.footer__text {
+.footer__container {
+  width: 100%;
+  max-width: 1210px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.footer__text {
+  margin: 0;
+  font-family: 'YS_Text';
+  font-style: normal;
+  color: var(--secondary-text-color);
+}
+
+.footer__link {
+  text-decoration: none;
 }
 
 .footer__info-block {
   width: 100%;
   max-width: 722px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 55px;
 }
 
 .footer__copyright-text {
   max-width: 255px;
-  font-family: 'YS Text';
-  font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  color: var(--secondary-text-color);
+  font-size: var(--m-text-size);
+  line-height: var(--m-line-height);
 }
 
 .footer__nav-container {
   display: flex;
   flex-direction: row;
+  column-gap: 45px;
 }
 
 .footer__nav {
-
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  max-height: 65px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 45px;
+  row-gap: 15px;
 }
 
 .footer__nav-element {
-
+  font-weight: 700;
+  font-size: var(--s-text-size);
+  line-height: var(--s-line-height);
 }
 
 .footer__an-offer-container {
   max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
 }
 
 .footer__an-offer-text {
-
+  font-weight: 400;
+  font-size: var(--m-text-size);
+  line-height: var(--m-line-height);
 }
 
 .footer__an-offer-link {
-
-}
-
-.footer__an-offer-text {
-
+  text-decoration: underline;
 }
 
 .footer__contacts-block {
-
+  padding: 0;
+  margin: 0;
+  max-width: 283px;
+  max-height: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  list-style: none;
+  column-gap: 30px;
+  row-gap: 40px;
 }
 
 .footer__telephone-container {
-
+  width: 100%;
 }
 
 .footer__telephone {
-
+  font-weight: 700;
+  font-size: var(--xl-text-size);
+  line-height: var(--xl-line-height);
 }
 
 .footer__telephone-info {
-
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: var(--l-text-size);
+  line-height: var(--l-line-height);
 }
 
 .footer__contacts-element {
-
+  max-height: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .footer__contacts-link {
-
+  font-weight: 400;
+  font-size: var(--l-text-size);
+  line-height: var(--l-line-height);
+  text-align: center;
 }
 
 .footer__contacts-link-img {
-
+  width: 40px;
+  height: 40px;
 }
