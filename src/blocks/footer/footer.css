@@ -65,7 +65,7 @@
 }
 
 .footer__an-offer-container {
-  max-width: 472px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   row-gap: 15px;
