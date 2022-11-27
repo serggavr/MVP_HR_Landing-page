@@ -1,11 +1,13 @@
 @font-face {
   font-family: "YS Text";
-  src: url("./fonts/YS Text/YS Text-Regular.ttf") format("ttf");
+  src: url("./fonts/YS-Text/YS-Text-Regular.ttf") format("ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "YS Text";
-  src: url("./fonts/YS Text/YS Text-Regular.ttf") format("ttf");
+  src: url("./fonts/YS-Text/YS-Text-Bold.ttf") format("ttf");
   font-weight: 700;
 }
+
+/* /// нужно будет подключить woff2 */
