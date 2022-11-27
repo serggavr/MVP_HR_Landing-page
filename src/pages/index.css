@@ -12,6 +12,7 @@
 
 /* section */
 @import url("../blocks/section/section.css");
+@import url("../blocks/welcome/welcome.css");
 
 /* header  */
 @import url("../blocks/header/header.css");

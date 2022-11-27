@@ -1,2 +1,4 @@
-.page {
+main, footer {
+    position: relative;
+    top: 120px;
 }
