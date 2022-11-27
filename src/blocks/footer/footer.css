@@ -7,7 +7,11 @@
 }
 
 .footer__text {
+  color: var(--secondary-text-color);
+}
 
+.footer__link {
+  text-decoration: none;
 }
 
 .footer__info-block {
@@ -22,7 +26,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  color: var(--secondary-text-color);
 }
 
 .footer__nav-container {
@@ -31,7 +34,7 @@
 }
 
 .footer__nav {
-
+  list-style: none;
 }
 
 .footer__nav-element {
@@ -47,7 +50,7 @@
 }
 
 .footer__an-offer-link {
-
+  text-decoration: underline;
 }
 
 .footer__an-offer-text {
@@ -55,7 +58,7 @@
 }
 
 .footer__contacts-block {
-
+  list-style: none;
 }
 
 .footer__telephone-container {
