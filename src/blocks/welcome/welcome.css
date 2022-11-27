@@ -1,6 +1,6 @@
 .welcome {
-    max-width: 1210px;
-    margin: 0 auto;
+    /* max-width: 1210px; - перенес в section
+    margin: 0 auto; */
     padding: 100px 50px;
 }
 
