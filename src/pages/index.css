@@ -15,9 +15,15 @@
 
 /* section */
 @import url("../blocks/section/section.css");
+
 @import url("../blocks/welcome/welcome.css");
-@import url(../blocks/advantages/advantages.css);
+
 @import url(../blocks/quiz/quiz.css);
+
+@import url(../blocks/faculties/faculties.css);
+
+@import url("../blocks/advantages/advantages.css");
+
 
 /* header  */
 @import url("../blocks/header/header.css");
