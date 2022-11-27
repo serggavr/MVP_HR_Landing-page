@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js","mappings":"mBAEAA,QAAQC,IAAI,S","sources":["webpack://MVP_HR_Landing-page/./src/scripts/index.js"],"sourcesContent":["import css from '../pages/index.css'\r\n\r\nconsole.log('loaded')"],"names":["console","log"],"sourceRoot":""}
