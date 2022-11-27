@@ -42,7 +42,7 @@
 .footer__nav-container {
   display: flex;
   flex-direction: row;
-  column-gap: 40px;
+  column-gap: 45px;
 }
 
 .footer__nav {
@@ -65,7 +65,10 @@
 }
 
 .footer__an-offer-container {
-  max-width: 500px;
+  max-width: 472px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
 }
 
 .footer__an-offer-text {
