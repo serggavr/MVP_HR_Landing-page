@@ -17,12 +17,9 @@
 @import url("../blocks/section/section.css");
 
 @import url("../blocks/welcome/welcome.css");
-<<<<<<< HEAD
 @import url(../blocks/advantages/advantages.css);
 @import url(../blocks/faculties/faculties.css);
-=======
-@import url("../blocks/advantages/advantages.css");
->>>>>>> 33f790d840896d48c4390adbe8d6816e61ca02fb
+
 
 /* header  */
 @import url("../blocks/header/header.css");
