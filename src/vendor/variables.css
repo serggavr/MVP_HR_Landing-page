@@ -1,4 +1,8 @@
 :root {
+  /* background */
   --primary-bg-color: #FFF;
-  --second-bg-color: #595959;
+  --secondary-bg-color: #595959;
+  /* text */
+  --primary-text-color: #000000;
+  --secondary-text-color: #FFF;
 }
