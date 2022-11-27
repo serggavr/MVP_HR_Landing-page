@@ -4,6 +4,8 @@
 /* fonts */
 @import url("../vendor/fonts.css");
 
+@import url("../vendor/variables.css");
+
 /* body */
 @import url("../blocks/body/body.css");
 
