@@ -15,7 +15,7 @@
 
 .footer__text {
   margin: 0;
-  font-family: 'YS Text';
+  font-family: 'YS_Text';
   font-style: normal;
   color: var(--secondary-text-color);
 }
