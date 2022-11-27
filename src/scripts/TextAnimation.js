@@ -4,6 +4,7 @@ const professionList = [
   "анализе данных",
   "маркетинге",
   "дизайне",
+  "IT-профессии",
 ];
 
 async function textAnimation() {
