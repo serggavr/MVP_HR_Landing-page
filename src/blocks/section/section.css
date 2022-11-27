@@ -2,3 +2,12 @@
   max-width: 1210px;
   margin: 0 auto;
 }
+
+.section__title {
+  margin: 0;
+  font-family: 'YS_Text';
+  font-style: normal;
+  color: var(--primary-text-color);
+  font-size: var(--xxl-text-size);
+  line-height: var(--xxl-line-height);
+}
