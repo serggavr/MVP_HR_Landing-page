@@ -1,15 +1,20 @@
 .welcome {
-    /* max-width: 1210px; - перенес в section
-    margin: 0 auto; */
     padding: 100px 50px;
 }
 
 .welcome__text {
-    font-family: 'YS Text', sans-serif;
     font-weight: 700;
     font-size: 65px;
     line-height: 80px;
-    margin: 0 0 72px;
+    margin: 0;
+}
+
+.welcome__text_float {
+    float: left;
+}
+
+.welcome__text:last-of-type {
+    margin-bottom: 70px;
 }
 
 .welcome__bars {
@@ -35,7 +40,6 @@
 }
 
 .welcome__description {
-    font-family: 'YS Text', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
@@ -48,7 +52,6 @@
     border-radius: 14px;
     padding: 24px 20px;
     color: #FFFFFF;
-    font-family: 'YS Text', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -59,4 +62,91 @@
 .welcome__button:hover {
     background-color: #D9D9D9;
     color: black;
+}
+
+.welcome__animation {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 80px;
+    display: inline;
+    padding-left: 15px;
+}
+
+.welcome__profession {
+    display: inline-block;
+    color: #5686E3;
+    position: relative;
+    white-space: nowrap;
+    left: 0;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 80px;
+
+
+    /*animation*/
+    -webkit-animation:move 6s;
+    -moz-animation:move 6s;
+    -ms-animation:move 6s;
+    -o-animation:move 6s;
+    animation:move 6s;
+    /*animation-iteration-count*/
+    -webkit-animation-iteration-count:infinite;
+    -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+    -o-animation-iteration-count:infinite;
+    animation-iteration-count:infinite;
+    /*animation-delay*/
+    -webkit-animation-delay:1s;
+    -moz-animation-delay:1s;
+    -ms-animation-delay:1s;
+    -o-animation-delay:1s;
+    animation-delay:1s;
+}
+
+@keyframes move{
+    0%  { top: 0px; }
+    10% { top: -80px; }
+    20% { top: -160px; }
+    30% { top: -240px; }
+    40% { top: -320px; }
+    50% { top: -320px; }
+    80% { top: 0; }
+}
+
+@-webkit-keyframes move {
+    0%  { top: 0px; }
+    10% { top: -80px; }
+    20% { top: -160px; }
+    30% { top: -240px; }
+    40% { top: -320px; }
+    50% { top: -320px; }
+    80% { top: 0; }
+}
+@-moz-keyframes move {
+    0%  { top: 0px; }
+    10% { top: -80px; }
+    20% { top: -160px; }
+    30% { top: -240px; }
+    40% { top: -320px; }
+    50% { top: -320px; }
+    80% { top: 0; }
+}
+@-o-keyframes move {
+    0%  { top: 0px; }
+    10% { top: -80px; }
+    20% { top: -160px; }
+    30% { top: -240px; }
+    40% { top: -320px; }
+    50% { top: -320px; }
+    80% { top: 0; }
+}
+@keyframes move {
+    0%  { top: 0px; }
+    10% { top: -80px; }
+    20% { top: -160px; }
+    30% { top: -240px; }
+    40% { top: -320px; }
+    50% { top: -320px; }
+    80% { top: 0; }
 }

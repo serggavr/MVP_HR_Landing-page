@@ -37,9 +37,17 @@
 
       <main class="content">
         <section class="section welcome">
-          <p class="welcome__text">Делись опытом в
-            <span class="welcome__profession">разработке</span>
-            и&nbsp;получай&nbsp;дополнительный доход</p>
+            <p class="welcome__text welcome__text_float">Делись опытом в</p>
+            <div class="welcome__animation">
+              <span class="welcome__profession">
+                IT-профессии<br />
+                анализе данных<br />
+                маркетинге<br />
+                дизайне<br />
+                разработке
+              </span>
+            </div>
+          <p class="welcome__text">и&nbsp;получай&nbsp;дополнительный доход</p>
           <div class="welcome__bars">
             <img
                     src="<%=require('./images/jdoo.jpg')%>"
@@ -96,6 +104,8 @@
       </div>
 
         </section>
+ <!-- end Advantages -->
+
         <!-- Feedback -->
 
         <section class="section feedback">
@@ -170,7 +180,7 @@
 
         <!-- end Feedback -->
 
-        <!-- end Advantages -->
+       
         <section class="quiz section">
             <h2 class="quiz__title">Узнай, что тебе подходит</h2>
             <p class="quiz__description">Пройди тест, чтобы больше
@@ -443,6 +453,68 @@
             </div>
         </section>
 
+        <!-- FAQ -->
+        <section class="section faq">
+          <div class="faq__title">Ответы на частые вопросы</div>
+          <ul class="faq__list-item">
+            <li class="faq__item">
+              <div class="faq__box">
+              <h3 class="faq__subtitle">Что делают наставник и преподаватель?</h3>
+              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
+              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
+            </div>
+              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
+                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
+            </li>
+            <li class="faq__item">
+              <div class="faq__box">
+              <h3 class="faq__subtitle">Я хочу стать наставником / преподавателем. Меня возьмут?</h3>
+              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
+              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
+            </div>
+              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
+                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
+            </li>
+            <li class="faq__item">
+              <div class="faq__box">
+              <h3 class="faq__subtitle">Что такое Школа наставников и сколько времени она занимает?</h3>
+              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
+              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
+            </div>
+              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
+                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
+            </li>
+            <li class="faq__item">
+              <div class="faq__box">
+              <h3 class="faq__subtitle">Что делает код-ревьюер?</h3>
+              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
+              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
+            </div>
+              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
+                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
+            </li>
+            <li class="faq__item">
+              <div class="faq__box">
+              <h3 class="faq__subtitle">Я хочу стать код-ревьюером. Меня возьмут?</h3>
+              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
+              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
+            </div>
+              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
+                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
+            </li>
+            <li class="faq__item">
+              <div class="faq__box">
+              <h3 class="faq__subtitle">Я подхожу. Что вы можете мне предложить?</h3>
+              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
+              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
+            </div
+            >
+              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
+                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
+            </li>
+          </ul>
+        </section>
+
         <footer class="footer">
           <div class="footer__container">
             <div class="footer__info-block">
@@ -517,6 +589,9 @@
             </ul>
           </div>
         </footer>
+
+        <!-- end FAQ -->
+        
       </main>
 
       

@@ -1,0 +1,65 @@
+.faq {
+  margin: 100px 4.2%;
+  max-width: 1100px;
+}
+
+.faq__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  margin: 100px 0 70px 0;
+}
+
+.faq__list-item {
+  padding: 0;
+}
+
+.faq__item {
+  list-style: none;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  padding: 40px 30px;
+}
+
+.faq__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.faq__subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0;
+}
+
+.faq__arrow-down {
+  display: block;
+}
+
+.faq__arrow-down:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.faq__arrow-up {
+  display: none;
+}
+
+.faq__arrow-up:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.faq__text {
+  margin: 20px 0 0 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  display: none;
+}

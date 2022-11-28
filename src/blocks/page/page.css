@@ -1,4 +1,7 @@
-/* main, footer {
+ /* main, footer {
     position: relative;
     top: 120px;
 } */
+.page {
+    font-family: "YS Text", sans-serif;
+}

@@ -1,9 +1,3 @@
-import css from '../pages/index.css'
-import textAnimation from "./TextAnimation";
+import css from "../pages/index.css";
 
-console.log('run index.js')
-
-textAnimation();
-
-
-
+console.log("run index.js");
