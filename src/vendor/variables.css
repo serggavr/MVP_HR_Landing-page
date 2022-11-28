@@ -5,6 +5,7 @@
   /* text */
   --primary-text-color: #000000;
   --secondary-text-color: #FFF;
+  --transparent-text-color: rgba(0, 0, 0, 0.6);
   /* text size */
   /* size 18 weight 400 line-height 25 */
   /* size 16 weight 700 line-height 20 */
