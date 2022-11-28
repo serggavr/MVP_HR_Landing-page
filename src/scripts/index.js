@@ -1,3 +1,4 @@
 import css from "../pages/index.css";
+import quiz from "./Quiz";
 
-console.log("run index.js");
+quiz();

@@ -187,19 +187,21 @@
               узнать об обязанностях наставника и ревьюера и выбрать подходящую для тебя роль.
             </p>
             <div class="quiz__bar">
-              <span class="quiz__quantity">0/5</span>
+              <span class="quiz__quantity"><span class="quiz__counter">0</span>/5</span>
               <div class="quiz__progress-bar">
                 <div class="quiz__progress-line"></div>
               </div>
             </div>
             <div class="quiz__card">
-              <img class="quiz__image" src="<%=require('./images/quiz-start.png')%>" alt="ладони вверх">
-              <p class="quiz__question">Наставник или ревьюер?</p>
-              <p class="quiz__question-description"></p>
+              <img class="quiz__image" src="<%=require('./images/quiz/quiz-1.png')%>" alt="Картинка квиза">
+              <div class="quiz__textarea">
+                <p class="quiz__question">Наставник или ревьюер?</p>
+                <p class="quiz__question-description"></p>
+              </div>
             </div>
             <div class="quiz__buttons">
-              <button class="quiz__button quiz__start quiz_button-visible">Начать тест</button>
-              <button class="quiz__button quiz__vacancies">Вакансии</button>
+              <button class="quiz__button quiz__start quiz__button-visible">Начать тест</button>
+              <button class="quiz__button quiz__vacancies">Посмотреть вакансии</button>
               <button class="quiz__button quiz__reset">Заново</button>
               <button class="quiz__button quiz__yes">Да</button>
               <button class="quiz__button quiz__no">Нет</button>
