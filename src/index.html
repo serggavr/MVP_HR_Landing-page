@@ -10,7 +10,7 @@
   </head>
 
   <body class="body">
-    <div class="page">
+    <div class="page page_disabled">
       <header class="header">
         <div class="header__container">
           <a class="header__logo-link" href="#">
@@ -19,13 +19,18 @@
               alt="Логотип"
               class="header__logo"
             />
-<!--            <img-->
-<!--              src="./images/logo.svg"-->
-<!--              alt="Логотип"-->
-<!--              class="header__logo"-->
-<!--            />-->
           </a>
-          <nav class="header__navbar">
+          <nav class="header__navbar" id="desktop-navbar">
+            <a class="header__link" href="#">Преимущества</a>
+            <a class="header__link" href="#">Квиз</a>
+            <a class="header__link" href="#">Отзывы</a>
+            <a class="header__link" href="#">Вакансии</a>
+            <a class="header__link" href="#">Контакты</a>
+          </nav>
+          <a class="header__burger-button"></a>
+        </div>
+        <div class="header__burger-container">
+          <nav class="header__navbar" id="mobile-navbar">
             <a class="header__link" href="#">Преимущества</a>
             <a class="header__link" href="#">Квиз</a>
             <a class="header__link" href="#">Отзывы</a>
@@ -54,11 +59,6 @@
                     alt="Фото"
                     class="welcome__photo"
             />
-<!--            <img-->
-<!--                    src="./images/jdoo.jpg"-->
-<!--                    alt="Фото"-->
-<!--                    class="welcome__photo"-->
-<!--            />-->
             <div class="welcome__aside-bar">
               <p class="welcome__description">
                 Станьте наставником или ревьюером,
@@ -175,7 +175,7 @@
             </ul>
 
           </div>
-          </div>
+
         </section>
 
         <!-- end Feedback -->
@@ -597,6 +597,7 @@
       </main>
 
       
+    </div>
     </div>
 
     <template id="renameThis"> 
