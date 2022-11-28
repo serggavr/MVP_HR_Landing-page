@@ -74,45 +74,321 @@
         </section>
         <!-- start Advantages  -->
         <section class="section advantages">
-<h2 class="advantages-title">Работа с нами - это возможность</h2>
-      <div class="advantages-container">
-        <div class="advantages-column">
-        <div class="advantages-card">
-          <!-- <img class="advantages-img" src="<%=require('./images/Pic-Advantage4.png')%>" alt="ладони вверх"> -->
-          <img class="advantages-img" src="./images/Pic-Advantage4.png" alt="ладони вверх">
-          <div class="advantages-subtitle">Давать знания</div>
-          <p class="advantages-text">и делиться опытом с тысячами наших студентов, а также узнавать что-то новое от них.</p>
+<h2 class="advantages__title">Работа с нами - это возможность</h2>
+      <div class="advantages__container">
+        <div class="advantages__column">
+        <div class="advantages__card">
+          <img class="advantages__img" src="<%=require('./images/Pic-Advantage4.png')%>" alt="ладони вверх">
+          <div class="advantages__subtitle">Давать знания</div>
+          <p class="advantages__text">и делиться опытом с тысячами наших студентов, а также узнавать что-то новое от них.</p>
         </div>
-        <div class="advantages-card">
-          <!-- <img class="advantages-img" src="<%=require('./images/Pic-Advantage4.png')%>" alt="ладони вверх"> -->
-          <img class="advantages-img" src="./images/Pic-Advantage4.png" alt="ладони вверх">
-          <div class="advantages-subtitle">Получать дополнительный доход</div>
-          <p class="advantages-text">в среднем от 35 до 50 тыс. рублей в месяц  при удалённом гибком графике 2-3 часа в день.</p>
+        <div class="advantages__card">
+          <img class="advantages__img" src="<%=require('./images/Pic-Advantage4.png')%>" alt="ладони вверх">
+          <div class="advantages__subtitle">Получать дополнительный доход</div>
+          <p class="advantages__text">в среднем от 35 до 50 тыс. рублей в месяц  при удалённом гибком графике 2-3 часа в день.</p>
         </div>
         
       </div>
-      <div class="advantages-column">
-        <div class="advantages-card">
-          <!-- <img class="advantages-img" src="<%=require('./images/Pic-Advantage4.png')%>" alt="ладони вверх"> -->
-          <img class="advantages-img" src="./images/Pic-Advantage4.png" alt="ладони вверх">
-          <div class="advantages-subtitle">Развивать личный бренд</div>
-          <p class="advantages-text">публикуя статьи в нашем блоге и выступая спикером на мероприятиях. например на YaTalks.</p>
+      <div class="advantages__column">
+        <div class="advantages__card">
+          <img class="advantages__img" src="<%=require('./images/Pic-Advantage4.png')%>" alt="ладони вверх">
+          <div class="advantages__subtitle">Развивать личный бренд</div>
+          <p class="advantages__text">публикуя статьи в нашем блоге и выступая спикером на мероприятиях. например на YaTalks.</p>
         </div>
-        <div class="advantages-card">
-          <!-- <img class="advantages-img" src="<%=require('./images/Pic-Advantage4.png')%>" alt="ладони вверх"> -->
-          <img class="advantages-img" src="./images/Pic-Advantage4.png" alt="ладони вверх">
-          <div class="advantages-subtitle">Стать частью сообщества</div>
-          <p class="advantages-text">и регулярно обмениваться опытом с экспертами в своей и смежных областях.</p>
+        <div class="advantages__card">
+          <img class="advantages__img" src="<%=require('./images/Pic-Advantage4.png')%>" alt="ладони вверх">
+          <div class="advantages__subtitle">Стать частью сообщества</div>
+          <p class="advantages__text">и регулярно обмениваться опытом с экспертами в своей и смежных областях.</p>
         </div>
-      </div>
+        </div>
       </div>
 
         </section>
-        <!-- end Advantages -->
+ <!-- end Advantages -->
+
+        <!-- Feedback -->
+
+        <section class="section feedback">
+          <h2 class="section__title">Что о нас говорят</h2>
+          <p class="feedback__text">Наши наставники и ревьюеры с разных факультетов,Наши наставники и ревьюеры с разных факультетов,</p>
+          <div class="slider">
+            <div class="slider__buttons-container">
+              <button class="slider__button slider__button-right">
+                <!-- <img src="./images/feedback/toLeftArrow.svg" alt="стрелка вправо" class="slider__button-right-img"> -->
+                <img src="<%=require('./images/feedback/toLeftArrow.svg')%>" alt="стрелка вправо" class="slider__button-img slider__button-right-img">
+              </button>
+              <button class="slider__button slider__button-left">
+                <!-- <img src="./images/feedback/toLeftArrow.svg" alt="стрелка влево" class="slider__button-left-img"> -->
+                <img src="<%=require('./images/feedback/toRightArrow.svg')%>" alt="стрелка влево" class="slider__button-img slider__button-left-img">
+              </button>
+            </div>
+            
+            <div class="slider__slide">
+              <!-- <img src="img1.jpg" alt="Иван Иванов"> -->
+              <img class="slider__slide-img" src="<%=require('./images/feedback/1.jpg')%>" alt="Иван Иванов">
+              <div class="slider__slide-text-container">
+                <h3 class="slider__slide-title slider__text">Иван Иванов</h3>
+                <p class="slider__slide-subtitle slider__text">Наставник направления дизайн интерфейсов</p>
+                <p class="slider__slide-text slider__text">
+                  Я в своем познании настолько преисполнился, 
+                  что я как будто бы уже сто триллионов миллиардов 
+                  лет проживаю на триллионах и триллионах таких же 
+                  планет.
+                </p>
+              </div>
+            </div>
+          
+            <!-- <div class="slider__slide">
+              <img src="img1.jpg" alt="Иван Иванов">
+              <img class="slider__slide-img" src="<%=require('./images/feedback/2.jpg')%>" alt="Петр Петров">
+              <div class="slider__slide-text-container">
+                <h3 class="slider__slide-title slider__text">Петр Петров</h3>
+                <p class="slider__slide-subtitle slider__text">Наставник направления дизайн интерфейсов</p>
+                <p class="slider__slide-text slider__text">
+                  И я в своем познании настолько преисполнился, 
+                  что я как будто бы уже сто триллионов миллиардов 
+                  лет проживаю на триллионах и триллионах таких же 
+                  планет.
+                </p>
+              </div>
+            </div> -->
+          
+            <!-- <div class="slider__slide">
+              <img src="img1.jpg" alt="Иван Иванов">
+              <img class="slider__slide-img" src="<%=require('./images/feedback/3.jpg')%>" alt="Александр Александров">
+              <div class="slider__slide-text-container">
+                <h3 class="slider__slide-title slider__text">Александр Александров</h3>
+                <p class="slider__slide-subtitle slider__text">Наставник направления web-разработка</p>
+                <p class="slider__slide-text slider__text">
+                  И я тоже в своем познании настолько преисполнился, 
+                  что я как будто бы уже сто триллионов миллиардов 
+                  лет проживаю на триллионах и триллионах таких же 
+                  планет.
+                </p>
+              </div>
+            </div> -->
+
+            <ul class="slider__dots-container">
+              <div class="slider__dot"></div>
+              <div class="slider__dot slider__dot-active"></div>
+              <div class="slider__dot"></div>
+            </ul>
+
+          </div>
+          </div>
+        </section>
+
+        <!-- end Feedback -->
+
+       
+        <section class="quiz section">
+            <h2 class="quiz__title">Узнай, что тебе подходит</h2>
+            <p class="quiz__description">Пройди тест, чтобы больше
+              узнать об обязанностях наставника и ревьюера и выбрать подходящую для тебя роль.
+            </p>
+            <div class="quiz__bar">
+              <span class="quiz__quantity">0/5</span>
+              <div class="quiz__progress-bar">
+                <div class="quiz__progress-line"></div>
+              </div>
+            </div>
+            <div class="quiz__card">
+              <img class="quiz__image" src="<%=require('./images/quiz-start.png')%>" alt="ладони вверх">
+              <p class="quiz__question">Наставник или ревьюер?</p>
+              <p class="quiz__question-description"></p>
+            </div>
+            <div class="quiz__buttons">
+              <button class="quiz__button quiz__start quiz_button-visible">Начать тест</button>
+              <button class="quiz__button quiz__vacancies">Вакансии</button>
+              <button class="quiz__button quiz__reset">Заново</button>
+              <button class="quiz__button quiz__yes">Да</button>
+              <button class="quiz__button quiz__no">Нет</button>
+            </div>
+        </section>
 
         <!-- Faculties -->
-
+       <section class="section faculties">
+        <div class="faculties__title">И что мы говорим о себе</div>
+        <div class="faculties__container">
+          <div class="faculties__box">
+            <p class="faculties__paragraph">О нас</p>
+          </div>
+          <div class="faculties__box">
+            <p class="faculties__paragraph">Яндекс Практикум — сервис онлайн-образования,
+              где каждая и каждый найдёт в себе силы изменить
+              свою профессиональную жизнь.</p>
+            <p class="faculties__paragraph">Мы верим, что освоить новый навык можно только
+              с помощью регулярных усилий и полного погружения в практику. 
+              В процессе обучения студенты сталкиваются со сложностями: 
+              не получается, непонятно, нет свободного времени, 
+              лень — всё как в жизни.</p>
+            <p class="faculties__paragraph">Наша миссия — помочь каждому преодолеть трудности и получить востребованные навыки. Во всём мире.</p>
+          </div>
+          <div class="faculties__box">
+           <p class="faculties__paragraph"> Наши факультеты</p>
+           </div>
+          <div class="faculties__box">
+            <ul class="faculties__list-item">
+              <li class="faculties__items">
+            <div class="faculties__item">
+              <h3 class="faculties__subtitle">Дизайн</h3>
+              <p class="faculties__link">Узнать больше &darr;</p>
+            </div>
+              <div class="faculties__box-hidden faculties__box-hidden_active">
+                <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
+                <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
+                <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
+                <div class="faculties__group">
+                  <a href="https://practicum.yandex.ru/catalog/design/" class="faculties__button" target="_blank">Перейти к факультету</a>
+                  <button class="faculties__close" type="button">Скрыть &uarr;</button>
+                </div>
+              </div>
+            </li>
+              <li class="faculties__items">
+                <div class="faculties__item">
+              <h3 class="faculties__subtitle">Программирование </h3>
+              <p class="faculties__link">Узнать больше &darr;</p>
+            </div>
+            <div class="faculties__box-hidden faculties__box-hidden_active">
+              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
+              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
+              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
+              <div class="faculties__group">
+                <a href="https://practicum.yandex.ru/catalog/programming/" class="faculties__button" target="_blank">Перейти к факультету</a>
+                <button class="faculties__close" type="button">Скрыть &uarr;</button>
+              </div>
+            </div>
+            </li>
+              <li class="faculties__items">
+                <div class="faculties__item">
+              <h3 class="faculties__subtitle">Анализ данных</h3>
+              <p class="faculties__link">Узнать больше &darr;</p>
+            </div>
+            <div class="faculties__box-hidden faculties__box-hidden_active">
+              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
+              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
+              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
+              <div class="faculties__group">
+                <a href="https://practicum.yandex.ru/catalog/data-analysis/" class="faculties__button" target="_blank">Перейти к факультету</a>
+                <button class="faculties__close" type="button">Скрыть &uarr;</button>
+              </div>
+            </div>
+            </li>
+              <li class="faculties__items">
+                <div class="faculties__item">
+              <h3 class="faculties__subtitle">Маркетинг</h3>
+              <p class="faculties__link">Узнать больше &darr;</p>
+            </div>
+            <div class="faculties__box-hidden faculties__box-hidden_active">
+              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
+              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
+              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
+              <div class="faculties__group">
+                <a href="https://practicum.yandex.ru/catalog/marketing/" class="faculties__button" target="_blank">Перейти к факультету</a>
+                <button class="faculties__close" type="button">Скрыть &uarr;</button>
+              </div>
+            </div>
+            </li>
+              <li class="faculties__items">
+                <div class="faculties__item">
+              <h3 class="faculties__subtitle">Менеджмент</h3>
+              <p class="faculties__link">Узнать больше &darr;</p>
+            </div>
+            <div class="faculties__box-hidden faculties__box-hidden_active">
+              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
+              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
+              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
+              <div class="faculties__group">
+                <a href="https://practicum.yandex.ru/catalog/management/" class="faculties__button" target="_blank">Перейти к факультету</a>
+                <button class="faculties__close" type="button">Скрыть &uarr;</button>
+              </div>
+            </div>
+            </li>
+              <li class="faculties__items">
+                <div class="faculties__item">
+              <h3 class="faculties__subtitle">Английский язык</h3>
+              <p class="faculties__link">Узнать больше &darr;</p>
+            </div>
+            <div class="faculties__box-hidden faculties__box-hidden_active">
+              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
+              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
+              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
+              <div class="faculties__group">
+                <a href="https://practicum.yandex.ru/english/" class="faculties__button" target="_blank">Перейти к факультету</a>
+                <button class="faculties__close" type="button">Скрыть &uarr;</button>
+              </div>
+            </div>
+            </li>
+          </ul>
+            </div>
+          
+        </div>
+       </section>
         <!-- end Faculties -->
+
+        <!-- FAQ -->
+        <section class="section faq">
+          <div class="faq__title">Ответы на частые вопросы</div>
+          <ul class="faq__list-item">
+            <li class="faq__item">
+              <div class="faq__box">
+              <h3 class="faq__subtitle">Что делают наставник и преподаватель?</h3>
+              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
+              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
+            </div>
+              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
+                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
+            </li>
+            <li class="faq__item">
+              <div class="faq__box">
+              <h3 class="faq__subtitle">Я хочу стать наставником / преподавателем. Меня возьмут?</h3>
+              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
+              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
+            </div>
+              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
+                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
+            </li>
+            <li class="faq__item">
+              <div class="faq__box">
+              <h3 class="faq__subtitle">Что такое Школа наставников и сколько времени она занимает?</h3>
+              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
+              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
+            </div>
+              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
+                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
+            </li>
+            <li class="faq__item">
+              <div class="faq__box">
+              <h3 class="faq__subtitle">Что делает код-ревьюер?</h3>
+              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
+              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
+            </div>
+              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
+                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
+            </li>
+            <li class="faq__item">
+              <div class="faq__box">
+              <h3 class="faq__subtitle">Я хочу стать код-ревьюером. Меня возьмут?</h3>
+              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
+              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
+            </div>
+              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
+                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
+            </li>
+            <li class="faq__item">
+              <div class="faq__box">
+              <h3 class="faq__subtitle">Я подхожу. Что вы можете мне предложить?</h3>
+              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
+              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
+            </div
+            >
+              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
+                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
+            </li>
+          </ul>
+        </section>
+
+        <!-- end FAQ -->
       </main>
 
       <footer class="footer">
@@ -173,14 +449,14 @@
             </li>
             <li class="footer__contacts-element">
               <a href="#" class="footer__contacts-link">
-                <!-- <img src="<%=require('./images/footer/telegram.svg')%>" alt="телеграм" class="footer__contacts-link-img"> -->
-                <img src="./images/footer/telegram.svg" alt="телеграм" class="footer__contacts-link-img">
+                <img src="<%=require('./images/footer/telegram.svg')%>" alt="телеграм" class="footer__contacts-link-img">
+                <!-- <img src="./images/footer/telegram.svg" alt="телеграм" class="footer__contacts-link-img"> -->
               </a>
             </li>
             <li class="footer__contacts-element">
               <a href="#" class="footer__contacts-link">
-                <!-- <img src="<%=require('./images/footer/vk.svg')%>" alt="вконтакте" class="footer__contacts-link-img"> -->
-                <img src="./images/footer/vk.svg" alt="вконтакте" class="footer__contacts-link-img">
+                <img src="<%=require('./images/footer/vk.svg')%>" alt="вконтакте" class="footer__contacts-link-img">
+                <!-- <img src="./images/footer/vk.svg" alt="вконтакте" class="footer__contacts-link-img"> -->
               </a>
             </li>
             <li class="footer__contacts-element">
