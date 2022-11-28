@@ -4,6 +4,3 @@ import textAnimation from "./TextAnimation";
 console.log('run index.js')
 
 textAnimation();
-
-
-
