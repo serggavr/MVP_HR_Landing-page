@@ -4,12 +4,15 @@ const Burger = () => {
   const burgerContainer = document.querySelector(".header__burger-container");
 
   const switchBurger = () => {
-    if (burgerContainer.style.display === "none") {
-      burgerContainer.style.display = "flex";
-      page.classList.add("page_disabled");
-    } else {
-      burgerContainer.style.display = "none";
+    console.log(burgerContainer.style.display);
+    if (
+      burgerContainer.classList.contains("header__burger-container_visible")
+    ) {
+      burgerContainer.classList.remove("header__burger-container_visible");
       page.classList.remove("page_disabled");
+    } else {
+      burgerContainer.classList.add("header__burger-container_visible");
+      page.classList.add("page_disabled");
     }
   };
 
