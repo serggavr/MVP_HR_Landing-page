@@ -3,7 +3,6 @@
 }
 
 .welcome__text {
-    font-family: 'YS Text', sans-serif;
     font-weight: 700;
     font-size: 65px;
     line-height: 80px;
@@ -41,7 +40,6 @@
 }
 
 .welcome__description {
-    font-family: 'YS Text', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
@@ -54,7 +52,6 @@
     border-radius: 14px;
     padding: 24px 20px;
     color: #FFFFFF;
-    font-family: 'YS Text', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -82,7 +79,6 @@
     position: relative;
     white-space: nowrap;
     left: 0;
-    font-family: 'YS Text', sans-serif;
     font-weight: 700;
     font-size: 65px;
     line-height: 80px;
