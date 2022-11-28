@@ -1,5 +1,5 @@
 .advantages {
-    margin: 100px 4.2% ;
+    margin: 100px auto;
 }
 
 .advantages__title {
@@ -12,7 +12,7 @@
 .advantages__container {
   display: flex;
  flex-direction: row;
- column-gap: 30px;
+
 }
 
 .advantages__column {
@@ -22,6 +22,7 @@
 
 .advantages__column:last-of-type {
     margin-top: 120px;
+    margin-left: 30px;
 }
 
 .advantages__card {
@@ -68,6 +69,7 @@ line-height: 26px;
 
       .advantages__column:last-of-type {
         margin-top: 0;
+        margin-left: 0;
     }
 }
 
@@ -79,7 +81,7 @@ line-height: 26px;
     .advantages__container {
        flex-direction: row;
        flex-wrap: nowrap;
-       column-gap: 0;
+      
        justify-content: start;
        overflow-x: auto;
   scroll-snap-type: x mandatory;

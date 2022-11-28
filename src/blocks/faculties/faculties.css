@@ -1,5 +1,5 @@
 .faculties {
-    margin: 100px 4.2% ;
+    margin: 100px auto;
 }
 
 .faculties__title {
@@ -132,3 +132,8 @@ padding: 24px 20px;
     opacity: 0.8;
 }
 
+@media (max-width: 768px){ 
+    .faculties__box {
+        width: 100%;
+    }
+}
