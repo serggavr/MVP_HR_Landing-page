@@ -8,7 +8,10 @@ const professionList = [
 ];
 
 async function textAnimation() {
-  for (let i = 0; i < professionList.length; i++) {
+  for (let i = 0; i <= professionList.length; i++) {
+    if (i === professionList.length) {
+      i = 0
+    }
     profession.textContent = professionList[i];
     await new Promise((res) => setTimeout(res, 1000));
   }
