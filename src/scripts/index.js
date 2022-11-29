@@ -1,7 +1,7 @@
 import css from "../pages/index.css";
 import quiz from "./Quiz";
 import burger from "./Burger.js";
-import faculties from "./Faculties";
+// import faculties from "./Faculties";
 
 import { vacanciesList } from '../utils/constants';
 import dropdown from './Dropdown'
