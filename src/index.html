@@ -359,17 +359,6 @@
               <div class="search-form__filter-container">
                 <div class="dropdown dropdown_type_faculty">
 
-                <!-- <input type="button" value="Факультет" class="dropdown__button dropdown__button_type_faculty">
-                <div class="dropdown__content-container dropdown__content-container_type_faculty">
-                  <a href="#" class="dropdown__content">Все</a>
-                  <a href="#" class="dropdown__content">Программирование</a>
-                  <a href="#" class="dropdown__content">Анализ данных</a>
-                  <a href="#" class="dropdown__content">Дизайн</a>
-                  <a href="#" class="dropdown__content">Маркетинг</a>
-                  <a href="#" class="dropdown__content">Менеджмент</a>
-                  <a href="#" class="dropdown__content">Английский</a>
-                </div> -->
-
                   <select value="Факультет" class="dropdown__button dropdown__button_type_faculty">
                     <option  value="" disabled selected hidden>Факультет</option>
                     <option class="dropdown__content">Все</option>
@@ -381,15 +370,6 @@
                     <option class="dropdown__content">Английский</option>
                   </select>
                 </div>
-
-              <!-- <div class="dropdown dropdown_type_role">
-                <input type="button" value="Роль" class="dropdown__button dropdown__button_type_role">
-                <div class="dropdown__content-container dropdown__content-container_type_role">
-                  <a href="#" class="dropdown__content">Все</a>
-                  <a href="#" class="dropdown__content">Наставник</a>
-                  <a href="#" class="dropdown__content">Ревьюер</a>
-                </div>
-              </div> -->
 
                 <div class="dropdown dropdown_type_role">
                   <select value="Роль" class="dropdown__button dropdown__button_type_role">
@@ -411,7 +391,7 @@
               <div class="vacancy-card">
                 <div class="vacancy-card__info-container">
                   <p class="vacancy-card__vacancy-name vacancy-card__text">Наставник</p>
-                  <h3 class="vacancy-card__vacancy-course vacancy-card__text">Курс «Миддл-фронтенд разработчик»</h3>
+                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Миддл-фронтенд разработчик»</h3>
                 </div>
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
@@ -422,12 +402,24 @@
                     </a>
                   </div>
                 </div>
-                
+                <!-- <div class="vacancy-card__requirements-container vacancy-card__requirements-container-hiden">
+                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Требования</h3>
+                  <ul class="vacancy-card__requirements-list">
+                    <li class="vacancy-card__requirements-list-element vacancy-card__text">Опыт бэкенд-разработки на Python от 3-х лет.   </li>
+                    <li class="vacancy-card__requirements-list-element vacancy-card__text">Владеете Django и другими фреймворками, знаете ООП, базовые алгоритмы и структуры данных.</li>
+                    <li class="vacancy-card__requirements-list-element vacancy-card__text">Работали с GIT, СУБД SQL, Docker.</li>
+                    <li class="vacancy-card__requirements-list-element vacancy-card__text">Готовы посвящать проекту от 10 часов в неделю.</li>
+                  </ul>
+                  <div class="vacancy-card__requirements-footer">
+                    <button class="button button_theme_dark vacancy-card__requirements-respond-button">Откликнуться</button>
+                    <button class="button button_theme_light vacancy-card__requirements-share-button">Поделиться вакансией</button>
+                  </div>
+                </div> -->
               </div>
               <div class="vacancy-card">
                 <div class="vacancy-card__info-container">
                   <p class="vacancy-card__vacancy-name vacancy-card__text">Ревьюер</p>
-                  <h3 class="vacancy-card__vacancy-course vacancy-card__text">Курс «Python‑разработчик» (резерв)</h3>
+                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Python‑разработчик» (резерв)</h3>
                 </div>
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
@@ -442,7 +434,7 @@
               <div class="vacancy-card">
                 <div class="vacancy-card__info-container">
                   <p class="vacancy-card__vacancy-name vacancy-card__text">Ревьюер</p>
-                  <h3 class="vacancy-card__vacancy-course vacancy-card__text">Курс «Дизайнер интерфейсов»</h3>
+                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Дизайнер интерфейсов»</h3>
                 </div>
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Дизайн</p>
@@ -457,7 +449,7 @@
               <div class="vacancy-card">
                 <div class="vacancy-card__info-container">
                   <p class="vacancy-card__vacancy-name vacancy-card__text">Наставник</p>
-                  <h3 class="vacancy-card__vacancy-course vacancy-card__text">Курс «Go-разработчик»</h3>
+                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Go-разработчик»</h3>
                 </div>
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
@@ -472,7 +464,7 @@
               <div class="vacancy-card">
                 <div class="vacancy-card__info-container">
                   <p class="vacancy-card__vacancy-name vacancy-card__text">Ревьюер</p>
-                  <h3 class="vacancy-card__vacancy-course vacancy-card__text">Курс «DevOps»</h3>
+                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «DevOps»</h3>
                 </div>
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
@@ -487,7 +479,7 @@
               <div class="vacancy-card">
                 <div class="vacancy-card__info-container">
                   <p class="vacancy-card__vacancy-name vacancy-card__text">Наставник</p>
-                  <h3 class="vacancy-card__vacancy-course vacancy-card__text">Курс «Алгоритмы для разработчиков»</h3>
+                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Алгоритмы для разработчиков»</h3>
                 </div>
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
@@ -663,15 +655,25 @@
       <div class="vacancy-card">
         <div class="vacancy-card__info-container">
           <p class="vacancy-card__vacancy-name vacancy-card__text"></p>
-          <h3 class="vacancy-card__vacancy-course vacancy-card__text"></h3>
+          <h3 class="vacancy-card__vacancy-title vacancy-card__text"></h3>
         </div>
         <div class="vacancy-card__footer">
           <p class="vacancy-card__vacancy-direction vacancy-card__text"></p>
           <div class="vacancy-card__footer-link-container">
             <p class="vacancy-card__vacancy-salary vacancy-card__text"></p>
-            <a href="#" class="vacancy-card__link">
+            <!-- <a href="#" class="vacancy-card__link">
               <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
-            </a>
+            </a> -->
+          </div>
+        </div>
+        <div class="vacancy-card__requirements-container vacancy-card__requirements-container-hiden">
+          <h3 class="vacancy-card__vacancy-title vacancy-card__vacancy-requirements-title vacancy-card__text"></h3>
+          <ul class="vacancy-card__requirements-list">
+            <li class="vacancy-card__requirements-list-element vacancy-card__text"></li>
+          </ul>
+          <div class="vacancy-card__requirements-footer">
+            <button class="button button_theme_dark vacancy-card__requirements-respond-button"></button>
+            <button class="button button_theme_light vacancy-card__requirements-share-button"></button>
           </div>
         </div>
       </div>
