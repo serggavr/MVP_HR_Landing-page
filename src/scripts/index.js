@@ -94,6 +94,14 @@ const applyFilters = (vacanciesList) => {
   return filteredVacanciesList
 }
 
+// ------
+const vacanciesContainer = document.querySelector(vacanciesContainerSelector)
+vacanciesContainer.addEventListener('click', (e) => {
+  console.log(e.target.classList)
+})
+
+// ------
+
 vacanciesCardsList.removeItems()
 vacanciesCardsList.renderItems(applyFilters(vacanciesList), 6)
 
