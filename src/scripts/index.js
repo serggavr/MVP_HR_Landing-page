@@ -1,4 +1,6 @@
 import css from "../pages/index.css";
+import burger from "../scripts/Burger"
+import quiz from "../scripts/Quiz";
 
 console.log("run index.js");
 //---------------------------------------------------- 
@@ -15,6 +17,21 @@ facultiesLink.forEach(function (item, i) {
       facultiesItem.forEach(function (item , i) {
         facultiesItems[i].classList.add('faculties__items_open');
         facultiesBox[i].classList.add('faculties__box-hidden_active')
+
+      });
+    });
+});
+
+facultiesClose.forEach(function (item, i) {
+  item.addEventListener('click', function (evt) {
+    evt.preventDefault();
+
+    facultiesItem.forEach(function (item , i) {
+      facultiesItem[i].classList.remove('faculties__items_open');
+      facultiesBox[i].classList.remove('faculties__box-hidden_active')
+    });
+  });
+});
         // -------------------------------------------------------------
 
 const vacanciesContainerSelector = '.vacancy__container';
@@ -108,17 +125,4 @@ if (screenWidth <= 450) {
 burger();
 quiz();
 
-      });
-    });
-  });
 
-  facultiesClose.forEach(function (item, i) {
-    item.addEventListener('click', function (evt) {
-      evt.preventDefault();
-
-      facultiesItem.forEach(function (item , i) {
-        facultiesItem[i].classList.remove('faculties__items_open');
-        facultiesBox[i].classList.remove('faculties__box-hidden_active')
-      });
-    });
-  });
