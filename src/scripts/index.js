@@ -10,10 +10,6 @@ import Section from './Section.js'
 console.log("run index.js");
 
 const facultiesItems = document.querySelectorAll(".faculties__items");
-const facultiesItem = document.querySelectorAll(".faculties__item");
-const facultiesLink = document.querySelectorAll(".faculties__link");
-const facultiesClose = document.querySelectorAll(".faculties__close");
-const facultiesBox = document.querySelectorAll(".faculties__box-hidden")
 
 
 
@@ -23,6 +19,8 @@ const loadMoreVacanciesButtonSelector = '.vacancy__load-more-button';
 const dropdownButtonTypeFacultySelector = '.dropdown__button_type_faculty'
 const dropdownButtonTypeRoleSelector = '.dropdown__button_type_role'
 const dropdownButtonSelectedClass = 'dropdown__button_style_selected'
+const vacancyCardSelector = '.vacancy-card';
+const vacancyCardClass = 'vacancy-card';
 
 const loadMoreVacanciesButtonButton = document.querySelector(loadMoreVacanciesButtonSelector)
 const dropdownTypeFacultyButton = document.querySelector(dropdownButtonTypeFacultySelector)
@@ -95,10 +93,17 @@ const applyFilters = (vacanciesList) => {
 }
 
 // ------
-const vacanciesContainer = document.querySelector(vacanciesContainerSelector)
-vacanciesContainer.addEventListener('click', (e) => {
-  console.log(e.target.classList)
-})
+const vacancyCard = document.querySelector(vacancyCardSelector)
+
+// const vacanciesContainer = document.querySelector(vacanciesContainerSelector)
+// vacanciesContainer.addEventListener('click', (e) => {
+  // console.log(vacancyCard)
+  // console.log(e.target.classList)
+  // console.log(e.composedPath().includes(div))
+  // console.log(e.target.parentElement)
+  // if ()
+  // console.log(e.composedPath().includes(vacancyCardClass))
+// })
 
 // ------
 

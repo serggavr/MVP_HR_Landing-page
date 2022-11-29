@@ -1,4 +1,5 @@
 .vacancy-card {
+  /* width: calc(50% - 55px); */
   max-width: 100%;
   padding: 40px 20px;
   display: flex;
@@ -13,20 +14,11 @@
   animation-timing-function: cubic-bezier(.1,-.6,.2,0);
 }
 
-@-webkit-keyframes Appearance {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+.vacancy-card-hidden {
+  display: none;
 }
 
-@-o-keyframes Appearance {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
 
-@-moz-keyframes Appearance {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
 
 .vacancy-card__text {
   margin: 0;
@@ -69,7 +61,26 @@
   color: var(--transparent-text-color);
 }
 
+.vacancy-card__info-container {
+  display: block;
+  animation-name: Appearance;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+}
+
+.vacancy-card__info-container-hidden {
+  display: none;
+}
+
 .vacancy-card__footer {
+  display: block;
+  animation-name: Appearance;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+}
+
+.vacancy-card__footer-hidden {
+  display: none;
 }
 
 .vacancy-card__footer-link-container {
@@ -103,10 +114,15 @@
 .vacancy-card__requirements-container {
   display: flex;
   flex-direction: column;
+
+  animation-name: Appearance;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(.1,.6,.2,0);
 }
 
-.vacancy-card__requirements-container-hiden {
-  /* display: none; */
+.vacancy-card__requirements-container-hidden {
+  display: none;
+  width: 100%;
 }
 
 .vacancy-card__requirements-title {
@@ -126,4 +142,19 @@
   display: flex;
   flex-direction: row;
   column-gap: 20px;
+}
+
+@-webkit-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-o-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }

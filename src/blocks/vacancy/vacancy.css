@@ -40,6 +40,10 @@
   display: none;
 }
 
+.vacancy__load-more-button-hidden {
+  display: none;
+}
+
 .vacancy__feedback-container {
   margin-top: 70px;
   display: flex;
