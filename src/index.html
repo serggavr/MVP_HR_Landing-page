@@ -102,7 +102,37 @@
           </div>
         </div>
       </section>
+
       <!-- end Advantages -->
+      
+      <section class="quiz section">
+        <h2 class="quiz__title">Узнай, что тебе подходит</h2>
+        <p class="quiz__description">Пройди тест, чтобы больше
+          узнать об обязанностях наставника и ревьюера и выбрать подходящую для тебя роль.
+        </p>
+        <div class="quiz__bar">
+          <span class="quiz__quantity"><span class="quiz__counter">0</span>/5</span>
+          <div class="quiz__progress-bar">
+            <div class="quiz__progress-line"></div>
+          </div>
+        </div>
+        <div class="quiz__card">
+          <img class="quiz__image" src="<%=require('./images/quiz/quiz-1.png')%>" alt="Картинка квиза">
+          <div class="quiz__textarea">
+            <p class="quiz__question">Наставник или ревьюер?</p>
+            <p class="quiz__question-description"></p>
+          </div>
+        </div>
+        <div class="quiz__buttons">
+          <button class="quiz__button quiz__start quiz__button-visible">Начать тест</button>
+          <div class="quiz__buttons_transformed">
+            <button class="quiz__button quiz__vacancies">Посмотреть вакансии</button>
+            <button class="quiz__button quiz__reset">Заново</button>
+          </div>
+          <button class="quiz__button quiz__yes">Да</button>
+          <button class="quiz__button quiz__no">Нет</button>
+        </div>
+    </section>
 
         <!-- Feedback -->
 
@@ -179,34 +209,7 @@
         <!-- end Feedback -->
 
        
-        <section class="quiz section">
-            <h2 class="quiz__title">Узнай, что тебе подходит</h2>
-            <p class="quiz__description">Пройди тест, чтобы больше
-              узнать об обязанностях наставника и ревьюера и выбрать подходящую для тебя роль.
-            </p>
-            <div class="quiz__bar">
-              <span class="quiz__quantity"><span class="quiz__counter">0</span>/5</span>
-              <div class="quiz__progress-bar">
-                <div class="quiz__progress-line"></div>
-              </div>
-            </div>
-            <div class="quiz__card">
-              <img class="quiz__image" src="<%=require('./images/quiz/quiz-1.png')%>" alt="Картинка квиза">
-              <div class="quiz__textarea">
-                <p class="quiz__question">Наставник или ревьюер?</p>
-                <p class="quiz__question-description"></p>
-              </div>
-            </div>
-            <div class="quiz__buttons">
-              <button class="quiz__button quiz__start quiz__button-visible">Начать тест</button>
-              <div class="quiz__buttons_transformed">
-                <button class="quiz__button quiz__vacancies">Посмотреть вакансии</button>
-                <button class="quiz__button quiz__reset">Заново</button>
-              </div>
-              <button class="quiz__button quiz__yes">Да</button>
-              <button class="quiz__button quiz__no">Нет</button>
-            </div>
-        </section>
+        
 
         <!-- Faculties -->
        <section class="section faculties">
