@@ -331,7 +331,7 @@
         <section class="section vacancy">
           <h2 class="section__title">Кого мы ищем</h2>
             
-            <form class='search-form'>
+            <!-- <form class='search-form'>
               <div class="search-form__container search-form__container_placed_header">
                 <div class="search-form__filter-container search-form__filter-container_placed_header">
                   <input type="button" value="Наставник" class="search-form__filter-button"></input>
@@ -353,6 +353,59 @@
                   <input type="button" value="Маркетинг" class="search-form__filter-button"></input>
                 </div>
               </div>
+            </form> -->
+
+            <form class='search-form'>
+              <div class="search-form__filter-container">
+                <div class="dropdown dropdown_type_faculty">
+
+                <!-- <input type="button" value="Факультет" class="dropdown__button dropdown__button_type_faculty">
+                <div class="dropdown__content-container dropdown__content-container_type_faculty">
+                  <a href="#" class="dropdown__content">Все</a>
+                  <a href="#" class="dropdown__content">Программирование</a>
+                  <a href="#" class="dropdown__content">Анализ данных</a>
+                  <a href="#" class="dropdown__content">Дизайн</a>
+                  <a href="#" class="dropdown__content">Маркетинг</a>
+                  <a href="#" class="dropdown__content">Менеджмент</a>
+                  <a href="#" class="dropdown__content">Английский</a>
+                </div> -->
+
+                  <select value="Факультет" class="dropdown__button dropdown__button_type_faculty">
+                    <option  value="" disabled selected hidden>Факультет</option>
+                    <option class="dropdown__content">Все</option>
+                    <option class="dropdown__content">Программирование</option>
+                    <option class="dropdown__content">Анализ данных</option>
+                    <option class="dropdown__content">Дизайн</option>
+                    <option class="dropdown__content">Маркетинг</option>
+                    <option class="dropdown__content">Менеджмент</option>
+                    <option class="dropdown__content">Английский</option>
+                  </select>
+                </div>
+
+              <!-- <div class="dropdown dropdown_type_role">
+                <input type="button" value="Роль" class="dropdown__button dropdown__button_type_role">
+                <div class="dropdown__content-container dropdown__content-container_type_role">
+                  <a href="#" class="dropdown__content">Все</a>
+                  <a href="#" class="dropdown__content">Наставник</a>
+                  <a href="#" class="dropdown__content">Ревьюер</a>
+                </div>
+              </div> -->
+
+                <div class="dropdown dropdown_type_role">
+                  <select value="Роль" class="dropdown__button dropdown__button_type_role">
+                    <option  value="" disabled selected hidden>Роль</option>
+                    <option class="dropdown__content">Все</option>
+                    <option class="dropdown__content">Наставник</option>
+                    <option class="dropdown__content">Ревьюер</option>
+                  </select>
+                </div>
+
+              </div>
+              <div class='search-form__search-bar'>
+                <img src="<%=require('./images/search-bar/search.svg')%>" alt="" class="search-form__search-bar-img">
+                <input type='text' class='search-form__search-bar-input' placeholder='Искать вакансию'></input>
+                <Button type='submit'class='search-form__search-bar-button'>Найти</Button>
+              </div>
             </form>
             <div class="vacancy__container">
               <div class="vacancy-card">
@@ -363,7 +416,7 @@
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
                   <div class="vacancy-card__footer-link-container">
-                    <p class="vacancy-card__vacancy-solary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                    <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
                     <a href="#" class="vacancy-card__link">
                       <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
                     </a>
@@ -379,7 +432,7 @@
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
                   <div class="vacancy-card__footer-link-container">
-                    <p class="vacancy-card__vacancy-solary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                    <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
                     <a href="#" class="vacancy-card__link">
                       <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
                     </a>
@@ -394,7 +447,7 @@
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Дизайн</p>
                   <div class="vacancy-card__footer-link-container">
-                    <p class="vacancy-card__vacancy-solary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                    <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
                     <a href="#" class="vacancy-card__link">
                       <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
                     </a>
@@ -409,7 +462,7 @@
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
                   <div class="vacancy-card__footer-link-container">
-                    <p class="vacancy-card__vacancy-solary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                    <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
                     <a href="#" class="vacancy-card__link">
                       <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
                     </a>
@@ -424,7 +477,7 @@
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
                   <div class="vacancy-card__footer-link-container">
-                    <p class="vacancy-card__vacancy-solary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                    <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
                     <a href="#" class="vacancy-card__link">
                       <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
                     </a>
@@ -439,7 +492,7 @@
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
                   <div class="vacancy-card__footer-link-container">
-                    <p class="vacancy-card__vacancy-solary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                    <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
                     <a href="#" class="vacancy-card__link">
                       <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
                     </a>
@@ -447,6 +500,7 @@
                 </div>
               </div>
             </div>
+            
             <button class="vacancy__load-more-button vacancy__text">Смотреть еще</button>
             <div class="vacancy__feedback-container">
               <p class="vacancy__feedback-text vacancy__text">Не нашли подходящей вакансии?</p>
@@ -605,5 +659,24 @@
         <img src="#" alt="#" class="element__photo" />
       </li>
     </template>
+
+    <template id="vacancyCard"> 
+      <div class="vacancy-card">
+        <div class="vacancy-card__info-container">
+          <p class="vacancy-card__vacancy-name vacancy-card__text"></p>
+          <h3 class="vacancy-card__vacancy-course vacancy-card__text"></h3>
+        </div>
+        <div class="vacancy-card__footer">
+          <p class="vacancy-card__vacancy-direction vacancy-card__text"></p>
+          <div class="vacancy-card__footer-link-container">
+            <p class="vacancy-card__vacancy-salary vacancy-card__text"></p>
+            <a href="#" class="vacancy-card__link">
+              <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </template>
+
   </body>
 </html>

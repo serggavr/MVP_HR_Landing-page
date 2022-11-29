@@ -2,19 +2,31 @@ export default class Section {
   constructor({
     renderer
   }, containerSelector) {
-    this._container = document.querySelector(containerSelector);
+    this.container = document.querySelector(containerSelector);
     this._renderer = renderer;
   }
 
   addItem(element) {
-    this._container.append(element)
+    this.container.append(element)
   }
 
   addItemToTopOfList(element) {
-    this._container.prepend(element)
+    this.container.prepend(element)
   }
 
-  renderItems(items) {
-    items.forEach(item => this._renderer(item))
+ removeItems() {
+    this.container.replaceChildren([])
+  }
+
+  renderItems(items, amount) {
+    const amountRenderedItems = this.container.children.length
+
+    if (amountRenderedItems + amount >= items.length) {
+      amount = items.length - amountRenderedItems
+    }
+    for (let i = amountRenderedItems; i < amountRenderedItems + amount; i++) {
+      this._renderer(items[i])
+      
+    }
   }
 }
