@@ -91,10 +91,10 @@ vacanciesCardsList.renderItems(applyFilters(vacanciesList), 6)
 
 
 const screenWidth = window.screen.width;
-const text = document.querySelector("#text-transform");
+const welcomeText = document.querySelector("#text-transform");
 if (screenWidth <= 450) {
   //JS для мобилок здесь
-  text.textContent = "и\u00A0получай доход"
+  welcomeText.textContent = "и\u00A0получай доход"
 }
 
 burger();
