@@ -1,5 +1,5 @@
 .welcome {
-    padding: 100px 50px;
+    padding: 220px 50px 100px 50px;
 }
 
 .welcome__text {
@@ -149,4 +149,66 @@
     40% { top: -320px; }
     50% { top: -320px; }
     80% { top: 0; }
+}
+
+@media screen and (max-width: 450px) {
+    .welcome__text {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .welcome {
+        padding: 110px 15px 40px 15px;
+    }
+
+    .welcome__animation {
+        height: 40px;
+        display: inline;
+        padding-left: 0;
+    }
+
+    .welcome__profession {
+        white-space: nowrap;
+        left: 0;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .welcome__text:last-of-type {
+        margin-bottom: 25px;
+    }
+
+    @keyframes move {
+        0%  { top: 0; }
+        10% { top: -40px; }
+        20% { top: -80px; }
+        30% { top: -120px; }
+        40% { top: -160px; }
+        50% { top: -160px; }
+        80% { top: 0; }
+    }
+
+    .welcome__photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .welcome__bars {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 15px;
+    }
+
+    .welcome__aside-bar {
+        width: 100%;
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .welcome__button {
+        width: 100%;
+        font-size: 18px;
+        line-height: 25px;
+    }
 }

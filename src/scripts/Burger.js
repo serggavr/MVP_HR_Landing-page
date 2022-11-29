@@ -1,6 +1,6 @@
 const Burger = () => {
   const burgerButton = document.querySelector(".header__burger-button");
-  const page = document.querySelector(".page");
+  const page = document.querySelector(".body");
   const burgerContainer = document.querySelector(".header__burger-container");
 
   const switchBurger = () => {
@@ -9,10 +9,10 @@ const Burger = () => {
       burgerContainer.classList.contains("header__burger-container_visible")
     ) {
       burgerContainer.classList.remove("header__burger-container_visible");
-      page.classList.remove("page_disabled");
+      page.classList.remove("body_disabled");
     } else {
       burgerContainer.classList.add("header__burger-container_visible");
-      page.classList.add("page_disabled");
+      page.classList.add("body_disabled");
     }
   };
 
