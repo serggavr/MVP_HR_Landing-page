@@ -1,8 +1,11 @@
 .vacancy {
-  padding: 100px 0;
+  box-sizing:border-box;
+  max-width: 1410px;
+  padding: 100px;
   display: flex;
   flex-direction: column;
-  background-color: var(--primary-bg-color);
+  background-color: var(--light-bg-color);
+  border-radius: 10px;
 }
 
 .vacancy__text {
@@ -14,7 +17,6 @@
 
 .vacancy__container {
   margin: 60px 0 50px;
-  /* background-color: aqua; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -27,11 +29,15 @@
   max-width: 350px;
   align-self: center;
   border: none;
-  background-color: var(--primary-bg-color);
+  background-color: var(--light-bg-color);
   font-weight: 700;
   font-size: var(--xl-text-size);
   line-height: var(--xl-line-height);
   cursor: pointer;
+}
+
+.vacancy__load-more-button:disabled {
+  display: none;
 }
 
 .vacancy__feedback-container {

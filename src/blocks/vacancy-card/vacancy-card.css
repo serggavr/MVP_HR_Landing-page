@@ -4,10 +4,28 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid black;
   border-radius: 20px;
   background-color: var(--primary-bg-color);
   flex-grow: 1;
+  
+  animation-name: Appearance;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+}
+
+@-webkit-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-o-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes Appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 
 .vacancy-card__text {
@@ -76,6 +94,6 @@
   
 }
 
-.vacancy-card__vacancy-solary {
+.vacancy-card__vacancy-salary {
 
 }
