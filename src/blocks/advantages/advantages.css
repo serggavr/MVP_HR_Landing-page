@@ -1,5 +1,6 @@
 .advantages {
     margin: 100px auto;
+    padding: 0 50px;
 }
 
 .advantages__title {
@@ -76,6 +77,11 @@ line-height: 26px;
 @media (max-width: 450px){
     .advantages {
         margin: 40px 0;
+        padding: 0 0 0 15px;
+    }
+
+    .advantages__title {
+        padding: 0 15px 0 0;
     }
 
     .advantages__container {
@@ -95,7 +101,8 @@ line-height: 26px;
     }
 
       .advantages__card {
-        margin: 15px;
+        width: 100%;
+        margin-right: 15px;
       }
 
       .advantages__img {
