@@ -1,4 +1,6 @@
 import css from "../pages/index.css";
+import quiz from "./Quiz";
+import burger from "./Burger.js";
 
 import { vacanciesList } from '../utils/constants';
 import dropdown from './Dropdown'
@@ -86,13 +88,5 @@ const applyFilters = (vacanciesList) => {
 
 vacanciesCardsList.removeItems()
 vacanciesCardsList.renderItems(applyFilters(vacanciesList), 6)
-
-
-
-
-
-
-
-
-
-
+burger();
+quiz();
