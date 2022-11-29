@@ -4,7 +4,6 @@ const Burger = () => {
   const burgerContainer = document.querySelector(".header__burger-container");
 
   const switchBurger = () => {
-    console.log(burgerContainer.style.display);
     if (
       burgerContainer.classList.contains("header__burger-container_visible")
     ) {

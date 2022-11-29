@@ -1,12 +1,21 @@
 import css from "../pages/index.css";
+import quiz from "./Quiz";
+import burger from "./Burger.js";
+
+import { vacanciesList } from '../utils/constants';
+import dropdown from './Dropdown'
+import createVacancyCard from './CreateVacancyCard';
+import Section from './Section.js'
 
 console.log("run index.js");
-//---------------------------------------------------- 
+
 const facultiesItems = document.querySelectorAll(".faculties__items");
 const facultiesItem = document.querySelectorAll(".faculties__item");
 const facultiesLink = document.querySelectorAll(".faculties__link");
 const facultiesClose = document.querySelectorAll(".faculties__close");
 const facultiesBox = document.querySelectorAll(".faculties__box-hidden")
+
+
 
 const vacanciesContainerSelector = '.vacancy__container';
 const cardTemplateSelector = '#vacancyCard';
@@ -42,7 +51,7 @@ loadMoreVacanciesButtonButton.addEventListener('click', () => {
 const filterVacancies = (query, queryField, vacanciesList) => {
   let filteredList = vacanciesList
   if (query === '' || query === 'Все') {
-    return filteredList 
+    return filteredList
   }
   filteredList = vacanciesList.filter(el => el[queryField] === query)
   return filteredList
@@ -108,25 +117,47 @@ burger();
 quiz();
 
 
+import { faculties as facultiesList } from "../utils/constants"
+const facultiesCardList = document.querySelector(".faculties__list-item");
+const facultiesCard = document.querySelectorAll(".faculties__items");
+const facultiesItem = document.querySelectorAll(".faculties__item");
+const facultiesLink = document.querySelectorAll(".faculties__link");
+const facultiesClose = document.querySelectorAll(".faculties__close");
+const facultiesBox = document.querySelectorAll(".faculties__box-hidden");
+
+
+facultiesList.forEach((item) => {
+  const facultiesCard = document.querySelector("#faculties-card").content.querySelector(".faculties__items").cloneNode(true);
+  const facultiesName = facultiesCard.querySelector(".faculties__subtitle");
+  const facultiesLink = facultiesCard.querySelector(".faculties__link");
+  facultiesCardList.append(facultiesCard);
+  facultiesName.textContent = item;
+  facultiesLink.addEventListener("click", collapse);
+})
+
+const collapse = (evt) => {
+
+}
+
 // facultiesLink.forEach(function (item, i) {
 //   item.addEventListener('click', function (evt) {
 //     evt.preventDefault();
-
+//
 //     facultiesItem.forEach(function (item , i) {
 //       facultiesItems[i].classList.add('faculties__items_open');
 //       facultiesBox[i].classList.add('faculties__box-hidden_active')
-//       // -------------------------------------------------------------
-//       });
 //     });
 //   });
-
-  facultiesClose.forEach(function (item, i) {
-    item.addEventListener('click', function (evt) {
-      evt.preventDefault();
-
-      facultiesItem.forEach(function (item , i) {
-        facultiesItem[i].classList.remove('faculties__items_open');
-        facultiesBox[i].classList.remove('faculties__box-hidden_active')
-      });
-    });
-  });
+// });
+//
+// facultiesClose.forEach(function (item, i) {
+//   item.addEventListener('click', function (evt) {
+//     evt.preventDefault();
+//
+//     facultiesItem.forEach(function (item , i) {
+//       facultiesItem[i].classList.remove('faculties__items_open');
+//       facultiesBox[i].classList.remove('faculties__box-hidden_active')
+//     });
+//   });
+// });
+// -------------------------------------------------------------
