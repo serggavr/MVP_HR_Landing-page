@@ -8,15 +8,6 @@ const facultiesLink = document.querySelectorAll(".faculties__link");
 const facultiesClose = document.querySelectorAll(".faculties__close");
 const facultiesBox = document.querySelectorAll(".faculties__box-hidden")
 
-facultiesLink.forEach(function (item, i) {
-    item.addEventListener('click', function (evt) {
-      evt.preventDefault();
-
-      facultiesItem.forEach(function (item , i) {
-        facultiesItems[i].classList.add('faculties__items_open');
-        facultiesBox[i].classList.add('faculties__box-hidden_active')
-        // -------------------------------------------------------------
-
 const vacanciesContainerSelector = '.vacancy__container';
 const cardTemplateSelector = '#vacancyCard';
 const loadMoreVacanciesButtonSelector = '.vacancy__load-more-button';
@@ -116,9 +107,18 @@ if (screenWidth <= 450) {
 burger();
 quiz();
 
-      });
-    });
-  });
+
+// facultiesLink.forEach(function (item, i) {
+//   item.addEventListener('click', function (evt) {
+//     evt.preventDefault();
+
+//     facultiesItem.forEach(function (item , i) {
+//       facultiesItems[i].classList.add('faculties__items_open');
+//       facultiesBox[i].classList.add('faculties__box-hidden_active')
+//       // -------------------------------------------------------------
+//       });
+//     });
+//   });
 
   facultiesClose.forEach(function (item, i) {
     item.addEventListener('click', function (evt) {
