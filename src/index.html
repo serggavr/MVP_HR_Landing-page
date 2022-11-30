@@ -102,7 +102,37 @@
           </div>
         </div>
       </section>
+
       <!-- end Advantages -->
+      
+      <section class="quiz section">
+        <h2 class="quiz__title">Узнай, что тебе подходит</h2>
+        <p class="quiz__description">Пройди тест, чтобы больше
+          узнать об обязанностях наставника и ревьюера и выбрать подходящую для тебя роль.
+        </p>
+        <div class="quiz__bar">
+          <span class="quiz__quantity"><span class="quiz__counter">0</span>/5</span>
+          <div class="quiz__progress-bar">
+            <div class="quiz__progress-line"></div>
+          </div>
+        </div>
+        <div class="quiz__card">
+          <img class="quiz__image" src="<%=require('./images/quiz/quiz-1.png')%>" alt="Картинка квиза">
+          <div class="quiz__textarea">
+            <p class="quiz__question">Наставник или ревьюер?</p>
+            <p class="quiz__question-description"></p>
+          </div>
+        </div>
+        <div class="quiz__buttons">
+          <button class="quiz__button quiz__start quiz__button-visible">Начать тест</button>
+          <div class="quiz__buttons_transformed">
+            <button class="quiz__button quiz__vacancies">Посмотреть вакансии</button>
+            <button class="quiz__button quiz__reset">Заново</button>
+          </div>
+          <button class="quiz__button quiz__yes">Да</button>
+          <button class="quiz__button quiz__no">Нет</button>
+        </div>
+    </section>
 
         <!-- Feedback -->
 
@@ -179,34 +209,7 @@
         <!-- end Feedback -->
 
        
-        <section class="quiz section">
-            <h2 class="quiz__title">Узнай, что тебе подходит</h2>
-            <p class="quiz__description">Пройди тест, чтобы больше
-              узнать об обязанностях наставника и ревьюера и выбрать подходящую для тебя роль.
-            </p>
-            <div class="quiz__bar">
-              <span class="quiz__quantity"><span class="quiz__counter">0</span>/5</span>
-              <div class="quiz__progress-bar">
-                <div class="quiz__progress-line"></div>
-              </div>
-            </div>
-            <div class="quiz__card">
-              <img class="quiz__image" src="<%=require('./images/quiz/quiz-1.png')%>" alt="Картинка квиза">
-              <div class="quiz__textarea">
-                <p class="quiz__question">Наставник или ревьюер?</p>
-                <p class="quiz__question-description"></p>
-              </div>
-            </div>
-            <div class="quiz__buttons">
-              <button class="quiz__button quiz__start quiz__button-visible">Начать тест</button>
-              <div class="quiz__buttons_transformed">
-                <button class="quiz__button quiz__vacancies">Посмотреть вакансии</button>
-                <button class="quiz__button quiz__reset">Заново</button>
-              </div>
-              <button class="quiz__button quiz__yes">Да</button>
-              <button class="quiz__button quiz__no">Нет</button>
-            </div>
-        </section>
+        
 
         <!-- Faculties -->
        <section class="section faculties">
@@ -231,97 +234,96 @@
            </div>
           <div class="faculties__box">
             <ul class="faculties__list-item">
-              <li class="faculties__items ">
-            <div class="faculties__item">
-              <h3 class="faculties__subtitle">Дизайн</h3>
-              <p class="faculties__link" >Развернуть</p>
-              <div class="faculties__close" >Скрыть</div>
-            </div>
-              <div class="faculties__box-hidden ">
-                <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
-                <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
-                <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
-                <div class="faculties__group">
-                  <a href="https://practicum.yandex.ru/catalog/design/" class="faculties__button" target="_blank">Перейти к факультету</a>
-                  
-                </div>
-              </div>
-            </li>
-              <li class="faculties__items ">
-                <div class="faculties__item">
-              <h3 class="faculties__subtitle">Программирование </h3>
-              <p class="faculties__link" >Развернуть</p>
-              <div class="faculties__close " >Скрыть</div>
-            </div>
-            <div class="faculties__box-hidden ">
-              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
-              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
-              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
-              <div class="faculties__group">
-                <a href="https://practicum.yandex.ru/catalog/programming/" class="faculties__button" target="_blank">Перейти к факультету</a>
-              </div>
-            </div>
-            </li>
-              <li class="faculties__items">
-                <div class="faculties__item">
-              <h3 class="faculties__subtitle">Анализ данных</h3>
-              <p class="faculties__link" >Развернуть</p>
-              <div class="faculties__close " >Скрыть</div>
-            </div>
-            <div class="faculties__box-hidden">
-              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
-              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
-              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
-              <div class="faculties__group">
-                <a href="https://practicum.yandex.ru/catalog/data-analysis/" class="faculties__button" target="_blank">Перейти к факультету</a>
-              </div>
-            </div>
-            </li>
-              <li class="faculties__items">
-                <div class="faculties__item">
-              <h3 class="faculties__subtitle">Маркетинг</h3>
-              <p class="faculties__link" >Развернуть</p>
-              <div class="faculties__close" >Скрыть</div>
-            </div>
-            <div class="faculties__box-hidden">
-              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
-              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
-              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
-              <div class="faculties__group">
-                <a href="https://practicum.yandex.ru/catalog/marketing/" class="faculties__button" target="_blank">Перейти к факультету</a>
-              </div>
-            </div>
-            </li>
-              <li class="faculties__items">
-                <div class="faculties__item">
-              <h3 class="faculties__subtitle">Менеджмент</h3>
-              <p class="faculties__link" >Развернуть</p>
-              <div class="faculties__close" >Скрыть</div>
-            </div>
-            <div class="faculties__box-hidden ">
-              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
-              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
-              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
-              <div class="faculties__group">
-                <a href="https://practicum.yandex.ru/catalog/management/" class="faculties__button" target="_blank">Перейти к факультету</a>
-              </div>
-            </div>
-            </li>
-              <li class="faculties__items">
-                <div class="faculties__item">
-              <h3 class="faculties__subtitle">Английский язык</h3>
-              <p class="faculties__link" >Развернуть</p>
-              <div class="faculties__close" >Скрыть</div>
-            </div>
-            <div class="faculties__box-hidden ">
-              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
-              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
-              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
-              <div class="faculties__group">
-                <a href="https://practicum.yandex.ru/english/" class="faculties__button" target="_blank">Перейти к факультету</a>
-              </div>
-            </div>
-            </li>
+<!--              <li class="faculties__items ">-->
+<!--                <div class="faculties__item">-->
+<!--                  <h3 class="faculties__subtitle">Дизайн</h3>-->
+<!--                  <p class="faculties__link" >Развернуть</p>-->
+<!--                  <div class="faculties__close" >Скрыть</div>-->
+<!--                </div>-->
+<!--                <div class="faculties__box-hidden ">-->
+<!--                  <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>-->
+<!--                  <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>-->
+<!--                  <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>-->
+<!--                  <div class="faculties__group">-->
+<!--                    <a href="https://practicum.yandex.ru/catalog/design/" class="faculties__button" target="_blank">Перейти к факультету</a>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </li>-->
+<!--              <li class="faculties__items ">-->
+<!--                <div class="faculties__item">-->
+<!--              <h3 class="faculties__subtitle">Программирование </h3>-->
+<!--              <p class="faculties__link" >Развернуть</p>-->
+<!--              <div class="faculties__close " >Скрыть</div>-->
+<!--            </div>-->
+<!--            <div class="faculties__box-hidden ">-->
+<!--              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>-->
+<!--              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>-->
+<!--              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>-->
+<!--              <div class="faculties__group">-->
+<!--                <a href="https://practicum.yandex.ru/catalog/programming/" class="faculties__button" target="_blank">Перейти к факультету</a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            </li>-->
+<!--              <li class="faculties__items">-->
+<!--                <div class="faculties__item">-->
+<!--              <h3 class="faculties__subtitle">Анализ данных</h3>-->
+<!--              <p class="faculties__link" >Развернуть</p>-->
+<!--              <div class="faculties__close " >Скрыть</div>-->
+<!--            </div>-->
+<!--            <div class="faculties__box-hidden">-->
+<!--              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>-->
+<!--              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>-->
+<!--              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>-->
+<!--              <div class="faculties__group">-->
+<!--                <a href="https://practicum.yandex.ru/catalog/data-analysis/" class="faculties__button" target="_blank">Перейти к факультету</a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            </li>-->
+<!--              <li class="faculties__items">-->
+<!--                <div class="faculties__item">-->
+<!--              <h3 class="faculties__subtitle">Маркетинг</h3>-->
+<!--              <p class="faculties__link" >Развернуть</p>-->
+<!--              <div class="faculties__close" >Скрыть</div>-->
+<!--            </div>-->
+<!--            <div class="faculties__box-hidden">-->
+<!--              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>-->
+<!--              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>-->
+<!--              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>-->
+<!--              <div class="faculties__group">-->
+<!--                <a href="https://practicum.yandex.ru/catalog/marketing/" class="faculties__button" target="_blank">Перейти к факультету</a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            </li>-->
+<!--              <li class="faculties__items">-->
+<!--                <div class="faculties__item">-->
+<!--              <h3 class="faculties__subtitle">Менеджмент</h3>-->
+<!--              <p class="faculties__link" >Развернуть</p>-->
+<!--              <div class="faculties__close" >Скрыть</div>-->
+<!--            </div>-->
+<!--            <div class="faculties__box-hidden ">-->
+<!--              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>-->
+<!--              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>-->
+<!--              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>-->
+<!--              <div class="faculties__group">-->
+<!--                <a href="https://practicum.yandex.ru/catalog/management/" class="faculties__button" target="_blank">Перейти к факультету</a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            </li>-->
+<!--              <li class="faculties__items">-->
+<!--                <div class="faculties__item">-->
+<!--              <h3 class="faculties__subtitle">Английский язык</h3>-->
+<!--              <p class="faculties__link" >Развернуть</p>-->
+<!--              <div class="faculties__close" >Скрыть</div>-->
+<!--            </div>-->
+<!--            <div class="faculties__box-hidden ">-->
+<!--              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>-->
+<!--              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>-->
+<!--              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>-->
+<!--              <div class="faculties__group">-->
+<!--                <a href="https://practicum.yandex.ru/english/" class="faculties__button" target="_blank">Перейти к факультету</a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            </li>-->
           </ul>
             </div>
           
@@ -360,17 +362,6 @@
               <div class="search-form__filter-container">
                 <div class="dropdown dropdown_type_faculty">
 
-                <!-- <input type="button" value="Факультет" class="dropdown__button dropdown__button_type_faculty">
-                <div class="dropdown__content-container dropdown__content-container_type_faculty">
-                  <a href="#" class="dropdown__content">Все</a>
-                  <a href="#" class="dropdown__content">Программирование</a>
-                  <a href="#" class="dropdown__content">Анализ данных</a>
-                  <a href="#" class="dropdown__content">Дизайн</a>
-                  <a href="#" class="dropdown__content">Маркетинг</a>
-                  <a href="#" class="dropdown__content">Менеджмент</a>
-                  <a href="#" class="dropdown__content">Английский</a>
-                </div> -->
-
                   <select value="Факультет" class="dropdown__button dropdown__button_type_faculty">
                     <option  value="" disabled selected hidden>Факультет</option>
                     <option class="dropdown__content">Все</option>
@@ -382,15 +373,6 @@
                     <option class="dropdown__content">Английский</option>
                   </select>
                 </div>
-
-              <!-- <div class="dropdown dropdown_type_role">
-                <input type="button" value="Роль" class="dropdown__button dropdown__button_type_role">
-                <div class="dropdown__content-container dropdown__content-container_type_role">
-                  <a href="#" class="dropdown__content">Все</a>
-                  <a href="#" class="dropdown__content">Наставник</a>
-                  <a href="#" class="dropdown__content">Ревьюер</a>
-                </div>
-              </div> -->
 
                 <div class="dropdown dropdown_type_role">
                   <select value="Роль" class="dropdown__button dropdown__button_type_role">
@@ -412,7 +394,7 @@
               <div class="vacancy-card">
                 <div class="vacancy-card__info-container">
                   <p class="vacancy-card__vacancy-name vacancy-card__text">Наставник</p>
-                  <h3 class="vacancy-card__vacancy-course vacancy-card__text">Курс «Миддл-фронтенд разработчик»</h3>
+                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Миддл-фронтенд разработчик»</h3>
                 </div>
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
@@ -423,12 +405,24 @@
                     </a>
                   </div>
                 </div>
-                
+                <!-- <div class="vacancy-card__requirements-container vacancy-card__requirements-container-hiden">
+                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Требования</h3>
+                  <ul class="vacancy-card__requirements-list">
+                    <li class="vacancy-card__requirements-list-element vacancy-card__text">Опыт бэкенд-разработки на Python от 3-х лет.   </li>
+                    <li class="vacancy-card__requirements-list-element vacancy-card__text">Владеете Django и другими фреймворками, знаете ООП, базовые алгоритмы и структуры данных.</li>
+                    <li class="vacancy-card__requirements-list-element vacancy-card__text">Работали с GIT, СУБД SQL, Docker.</li>
+                    <li class="vacancy-card__requirements-list-element vacancy-card__text">Готовы посвящать проекту от 10 часов в неделю.</li>
+                  </ul>
+                  <div class="vacancy-card__requirements-footer">
+                    <button class="button button_theme_dark vacancy-card__requirements-respond-button">Откликнуться</button>
+                    <button class="button button_theme_light vacancy-card__requirements-share-button">Поделиться вакансией</button>
+                  </div>
+                </div> -->
               </div>
               <div class="vacancy-card">
                 <div class="vacancy-card__info-container">
                   <p class="vacancy-card__vacancy-name vacancy-card__text">Ревьюер</p>
-                  <h3 class="vacancy-card__vacancy-course vacancy-card__text">Курс «Python‑разработчик» (резерв)</h3>
+                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Python‑разработчик» (резерв)</h3>
                 </div>
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
@@ -443,7 +437,7 @@
               <div class="vacancy-card">
                 <div class="vacancy-card__info-container">
                   <p class="vacancy-card__vacancy-name vacancy-card__text">Ревьюер</p>
-                  <h3 class="vacancy-card__vacancy-course vacancy-card__text">Курс «Дизайнер интерфейсов»</h3>
+                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Дизайнер интерфейсов»</h3>
                 </div>
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Дизайн</p>
@@ -458,7 +452,7 @@
               <div class="vacancy-card">
                 <div class="vacancy-card__info-container">
                   <p class="vacancy-card__vacancy-name vacancy-card__text">Наставник</p>
-                  <h3 class="vacancy-card__vacancy-course vacancy-card__text">Курс «Go-разработчик»</h3>
+                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Go-разработчик»</h3>
                 </div>
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
@@ -473,7 +467,7 @@
               <div class="vacancy-card">
                 <div class="vacancy-card__info-container">
                   <p class="vacancy-card__vacancy-name vacancy-card__text">Ревьюер</p>
-                  <h3 class="vacancy-card__vacancy-course vacancy-card__text">Курс «DevOps»</h3>
+                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «DevOps»</h3>
                 </div>
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
@@ -488,7 +482,7 @@
               <div class="vacancy-card">
                 <div class="vacancy-card__info-container">
                   <p class="vacancy-card__vacancy-name vacancy-card__text">Наставник</p>
-                  <h3 class="vacancy-card__vacancy-course vacancy-card__text">Курс «Алгоритмы для разработчиков»</h3>
+                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Алгоритмы для разработчиков»</h3>
                 </div>
                 <div class="vacancy-card__footer">
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
@@ -664,18 +658,46 @@
       <div class="vacancy-card">
         <div class="vacancy-card__info-container">
           <p class="vacancy-card__vacancy-name vacancy-card__text"></p>
-          <h3 class="vacancy-card__vacancy-course vacancy-card__text"></h3>
+          <h3 class="vacancy-card__vacancy-title vacancy-card__text"></h3>
         </div>
         <div class="vacancy-card__footer">
           <p class="vacancy-card__vacancy-direction vacancy-card__text"></p>
           <div class="vacancy-card__footer-link-container">
             <p class="vacancy-card__vacancy-salary vacancy-card__text"></p>
-            <a href="#" class="vacancy-card__link">
+            <!-- <a href="#" class="vacancy-card__link">
               <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
-            </a>
+            </a> -->
+          </div>
+        </div>
+        <div class="vacancy-card__requirements-container vacancy-card__requirements-container-hiden">
+          <h3 class="vacancy-card__vacancy-title vacancy-card__vacancy-requirements-title vacancy-card__text"></h3>
+          <ul class="vacancy-card__requirements-list">
+            <li class="vacancy-card__requirements-list-element vacancy-card__text"></li>
+          </ul>
+          <div class="vacancy-card__requirements-footer">
+            <button class="button button_theme_dark vacancy-card__requirements-respond-button"></button>
+            <button class="button button_theme_light vacancy-card__requirements-share-button"></button>
           </div>
         </div>
       </div>
+    </template>
+
+    <template id="faculties-card">
+      <li class="faculties__items ">
+        <div class="faculties__item">
+          <h3 class="faculties__subtitle">Дизайн</h3>
+          <p class="faculties__link" >Развернуть</p>
+          <div class="faculties__close" >Скрыть</div>
+        </div>
+        <div class="faculties__box-hidden ">
+          <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
+          <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
+          <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
+          <div class="faculties__group">
+            <a href="https://practicum.yandex.ru/catalog/design/" class="faculties__button" target="_blank">Перейти к факультету</a>
+          </div>
+        </div>
+      </li>
     </template>
 
   </body>
