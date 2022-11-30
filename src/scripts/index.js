@@ -1,6 +1,7 @@
 import css from "../pages/index.css";
 import quiz from "./Quiz";
 import burger from "./Burger.js";
+import faq from "./Faq.js";
 
 import PopupWithForm from './PopupWithForm.js';
 import faculties from "./Faculties";
@@ -106,18 +107,19 @@ vacanciesCardsList.removeItems()
 vacanciesCardsList.renderItems(applyFilters(vacanciesList), 6)
 
 const screenWidth = window.screen.width;
-const text = document.querySelector("#text-transform");
+const bottomText = document.querySelector("#text-transform-bot");
+const upperText = document.querySelector("#text-transform-up");
 if (screenWidth <= 450) {
-  //JS для мобилок здесь
-  text.textContent = "и\u00A0получай доход"
+  upperText.textContent = "Делись опытом в"
+  bottomText.textContent = "и\u00A0получай доход"
 }
 
 burger();
 quiz();
-// =====================================================================
-
-
-// -------------------------------------------------------------
-
 faculties();
+faq();
+
+
+
+
 
