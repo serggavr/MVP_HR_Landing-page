@@ -1,8 +1,10 @@
 .slider {
-  max-width: 918px;
+  /* max-width: 918px; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  background-color: var(--light-bg-color);
+  /* margin-right: -200px; */
 }
 
 .slider__text {
@@ -15,7 +17,7 @@
 .slider__buttons-container {
   display: flex;
   flex-direction: row;
-  margin: 0 50px 50px 0;
+  margin: 0 0 50px;
   align-self: flex-end;
   column-gap: 30px;
 }
@@ -26,11 +28,25 @@
   height: 40px;
   border-radius: 50%;
   border: none;
-  background-color: #D9D9D9;
+  background-color: var(--primary-bg-color);
   cursor: pointer;
 }
 
-.slider__button-img {
+.slider__button_type_right {
+  background-image: url('../../images/feedback/toLeftArrow.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 10px;
+}
+
+.slider__button_type_left {
+  background-image: url('../../images/feedback/toRightArrow.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 10px;
+}
+
+/* .slider__button-img {
   margin-top: 1px;
 }
 
@@ -40,31 +56,52 @@
 
 .slider__button-right-img {
   margin-right: 3.5px;
+} */
+
+.slider__header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.slider__container {
+  position: relative;
+  margin-right: -100px;
+  margin-left: -20px;
+}
+
+.slider__list {
+  column-gap: 20px;
 }
 
 .slider__slide {
-  /* max-width: 918px; */
-  padding: 40px 30px;
+  position: relative;
+  max-width: 762px;
+  min-height: 390px;
+  /* padding: 40px 30px; */
   display: flex;
   flex-direction: row;
-  /* align-self: center; */
-  background-color: #E0E0E0;
-  column-gap: 25px;
+  background-color: var(--primary-bg-color);
+  column-gap: 55px;
   border-radius: 25px;
 }
 
 .slider__slide-img {
   width: 100%;
-  max-width: 200px;
-  min-height: 310px;
+  max-width: 260px;
+  min-height: 390px;
   object-fit: cover;
+  border-radius: 25px;
 }
 
 .slider__slide-text-container {
-
+  width: 100%;
+  max-width: 417px;
 }
 
 .slider__slide-title {
+  margin-top: 40px;
   font-weight: 700;
   font-size: var(--xl-text-size);
   line-height: var(--xl-line-height);
