@@ -15,7 +15,10 @@ const Burger = () => {
 
   burgerButton.addEventListener("click", switchBurger);
   links.forEach((item) => {
-    item.addEventListener('click', switchBurger);
+    const screenWidth = window.screen.width;
+    if (screenWidth <= 450) {
+      item.addEventListener('click', switchBurger);
+    }
   })
 };
 
