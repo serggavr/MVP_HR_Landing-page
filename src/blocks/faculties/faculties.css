@@ -93,6 +93,9 @@
   color: white;
   margin-left: auto;
 }
+.faculties__link_hidden {
+    display: none;
+}
 
 .faculties__close {
   display: none;
@@ -103,6 +106,10 @@
   line-height: 26px;
   margin: 0;
   margin-left: auto;
+}
+
+.faculties__close_active {
+
 }
 /* ============================= */
 /* .faculties__items_open .faculties__link {
