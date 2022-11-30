@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ee89ff54-9561-4fcc-971e-d57a710c8e0f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/welcome/welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/welcome/welcome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/Burger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Burger.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +113,35 @@
       <option name="project" value="LOCAL" />
       <updated>1669810614924</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="refactor hovers">
+      <created>1669815183560</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669815183560</updated>
+    </task>
+    <task id="LOCAL-00011" summary="refactor welcome desktop">
+      <created>1669819869926</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669819869926</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refactor welcome desktop">
+      <created>1669825110324</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669825110324</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add button-animation styles">
+      <created>1669825147571</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669825147571</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +167,10 @@
     <MESSAGE value="delete unused code" />
     <MESSAGE value="try refactor faculties script" />
     <MESSAGE value="add faculties block scripts" />
-    <option name="LAST_COMMIT_MESSAGE" value="add faculties block scripts" />
+    <MESSAGE value="refactor hovers" />
+    <MESSAGE value="refactor welcome desktop" />
+    <MESSAGE value="add button-animation styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="add button-animation styles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
