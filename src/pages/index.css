@@ -39,6 +39,7 @@
 
 /* elements */
 @import url("../blocks/elements/elements.css");
+@import url("../blocks/animated/animated.css");
 
 /* element */
 @import url("../blocks/element/element.css");
