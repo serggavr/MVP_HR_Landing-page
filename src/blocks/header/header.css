@@ -36,7 +36,11 @@
 }
 
 .header__link:hover {
-    color: darkslategray;
+    color: #5686E3;
+}
+
+.header__link:checked {
+    color: #5686E3;
 }
 
 .header__burger-button {
@@ -75,6 +79,7 @@
 
     #mobile-navbar {
         display: flex;
+        width: 100%;
     }
 
     .header__logo {
@@ -96,6 +101,15 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 25px;
+    }
+
+    .header__link:hover {
+        color: black;
+        background-color: #EDF2F7;
+    }
+
+    .header__link:checked {
+        background-color: #EDF2F7;
     }
 
     .header__navbar {
