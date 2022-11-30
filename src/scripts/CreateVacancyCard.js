@@ -45,6 +45,7 @@ export default function createVacancyCard (vacancyData, vacancyCardTemplateSelec
       }
       showMoreVacancyButton.classList.toggle('vacancy__load-more-button-hidden')
       vacancyCard.classList.toggle('vacancy-card-hidden')
+      // vacancyName.scrollIntoView()
     }
   })
 

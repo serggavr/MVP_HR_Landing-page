@@ -37,7 +37,7 @@ let filteredVacanciesList = []
 // requirementPopup
 
 const requirementPopupSubmit = () => {
-  console.log('requirementPopupSubmit')
+  console.log('Отправка формы')
 }
 
 const requirementPopup = new PopupWithForm({
