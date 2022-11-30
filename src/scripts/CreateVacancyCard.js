@@ -1,4 +1,4 @@
-export default function createVacancyCard (vacancyData, vacancyCardTemplateSelector) {
+export default function createVacancyCard (vacancyData, vacancyCardTemplateSelector, handleClickRespondButton) {
   const vacancyCard = document.querySelector(vacancyCardTemplateSelector).content.querySelector(".vacancy-card").cloneNode(true)
   
   const vacancyName = vacancyCard.querySelector('.vacancy-card__vacancy-name')
@@ -46,6 +46,18 @@ export default function createVacancyCard (vacancyData, vacancyCardTemplateSelec
       showMoreVacancyButton.classList.toggle('vacancy__load-more-button-hidden')
       vacancyCard.classList.toggle('vacancy-card-hidden')
     }
+  })
+
+  // vacancyRequirementRespondButton.addEventListener('click', () => {
+    // console.log('popup opened')
+    // const requirementPopup = document.querySelector('.popup_type_respond')
+    // const requirementPopupOpenClass = 'popup_opened'
+    // requirementPopup.classList.toggle(requirementPopupOpenClass)
+    // handleClickRespondButton()
+  // })
+
+  vacancyRequirementRespondButton.addEventListener('click', () => {
+    handleClickRespondButton()
   })
 
   return(vacancyCard)

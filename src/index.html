@@ -700,5 +700,103 @@
       </li>
     </template>
 
+    <div class="popup popup_type_respond">
+      <div class="popup__container">
+        <button
+          class="popup__close-button"
+          type="button"
+          aria-label="Закрыть"
+        ></button>
+        <form action="#" class="popup__form" name="edit-profile" novalidate>
+          <h2 class="popup__title">Нет подходящей вакансии?</h2>
+          <p class="popup__subtitle">Заполните форму и мы попробуем подобрать вам варианты</p>
+          <div class="popup__inputs-container">
+            <div class="popup__inputs-row">
+              <label class="popup__input-label">
+                ФИО
+                <input
+                  type="text"
+                  class="popup__input popup__input_type_username"
+                  required
+                  minlength="2"
+                  maxlength="40"
+                />
+              </label>
+              <!-- <span class="popup__error" data-input="name-input-error"></span> -->
+              <label class="popup__input-label">
+                *Почта
+                <input
+                  type="email"
+                  class="popup__input popup__input_type_email"
+                  required
+                />
+              </label>
+            </div>
+            <div class="popup__inputs-row">
+              <label class="popup__input-label">
+                *Телефон или Telegram
+                <input
+                  type="text"
+                  class="popup__input popup__input_type_phone popup__input_size_half"
+                  required
+                />
+              </label>
+            </div>
+            <div class="popup__inputs-row">
+              <label class="popup__input-label">
+                *Ссылка на резюме (не забудьте открыть доступ к документу)
+                <input
+                  type="url"
+                  class="popup__input popup__input_type_description"
+                  name="popup__input_type_description"
+                  required
+                />
+              </label>
+            </div>
+            <div class="popup__inputs-row">
+              <label class="popup__input-label">
+                *Какая роль вам ближе
+                <select class="popup__select popup__select_type_role" required >
+                  <option value="" disabled selected hidden></option>
+                  <option>Роль</option>
+                </select>
+              </label>
+              <label class="popup__input-label">
+                *Выберите факультет
+                <select class="popup__select popup__select_type_faculty" required >
+                  <option value="" disabled selected hidden></option>
+                  <option>Факультет</option>
+                </select>
+              </label>
+            </div>
+            <div class="popup__inputs-row">
+              <label class="popup__input-label">
+                *Перечислите набор технологий, которыми вы владеете и уровень владения каждой
+                <textarea
+                  class="popup__textarea"
+                  required
+                ></textarea>
+              </label>
+            </div>
+            <div class="popup__checkbox-container">
+              <input
+                type="checkbox"
+                class="popup__checkbox"
+                required
+              />
+              <p class="popup__checkbox-container-description">
+                Я даю согласие АНО ДПО «ШАД» и ООО «ЯНДЕКС» на обработку указанных данных для целей рассмотрения анкеты и обратной связи по ней.
+              </p>
+            </div>
+          <!-- <span
+            class="popup__error"
+            data-input="description-input-error"
+          ></span> -->
+          </div>
+          <input type="submit" class="popup__button button button_theme_dark" value="Сохранить" />
+        </form>
+      </div>
+    </div>
+
   </body>
 </html>
