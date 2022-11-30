@@ -32,6 +32,7 @@
     box-sizing: border-box;
     justify-content: space-between;
     align-items: flex-end;
+    position: relative;
 }
 
 .welcome__aside-bar {
@@ -165,7 +166,7 @@
     }
 
     .welcome {
-        padding: 110px 15px 40px 15px;
+        padding: 110px 15px 180px 15px;
     }
 
     .welcome__animation {
@@ -211,11 +212,25 @@
         width: 100%;
         padding: 15px;
         min-height: auto;
+        background-color: rgba(71,71,71, 0.50);
+        backdrop-filter: blur(50px);
+        position: relative;
+        top: 190px;
+        margin-bottom: 15px;
     }
 
     .welcome__button {
         width: 100%;
         font-size: 18px;
         line-height: 25px;
+        position: relative;
+        top: 190px;
+    }
+
+    .welcome__photo {
+        height: 245px;
+        flex-direction: column-reverse;
+        padding: 15px 0 0 0;
+        background-position: -100px;
     }
 }
