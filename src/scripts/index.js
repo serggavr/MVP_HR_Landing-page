@@ -1,4 +1,3 @@
-
 import css from "../pages/index.css";
 import quiz from "./Quiz";
 import burger from "./Burger.js";
@@ -6,16 +5,12 @@ import burger from "./Burger.js";
 import PopupWithForm from './PopupWithForm.js';
 import faculties from "./Faculties";
 
-
-
 import { vacanciesList } from '../utils/constants';
 import dropdown from './Dropdown'
 import createVacancyCard from './CreateVacancyCard';
 import Section from './Section.js'
 
 console.log("run index.js");
-
-const facultiesItems = document.querySelectorAll(".faculties__items");
 
 
 
