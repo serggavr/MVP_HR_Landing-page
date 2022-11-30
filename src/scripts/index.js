@@ -22,14 +22,18 @@ const dropdownButtonTypeRoleSelector = '.dropdown__button_type_role'
 const dropdownButtonSelectedClass = 'dropdown__button_style_selected'
 const vacancyCardSelector = '.vacancy-card';
 const requirementPopupSelector = '.popup_type_respond'
+const buttonOpenFeedbackSelector = '.button__open_feedback-popup'
 
 const loadMoreVacanciesButtonButton = document.querySelector(loadMoreVacanciesButtonSelector)
 const dropdownTypeFacultyButton = document.querySelector(dropdownButtonTypeFacultySelector)
 const dropdownTypeRoleButton = document.querySelector(dropdownButtonTypeRoleSelector)
+const buttonOpenFeedback = document.querySelector(buttonOpenFeedbackSelector)
+const vacancyCardContainer = document.querySelector(vacanciesContainerSelector)
 let filteredVacanciesList = []
 
 
 // requirementPopup
+
 
 const requirementPopupSubmit = () => {
   console.log('Отправка формы')
@@ -41,15 +45,23 @@ const requirementPopup = new PopupWithForm({
 
 requirementPopup.setEventListeners()
 
-const handleClickRespondButton = () => {
+buttonOpenFeedback.addEventListener('click', () => {
   requirementPopup.open()
+})
+
+const handleClickRespondButton = () => {
+  console.log('связаться с нами')
+}
+
+const handleClickShareButton = () => {
+  console.log('поделиться вакансией')
 }
 
 // requirementPopup end
 
 const vacanciesCardsList = new Section({
   renderer: (item) => {
-    const vacancy = createVacancyCard(item, cardTemplateSelector, handleClickRespondButton)
+    const vacancy = createVacancyCard(item, cardTemplateSelector, vacancyCardContainer, handleClickRespondButton, handleClickShareButton)
     vacanciesCardsList.addItem(vacancy);
   }
 }, vacanciesContainerSelector)

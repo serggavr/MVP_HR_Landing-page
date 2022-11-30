@@ -400,8 +400,8 @@
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
                   <div class="vacancy-card__footer-link-container">
                     <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__link">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
+                    <a href="#" class="vacancy-card__see-more">
+                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
                     </a>
                   </div>
                 </div>
@@ -428,8 +428,8 @@
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
                   <div class="vacancy-card__footer-link-container">
                     <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__link">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
+                    <a href="#" class="vacancy-card__see-more">
+                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
                     </a>
                   </div>
                 </div>
@@ -443,8 +443,8 @@
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Дизайн</p>
                   <div class="vacancy-card__footer-link-container">
                     <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__link">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
+                    <a href="#" class="vacancy-card__see-more">
+                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
                     </a>
                   </div>
                 </div>
@@ -458,8 +458,8 @@
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
                   <div class="vacancy-card__footer-link-container">
                     <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__link">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
+                    <a href="#" class="vacancy-card__see-more">
+                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
                     </a>
                   </div>
                 </div>
@@ -473,8 +473,8 @@
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
                   <div class="vacancy-card__footer-link-container">
                     <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__link">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
+                    <a href="#" class="vacancy-card__see-more">
+                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
                     </a>
                   </div>
                 </div>
@@ -488,8 +488,8 @@
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
                   <div class="vacancy-card__footer-link-container">
                     <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__link">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
+                    <a href="#" class="vacancy-card__see-more">
+                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
                     </a>
                   </div>
                 </div>
@@ -499,7 +499,7 @@
             <button class="vacancy__load-more-button vacancy__text">Смотреть еще</button>
             <div class="vacancy__feedback-container">
               <p class="vacancy__feedback-text vacancy__text">Не нашли подходящей вакансии?</p>
-              <button class="button button_placed_vacancy button_theme_dark">Связаться с нами</button>
+              <button class="button button_placed_vacancy button_theme_dark button__open_feedback-popup">Связаться с нами</button>
               <button class="button button_placed_vacancy button_theme_light">Подписаться на вакансии</button>
             </div>
         </section>
@@ -656,6 +656,7 @@
 
     <template id="vacancyCard"> 
       <div class="vacancy-card">
+        <button class=" button button__type_close-more vacancy-card__close-more button_hidden"></button>
         <div class="vacancy-card__info-container">
           <p class="vacancy-card__vacancy-name vacancy-card__text"></p>
           <h3 class="vacancy-card__vacancy-title vacancy-card__text"></h3>
@@ -664,6 +665,7 @@
           <p class="vacancy-card__vacancy-direction vacancy-card__text"></p>
           <div class="vacancy-card__footer-link-container">
             <p class="vacancy-card__vacancy-salary vacancy-card__text"></p>
+            <button class=" button button__type_see-more vacancy-card__see-more"></button>
           </div>
         </div>
         <div class="vacancy-card__requirements-container vacancy-card__requirements-container-hiden">
