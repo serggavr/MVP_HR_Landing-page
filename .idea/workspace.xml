@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ee89ff54-9561-4fcc-971e-d57a710c8e0f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/page/page.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page/page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/quiz/quiz.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/quiz/quiz.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/welcome/welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/welcome/welcome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/Quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Quiz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,9 +33,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images/header" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\MVP_HR_Landing-page\src\images\header" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -98,7 +109,42 @@
       <option name="project" value="LOCAL" />
       <updated>1669757333789</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add faculties block scripts">
+      <created>1669810614924</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669810614924</updated>
+    </task>
+    <task id="LOCAL-00010" summary="refactor hovers">
+      <created>1669815183560</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669815183560</updated>
+    </task>
+    <task id="LOCAL-00011" summary="refactor welcome desktop">
+      <created>1669819869926</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669819869926</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refactor welcome desktop">
+      <created>1669825110324</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669825110324</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add button-animation styles">
+      <created>1669825147571</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669825147571</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +170,19 @@
     <MESSAGE value="delete unused code" />
     <MESSAGE value="try refactor faculties script" />
     <MESSAGE value="add faculties block scripts" />
-    <option name="LAST_COMMIT_MESSAGE" value="add faculties block scripts" />
+    <MESSAGE value="refactor hovers" />
+    <MESSAGE value="refactor welcome desktop" />
+    <MESSAGE value="add button-animation styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="add button-animation styles" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/scripts/Faculties.js</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,8 +1,9 @@
-
 import css from "../pages/index.css";
 import quiz from "./Quiz";
 import burger from "./Burger.js";
- import faculties from "./Faculties";
+
+import PopupWithForm from './PopupWithForm.js';
+import faculties from "./Faculties";
 
 
 import { vacanciesList } from '../utils/constants';
@@ -14,8 +15,6 @@ console.log("run index.js");
 
 
 
-
-
 const vacanciesContainerSelector = '.vacancy__container';
 const cardTemplateSelector = '#vacancyCard';
 const loadMoreVacanciesButtonSelector = '.vacancy__load-more-button';
@@ -23,15 +22,35 @@ const dropdownButtonTypeFacultySelector = '.dropdown__button_type_faculty'
 const dropdownButtonTypeRoleSelector = '.dropdown__button_type_role'
 const dropdownButtonSelectedClass = 'dropdown__button_style_selected'
 const vacancyCardSelector = '.vacancy-card';
-const vacancyCardClass = 'vacancy-card';
+const requirementPopupSelector = '.popup_type_respond'
 
 const loadMoreVacanciesButtonButton = document.querySelector(loadMoreVacanciesButtonSelector)
 const dropdownTypeFacultyButton = document.querySelector(dropdownButtonTypeFacultySelector)
 const dropdownTypeRoleButton = document.querySelector(dropdownButtonTypeRoleSelector)
 let filteredVacanciesList = []
+
+
+// requirementPopup
+
+const requirementPopupSubmit = () => {
+  console.log('Отправка формы')
+}
+
+const requirementPopup = new PopupWithForm({
+  submitForm: requirementPopupSubmit
+}, requirementPopupSelector)
+
+requirementPopup.setEventListeners()
+
+const handleClickRespondButton = () => {
+  requirementPopup.open()
+}
+
+// requirementPopup end
+
 const vacanciesCardsList = new Section({
   renderer: (item) => {
-    const vacancy = createVacancyCard(item, cardTemplateSelector)
+    const vacancy = createVacancyCard(item, cardTemplateSelector, handleClickRespondButton)
     vacanciesCardsList.addItem(vacancy);
   }
 }, vacanciesContainerSelector)
@@ -83,18 +102,6 @@ const applyFilters = (vacanciesList) => {
 // ------
 const vacancyCard = document.querySelector(vacancyCardSelector)
 
-// const vacanciesContainer = document.querySelector(vacanciesContainerSelector)
-// vacanciesContainer.addEventListener('click', (e) => {
-  // console.log(vacancyCard)
-  // console.log(e.target.classList)
-  // console.log(e.composedPath().includes(div))
-  // console.log(e.target.parentElement)
-  // if ()
-  // console.log(e.composedPath().includes(vacancyCardClass))
-// })
-
-// ------
-
 vacanciesCardsList.removeItems()
 vacanciesCardsList.renderItems(applyFilters(vacanciesList), 6)
 
@@ -111,4 +118,6 @@ quiz();
 
 
 // -------------------------------------------------------------
-// faculties();
+
+faculties();
+

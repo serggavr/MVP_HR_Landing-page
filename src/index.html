@@ -15,62 +15,62 @@
         <div class="header__container">
           <a class="header__logo-link" href="#">
             <img
-              src="<%=require('./images/logo.svg')%>"
+              src="<%=require('./images/header/logo.svg')%>"
               alt="Логотип"
               class="header__logo"
             />
           </a>
           <nav class="header__navbar" id="desktop-navbar">
-            <a class="header__link" href="#">Преимущества</a>
-            <a class="header__link" href="#">Квиз</a>
-            <a class="header__link" href="#">Отзывы</a>
-            <a class="header__link" href="#">Вакансии</a>
-            <a class="header__link" href="#">Контакты</a>
+            <a class="header__link" href="#advantages">Преимущества</a>
+            <a class="header__link" href="#quiz">Квиз</a>
+            <a class="header__link" href="#feedback">Отзывы</a>
+            <a class="header__link" href="#vacancies">Сотрудничество</a>
+            <a class="header__link" href="#footer">Контакты</a>
           </nav>
           <a class="header__burger-button"></a>
         </div>
         <div class="header__burger-container">
           <nav class="header__navbar" id="mobile-navbar">
-            <a class="header__link" href="#">Преимущества</a>
-            <a class="header__link" href="#">Квиз</a>
-            <a class="header__link" href="#">Отзывы</a>
-            <a class="header__link" href="#">Вакансии</a>
-            <a class="header__link" href="#">Контакты</a>
+            <a class="header__link" href="#advantages">Преимущества</a>
+            <a class="header__link" href="#quiz">Квиз</a>
+            <a class="header__link" href="#feedback">Отзывы</a>
+            <a class="header__link" href="#vacancies">Сотрудничество</a>
+            <a class="header__link" href="#footer">Контакты</a>
           </nav>
         </div>
       </header>
 
       <main class="content">
         <section class="section welcome">
-            <p class="welcome__text welcome__text_float">Делись опытом в</p>
+            <p class="welcome__text welcome__text_float">Делитесь опытом в</p>
             <div class="welcome__animation">
               <span class="welcome__profession">
                 IT-профессии<br />
-                анализе данных<br />
+                аналитике<br />
                 маркетинге<br />
                 дизайне<br />
                 разработке
               </span>
             </div>
-          <p class="welcome__text" id="text-transform">и&nbsp;получай&nbsp;дополнительный доход</p>
-          <div class="welcome__bars">
-            <img
-                    src="<%=require('./images/jdoo.jpg')%>"
-                    alt="Фото"
-                    class="welcome__photo"
-            />
-            <div class="welcome__aside-bar">
-              <p class="welcome__description">
-                Станьте наставником или ревьюером,
-                осуществите мечту помогать другим людям.
-                Станьте наставником или ревьюером,
-                осуществите мечту помогать другим людям
-              </p>
+          <p class="welcome__text" id="text-transform">и&nbsp;получайте&nbsp;доход</p>
+          <div class="welcome__main">
+<!--            <img-->
+<!--                    src="<%=require('./images/welcome/pic-welcome.jpg')%>"-->
+<!--                    alt="Фото"-->
+<!--                    class="welcome__photo"-->
+<!--            />-->
+            <div class="welcome__photo">
+              <a class="welcome__button animated-button animated-black-button" href="#vacancies">
+                Хочу делиться опытом
+              </a>
+              <div class="welcome__aside-bar">
+                <p class="welcome__description">
+                  Практикум растёт, поэтому мы всегда ищем специалистов
+                  в команду обучения студентов: ревьюеров, наставников.
+                </p>
+              </div>
             </div>
           </div>
-          <button class="welcome__button">
-            Хочу делиться знаниями
-          </button>
         </section>
         <!-- start Advantages  -->
         <section class="section advantages">
@@ -103,8 +103,10 @@
 
       <!-- end Advantages -->
       
-      <section class="quiz section">
-        <h2 class="quiz__title">Узнай, что тебе подходит</h2>
+      <section id="quiz" class="quiz section">
+        <h2 class="quiz__title">
+          Мы сделали <span class="quiz__title quiz__title_accent">тест</span> про наши роли
+        </h2>
         <p class="quiz__description">Пройди тест, чтобы больше
           узнать об обязанностях наставника и ревьюера и выбрать подходящую для тебя роль.
         </p>
@@ -122,19 +124,19 @@
           </div>
         </div>
         <div class="quiz__buttons">
-          <button class="quiz__button quiz__start quiz__button-visible">Начать тест</button>
+          <button class="quiz__button animated-button animated-black-button quiz__start quiz__button-visible">Начать тест</button>
           <div class="quiz__buttons_transformed">
-            <button class="quiz__button quiz__vacancies">Посмотреть вакансии</button>
-            <button class="quiz__button quiz__reset">Заново</button>
+            <a class="quiz__button quiz__vacancies animated-button animated-black-button" href="#vacancies">Посмотреть вакансии</a>
+            <button class="quiz__button quiz__reset animated-button animated-white-button">Заново</button>
           </div>
-          <button class="quiz__button quiz__yes">Да</button>
-          <button class="quiz__button quiz__no">Нет</button>
+          <button class="quiz__button quiz__yes animated-button animated-black-button">Да</button>
+          <button class="quiz__button quiz__no animated-button animated-black-button">Нет</button>
         </div>
     </section>
 
         <!-- Feedback -->
 
-        <section class="section feedback">
+        <section id="feedback" class="section feedback">
           <h2 class="section__title">Что о нас говорят</h2>
           <p class="feedback__text">Наши наставники и ревьюеры с разных факультетов,Наши наставники и ревьюеры с разных факультетов,</p>
           <div class="slider">
@@ -328,7 +330,7 @@
        </section>
         <!-- end Faculties -->
 
-        <section class="section vacancy">
+        <section id="vacancies" class="section vacancy">
           <h2 class="section__title">Кого мы ищем</h2>
             
             <!-- <form class='search-form'>
@@ -568,7 +570,7 @@
         <!-- end FAQ -->
         
       </main>
-      <footer class="footer">
+      <footer id="footer" class="footer">
         <div class="footer__container">
           <div class="footer__info-block">
             <nav class="footer__nav-container">
@@ -580,13 +582,13 @@
                   <a href="#" class="footer__text footer__link footer__nav-link ">Помощь</a>
                 </li>
                 <li class="footer__nav-element">
-                  <a href="#" class="footer__nav-link footer__text footer__link">Вакансии</a>
+                  <a href="#vacancies" class="footer__nav-link footer__text footer__link">Вакансии</a>
                 </li>
                 <li class="footer__nav-element">
                   <a href="#" class="footer__nav-link footer__text footer__link">Лицензия</a>
                 </li>
                 <li class="footer__nav-element">
-                  <a href="#" class="footer__nav-link footer__text footer__link">Отзывы</a>
+                  <a href="#feedback" class="footer__nav-link footer__text footer__link">Отзывы</a>
                 </li>
                 <li class="footer__nav-element">
                   <a href="#" class="footer__nav-link footer__text footer__link">Правовая информация</a>
@@ -661,9 +663,6 @@
           <p class="vacancy-card__vacancy-direction vacancy-card__text"></p>
           <div class="vacancy-card__footer-link-container">
             <p class="vacancy-card__vacancy-salary vacancy-card__text"></p>
-            <!-- <a href="#" class="vacancy-card__link">
-              <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
-            </a> -->
           </div>
         </div>
         <div class="vacancy-card__requirements-container vacancy-card__requirements-container-hiden">
@@ -696,6 +695,95 @@
         </div>
       </li>
     </template>
+
+    <div class="popup popup_type_respond">
+      <div class="popup__container">
+        <button class="popup__close-button button button__type_close" type="button" ></button>
+        <form action="#" class="popup__form" name="edit-profile" >
+          <h2 class="popup__title popup__text">Нет подходящей вакансии?</h2>
+          <p class="popup__subtitle popup__text">Заполните форму и мы попробуем подобрать вам варианты</p>
+          <div class="popup__inputs-container">
+            <div class="popup__inputs-row">
+              <label class="popup__input-label popup__text">
+                ФИО
+                <input
+                  type="text"
+                  class="popup__input popup__input_type_username popup__text"
+                  required
+                  minlength="2"
+                  maxlength="40"
+                />
+              </label>
+              <label class="popup__input-label popup__text">
+                *Почта
+                <input
+                  type="email"
+                  class="popup__input popup__input_type_email popup__text"
+                  required
+                />
+              </label>
+            </div>
+            <div class="popup__inputs-row">
+              <label class="popup__input-label popup__text">
+                *Телефон или Telegram
+                <input
+                  type="text"
+                  class="popup__input popup__input_type_phone popup__input_size_half popup__text"
+                  required
+                />
+              </label>
+            </div>
+            <div class="popup__inputs-row">
+              <label class="popup__input-label popup__text">
+                *Ссылка на резюме (не забудьте открыть доступ к документу)
+                <input
+                  type="url"
+                  class="popup__input popup__input_type_description popup__text"
+                  name="popup__input_type_description"
+                  required
+                />
+              </label>
+            </div>
+            <div class="popup__inputs-row">
+              <label class="popup__input-label popup__text">
+                *Какая роль вам ближе
+                <select class="popup__select popup__select_type_role popup__text" required >
+                  <option value="" disabled selected hidden></option>
+                  <option>Роль</option>
+                </select>
+              </label>
+              <label class="popup__input-label popup__text">
+                *Выберите факультет
+                <select class="popup__select popup__select_type_faculty popup__text" required >
+                  <option value="" disabled selected hidden></option>
+                  <option>Факультет</option>
+                </select>
+              </label>
+            </div>
+            <div class="popup__inputs-row">
+              <label class="popup__input-label popup__text">
+                *Перечислите набор технологий, которыми вы владеете и уровень владения каждой
+                <textarea
+                  class="popup__textarea popup__text"
+                  required
+                ></textarea>
+              </label>
+            </div>
+            <div class="popup__checkbox-container">
+              <input
+                type="checkbox"
+                class="popup__checkbox"
+                required
+              />
+              <p class="popup__checkbox-description popup__text">
+                Я даю согласие АНО ДПО «ШАД» и ООО «ЯНДЕКС» на обработку указанных данных для целей рассмотрения анкеты и обратной связи по ней.
+              </p>
+            </div>
+          </div>
+          <input type="submit" class="popup__button button button_theme_dark button_placed_popup" value="Отправить" />
+        </form>
+      </div>
+    </div>
 
   </body>
 </html>
