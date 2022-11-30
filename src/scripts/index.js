@@ -4,8 +4,10 @@ import burger from "./Burger.js";
 import faq from "./Faq.js";
 import slider from "./Slider";
 
+
 import PopupWithForm from './PopupWithForm.js';
 import faculties from "./Faculties";
+
 
 import { vacanciesList } from '../utils/constants';
 import dropdown from './Dropdown'
@@ -15,7 +17,7 @@ import Section from './Section.js'
 console.log("run index.js");
 
 
-
+const pageBodySelector = '.body';
 const vacanciesContainerSelector = '.vacancy__container';
 const cardTemplateSelector = '#vacancyCard';
 const loadMoreVacanciesButtonSelector = '.vacancy__load-more-button';
@@ -24,14 +26,21 @@ const dropdownButtonTypeRoleSelector = '.dropdown__button_type_role'
 const dropdownButtonSelectedClass = 'dropdown__button_style_selected'
 const vacancyCardSelector = '.vacancy-card';
 const requirementPopupSelector = '.popup_type_respond'
+const buttonOpenFeedbackSelector = '.button__open_feedback-popup'
+const buttonOpenSubscribeSelector = '.button__open_subscribe-popup'
 
+const pageBody = document.querySelector(pageBodySelector)
 const loadMoreVacanciesButtonButton = document.querySelector(loadMoreVacanciesButtonSelector)
 const dropdownTypeFacultyButton = document.querySelector(dropdownButtonTypeFacultySelector)
 const dropdownTypeRoleButton = document.querySelector(dropdownButtonTypeRoleSelector)
+const buttonOpenFeedback = document.querySelector(buttonOpenFeedbackSelector)
+const buttonOpenSubscribe = document.querySelector(buttonOpenSubscribeSelector)
+const vacancyCardContainer = document.querySelector(vacanciesContainerSelector)
 let filteredVacanciesList = []
 
 
 // requirementPopup
+
 
 const requirementPopupSubmit = () => {
   console.log('Отправка формы')
@@ -43,15 +52,28 @@ const requirementPopup = new PopupWithForm({
 
 requirementPopup.setEventListeners()
 
-const handleClickRespondButton = () => {
+buttonOpenFeedback.addEventListener('click', () => {
   requirementPopup.open()
+})
+
+buttonOpenSubscribe.addEventListener('click', () => {
+  // requirementPopup.open()
+  console.log('подписка')
+})
+
+const handleClickRespondButton = () => {
+  console.log('связаться с нами')
+}
+
+const handleClickShareButton = () => {
+  console.log('поделиться вакансией')
 }
 
 // requirementPopup end
 
 const vacanciesCardsList = new Section({
   renderer: (item) => {
-    const vacancy = createVacancyCard(item, cardTemplateSelector, handleClickRespondButton)
+    const vacancy = createVacancyCard(item, cardTemplateSelector, vacancyCardContainer, handleClickRespondButton, handleClickShareButton)
     vacanciesCardsList.addItem(vacancy);
   }
 }, vacanciesContainerSelector)
@@ -71,6 +93,7 @@ const filterVacancies = (query, queryField, vacanciesList) => {
   filteredList = vacanciesList.filter(el => el[queryField] === query)
   return filteredList
 }
+
 dropdownTypeFacultyButton.addEventListener('change', (e) => {
   vacanciesCardsList.removeItems()
   vacanciesCardsList.renderItems(applyFilters(vacanciesList), 6)
@@ -89,9 +112,13 @@ dropdownTypeRoleButton.addEventListener('change', (e) => {
     dropdownTypeRoleButton.classList.add(dropdownButtonSelectedClass)
   }
 })
+
 const applyFilters = (vacanciesList) => {
   filteredVacanciesList = filterVacancies(dropdownTypeRoleButton.value, 'role', vacanciesList)
   filteredVacanciesList = filterVacancies(dropdownTypeFacultyButton.value, 'faculty', filteredVacanciesList)
+  if (filteredVacanciesList.length === 0) {
+    console.log('ноль')
+  }
   if (vacanciesCardsList.container.children.length === filteredVacanciesList.length || filteredVacanciesList.length <= 6) {
     loadMoreVacanciesButtonButton.setAttribute('disabled', '')
   } else {

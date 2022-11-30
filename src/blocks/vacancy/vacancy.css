@@ -15,6 +15,10 @@
   color: var(--primary-text-color);
 }
 
+.vacancy__text_type_colored {
+  color: var(--colored-text);
+}
+
 .vacancy__container {
   margin: 60px 0 50px;
   display: flex;
@@ -25,7 +29,7 @@
 }
 
 .vacancy__load-more-button {
-  width: 100%;
+  /* width: 100%;
   max-width: 350px;
   align-self: center;
   border: none;
@@ -33,7 +37,10 @@
   font-weight: 700;
   font-size: var(--xl-text-size);
   line-height: var(--xl-line-height);
-  cursor: pointer;
+  cursor: pointer; */
+  font-weight: 700;
+  font-size: var(--l-text-size);
+  line-height: var(--l-line-height);
 }
 
 .vacancy__load-more-button:disabled {
@@ -54,7 +61,7 @@
 
 .vacancy__feedback-text {
   padding-right: 40px;
-  font-weight: 400;
-  font-size: var(--l-text-size);
-  line-height: var(--l-line-height);
+  font-weight: 700;
+  font-size: var(--xl-text-size);
+  line-height: var(--xl-line-height);
 }

@@ -10,6 +10,13 @@
 @font-face {
   font-family: "YS_Text";
   src:
+    url("./fonts/YS-Text/YS-Text-Medium.ttf") format("ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "YS_Text";
+  src:
     url("./fonts/YS-Text/YS-Text-Regular.woff2") format("woff2"),
     url("./fonts/YS-Text/YS-Text-Regular.woff") format("woff"),
     url("./fonts/YS-Text/YS-Text-Regular.ttf") format("ttf");

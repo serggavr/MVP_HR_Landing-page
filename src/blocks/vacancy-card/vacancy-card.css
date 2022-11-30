@@ -1,4 +1,5 @@
 .vacancy-card {
+  position: relative;
   /* width: calc(50% - 55px); */
   max-width: 100%;
   padding: 40px 20px;
@@ -93,7 +94,7 @@
   justify-content: space-between;
 }
 
-.vacancy-card__link {
+.vacancy-card__see-more {
   height: 100%;
   width: 35px;
   display: flex;
@@ -101,7 +102,7 @@
   justify-content: center;
 }
 
-.vacancy-card__link-img {
+.vacancy-card__see-more-img {
   
 }
 
@@ -142,6 +143,22 @@
   display: flex;
   flex-direction: row;
   column-gap: 20px;
+}
+
+.vacancy-card__see-more {
+  right: 30px;
+  width: 35px;
+  /* position: absolute;
+  bottom: 40px;
+  right: 30px;
+  width: 35px;
+  height: 35px;
+  background-image: url(../../images/vacancy/arrow.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--primary-bg-color);
+  border: none;
+  cursor: pointer; */
 }
 
 @-webkit-keyframes Appearance {

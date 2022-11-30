@@ -41,6 +41,12 @@
 
 .faq__arrow-down {
   display: block;
+  width: 30px;
+}
+
+.faq__arrow-down_hidden {
+  display: none;
+  
 }
 
 .faq__arrow-down:hover {
@@ -49,6 +55,12 @@
 
 .faq__arrow-up {
   display: none;
+  width: 30px;
+}
+
+.faq__arrow-up_active {
+  display: block;
+
 }
 
 .faq__arrow-up:hover {
@@ -88,13 +100,7 @@
     line-height: 25px;
   }
 
-  .faq__arrow-down {
-    width: 30px;
-  }
-
-  .faq__arrow-up {
-    width: 30px;
-  }
+  
 
   .faq__text {
     font-size: 18px;
