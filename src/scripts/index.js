@@ -1,6 +1,7 @@
 import css from "../pages/index.css";
 import quiz from "./Quiz";
 import burger from "./Burger.js";
+import faq from "./Faq.js";
 
 import PopupWithForm from './PopupWithForm.js';
 import faculties from "./Faculties";
@@ -105,60 +106,19 @@ vacanciesCardsList.removeItems()
 vacanciesCardsList.renderItems(applyFilters(vacanciesList), 6)
 
 const screenWidth = window.screen.width;
-const text = document.querySelector("#text-transform");
+const bottomText = document.querySelector("#text-transform-bot");
+const upperText = document.querySelector("#text-transform-up");
 if (screenWidth <= 450) {
-  //JS для мобилок здесь
-  text.textContent = "и\u00A0получай доход"
+  upperText.textContent = "Делись опытом в"
+  bottomText.textContent = "и\u00A0получай доход"
 }
 
 burger();
 quiz();
-
-
-// import { faculties as facultiesList } from "../utils/constants"
-// const facultiesCardList = document.querySelector(".faculties__list-item");
-// const facultiesCard = document.querySelectorAll(".faculties__items");
-// const facultiesItem = document.querySelectorAll(".faculties__item");
-// const facultiesLink = document.querySelectorAll(".faculties__link");
-// const facultiesClose = document.querySelectorAll(".faculties__close");
-// const facultiesBox = document.querySelectorAll(".faculties__box-hidden");
-
-
-// facultiesList.forEach((item) => {
-//   const facultiesCard = document.querySelector("#faculties-card").content.querySelector(".faculties__items").cloneNode(true);
-//   const facultiesName = facultiesCard.querySelector(".faculties__subtitle");
-//   const facultiesLink = facultiesCard.querySelector(".faculties__link");
-//   facultiesCardList.append(facultiesCard);
-//   facultiesName.textContent = item;
-//   facultiesLink.addEventListener("click", collapse);
-// })
-
-// const collapse = (evt) => {
-
-// }
-
-// facultiesLink.forEach(function (item, i) {
-//   item.addEventListener('click', function (evt) {
-//     evt.preventDefault();
-//
-//     facultiesItem.forEach(function (item , i) {
-//       facultiesItems[i].classList.add('faculties__items_open');
-//       facultiesBox[i].classList.add('faculties__box-hidden_active')
-//     });
-//   });
-// });
-//
-// facultiesClose.forEach(function (item, i) {
-//   item.addEventListener('click', function (evt) {
-//     evt.preventDefault();
-//
-//     facultiesItem.forEach(function (item , i) {
-//       facultiesItem[i].classList.remove('faculties__items_open');
-//       facultiesBox[i].classList.remove('faculties__box-hidden_active')
-//     });
-//   });
-// });
-// -------------------------------------------------------------
-
 faculties();
+faq();
+
+
+
+
 

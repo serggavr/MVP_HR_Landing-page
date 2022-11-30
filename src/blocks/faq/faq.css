@@ -28,6 +28,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .faq__subtitle {
@@ -63,7 +64,7 @@
   display: none;
 }
 
-.faq__text_hidden {
+.faq__text_visible {
   display: block;
 }
 
