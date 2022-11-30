@@ -37,13 +37,13 @@
   margin: 0 0 25px 0;
 }
 
-.faculties__items .faculties__box-hidden {
+/* .faculties__items .faculties__box-hidden {
   display: none;
 }
 
 .faculties__items_open .faculties__box-hidden_active {
   display: block;
-}
+} */
 
 .faculties__box-hidden {
   display: none;
@@ -105,13 +105,13 @@
   margin-left: auto;
 }
 /* ============================= */
-.faculties__items_open .faculties__link {
+/* .faculties__items_open .faculties__link {
   display: none;
 }
 
 .faculties__items_open .faculties__close {
   display: block;
-}
+} */
 
 /* .faculties__items .faculties__close {
     display: none;
