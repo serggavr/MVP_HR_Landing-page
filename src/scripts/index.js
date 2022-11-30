@@ -2,6 +2,7 @@ import css from "../pages/index.css";
 import quiz from "./Quiz";
 import burger from "./Burger.js";
 import faq from "./Faq.js";
+import slider from "./Slider";
 
 import PopupWithForm from './PopupWithForm.js';
 import faculties from "./Faculties";
@@ -117,7 +118,7 @@ burger();
 quiz();
 faculties();
 faq();
-
+slider();
 
 
 

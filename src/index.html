@@ -54,11 +54,6 @@
             </div>
           <p class="welcome__text" id="text-transform-bot">и&nbsp;получайте&nbsp;доход</p>
           <div class="welcome__main">
-<!--            <img-->
-<!--                    src="<%=require('./images/welcome/pic-welcome.jpg')%>"-->
-<!--                    alt="Фото"-->
-<!--                    class="welcome__photo"-->
-<!--            />-->
             <div class="welcome__photo">
               <a class="welcome__button animated-button animated-black-button" href="#vacancies">
                 Хочу делиться опытом
@@ -72,6 +67,7 @@
             </div>
           </div>
         </section>
+
         <!-- start Advantages  -->
         <section id="advantages" class="section advantages">
           <h2 class="advantages__title">Работа с нами - это возможность</h2>
@@ -141,76 +137,80 @@
         <section id="feedback" class="section feedback">
           <h2 class="section__title">Что о нас говорят</h2>
           <p class="feedback__text">Наши наставники и ревьюеры с разных факультетов,Наши наставники и ревьюеры с разных факультетов,</p>
-          <div class="slider">
+<!--          <section class="splide" aria-label="Splide Basic HTML Example">-->
+<!--            <div class="splide__track">-->
+<!--              <ul class="splide__list">-->
+<!--                <li class="splide__slide">Slide 01</li>-->
+<!--                <li class="splide__slide">Slide 02</li>-->
+<!--                <li class="splide__slide">Slide 03</li>-->
+<!--              </ul>-->
+<!--            </div>-->
+<!--          </section>-->
+
+          <div class="slider splide">
             <div class="slider__buttons-container">
               <button class="slider__button slider__button-right">
-                <!-- <img src="./images/feedback/toLeftArrow.svg" alt="стрелка вправо" class="slider__button-right-img"> -->
                 <img src="<%=require('./images/feedback/toLeftArrow.svg')%>" alt="стрелка вправо" class="slider__button-img slider__button-right-img">
               </button>
               <button class="slider__button slider__button-left">
-                <!-- <img src="./images/feedback/toLeftArrow.svg" alt="стрелка влево" class="slider__button-left-img"> -->
                 <img src="<%=require('./images/feedback/toRightArrow.svg')%>" alt="стрелка влево" class="slider__button-img slider__button-left-img">
               </button>
             </div>
-            
-            <div class="slider__slide">
-              <!-- <img src="img1.jpg" alt="Иван Иванов"> -->
-              <img class="slider__slide-img" src="<%=require('./images/feedback/1.jpg')%>" alt="Иван Иванов">
-              <div class="slider__slide-text-container">
-                <h3 class="slider__slide-title slider__text">Иван Иванов</h3>
-                <p class="slider__slide-subtitle slider__text">Наставник направления дизайн интерфейсов</p>
-                <p class="slider__slide-text slider__text">
-                  Я в своем познании настолько преисполнился, 
-                  что я как будто бы уже сто триллионов миллиардов 
-                  лет проживаю на триллионах и триллионах таких же 
-                  планет.
-                </p>
-              </div>
-            </div>
-          
-            <!-- <div class="slider__slide">
-              <img src="img1.jpg" alt="Иван Иванов">
-              <img class="slider__slide-img" src="<%=require('./images/feedback/2.jpg')%>" alt="Петр Петров">
-              <div class="slider__slide-text-container">
-                <h3 class="slider__slide-title slider__text">Петр Петров</h3>
-                <p class="slider__slide-subtitle slider__text">Наставник направления дизайн интерфейсов</p>
-                <p class="slider__slide-text slider__text">
-                  И я в своем познании настолько преисполнился, 
-                  что я как будто бы уже сто триллионов миллиардов 
-                  лет проживаю на триллионах и триллионах таких же 
-                  планет.
-                </p>
-              </div>
-            </div> -->
-          
-            <!-- <div class="slider__slide">
-              <img src="img1.jpg" alt="Иван Иванов">
-              <img class="slider__slide-img" src="<%=require('./images/feedback/3.jpg')%>" alt="Александр Александров">
-              <div class="slider__slide-text-container">
-                <h3 class="slider__slide-title slider__text">Александр Александров</h3>
-                <p class="slider__slide-subtitle slider__text">Наставник направления web-разработка</p>
-                <p class="slider__slide-text slider__text">
-                  И я тоже в своем познании настолько преисполнился, 
-                  что я как будто бы уже сто триллионов миллиардов 
-                  лет проживаю на триллионах и триллионах таких же 
-                  планет.
-                </p>
-              </div>
-            </div> -->
-
-            <ul class="slider__dots-container">
-              <div class="slider__dot"></div>
-              <div class="slider__dot slider__dot-active"></div>
-              <div class="slider__dot"></div>
-            </ul>
-
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="slider__slide splide__slide">
+                  <img class="slider__slide-img" src="<%=require('./images/feedback/1.jpg')%>" alt="Иван Иванов">
+                  <div class="slider__slide-text-container">
+                    <h3 class="slider__slide-title slider__text">Иван Иванов</h3>
+                    <p class="slider__slide-subtitle slider__text">Наставник направления дизайн интерфейсов</p>
+                    <p class="slider__slide-text slider__text">
+                      Я в своем познании настолько преисполнился,
+                      что я как будто бы уже сто триллионов миллиардов
+                      лет проживаю на триллионах и триллионах таких же
+                      планет.
+                    </p>
+                  </div>
+                </li>
+                <li class="slider__slide splide__slide">
+                  <img class="slider__slide-img" src="<%=require('./images/feedback/1.jpg')%>" alt="Иван Иванов">
+                  <div class="slider__slide-text-container">
+                    <h3 class="slider__slide-title slider__text">Иван Иванов</h3>
+                    <p class="slider__slide-subtitle slider__text">Наставник направления дизайн интерфейсов</p>
+                    <p class="slider__slide-text slider__text">
+                      Я в своем познании настолько преисполнился,
+                      что я как будто бы уже сто триллионов миллиардов
+                      лет проживаю на триллионах и триллионах таких же
+                      планет.
+                    </p>
+                  </div>
+                </li>
+                <li class="slider__slide splide__slide">
+                  <img class="slider__slide-img" src="<%=require('./images/feedback/1.jpg')%>" alt="Иван Иванов">
+                  <div class="slider__slide-text-container">
+                    <h3 class="slider__slide-title slider__text">Иван Иванов</h3>
+                    <p class="slider__slide-subtitle slider__text">Наставник направления дизайн интерфейсов</p>
+                    <p class="slider__slide-text slider__text">
+                      Я в своем познании настолько преисполнился,
+                      что я как будто бы уже сто триллионов миллиардов
+                      лет проживаю на триллионах и триллионах таких же
+                      планет.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            <div>
+<!--            <ul class="slider__dots-container">-->
+<!--              <div class="slider__dot"></div>-->
+<!--              <div class="slider__dot slider__dot-active"></div>-->
+<!--              <div class="slider__dot"></div>-->
+<!--            </ul>-->
+              <ul class="splide__pagination"></ul>
           </div>
-
         </section>
 
         <!-- end Feedback -->
 
-       
+
         
 
         <!-- Faculties -->
