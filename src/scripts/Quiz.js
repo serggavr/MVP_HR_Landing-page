@@ -25,14 +25,16 @@ export default () => {
   let mentorCount = 0;
   let reviewerCount = 0;
 
+
   const nextStep = () => {
     step++;
     if (step <= 5) {
+      const currentQuestion = questions[step - 1];
       stepCounter.textContent = step;
-      quizQuestion.textContent = questions[step - 1].text;
-      quizImage.src = questions[step - 1].image;
+      quizQuestion.textContent = currentQuestion.text;
+      quizDescription.textContent = currentQuestion.description;
+      quizImage.src = currentQuestion.image;
       progressLine.style.width = `${stepCounter.textContent * 20}%`;
-      console.log(step, mentorCount, reviewerCount);
     } else {
       showResult();
     }
