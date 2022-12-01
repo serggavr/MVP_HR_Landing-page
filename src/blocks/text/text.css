@@ -1,9 +1,0 @@
-.text {
-  margin: 0;
-  font-family: 'YS_Text';
-  font-style: normal;
-}
-
-.text_type_colored {
-  color: var(--colored-text);
-}
