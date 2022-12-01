@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a0ca45e-a028-4556-b35c-8ff71d17a1ff" name="Changes" comment="add swiper script">
-      <change afterPath="$PROJECT_DIR$/src/vendor/fonts/YS-Text/YS-Text-Medium-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vendor/fonts/YS-Text/YS-Text-Medium-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vendor/fonts/YS-Text/YS-Text-Medium-Regular.woff2" afterDir="false" />
+    <list default="true" id="1a0ca45e-a028-4556-b35c-8ff71d17a1ff" name="Changes" comment="fix workspace">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/advantages/advantages.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/advantages/advantages.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/faculties/faculties.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/faculties/faculties.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/welcome/welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/welcome/welcome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/Faculties.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Faculties.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/constants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vendor/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/vendor/fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/quiz/quiz.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/quiz/quiz.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/Quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Quiz.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669909336660</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="fix workspace">
+      <created>1669911736970</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1669911736970</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +239,8 @@
     <MESSAGE value="fix faq background and arrow" />
     <MESSAGE value="fix faculties click area and content" />
     <MESSAGE value="fix welcome button color" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix welcome button color" />
+    <MESSAGE value="fix workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix workspace" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
