@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee89ff54-9561-4fcc-971e-d57a710c8e0f" name="Changes" comment="fix quiz block">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/faq/faq.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/faq/faq.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/Faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Faq.js" afterDir="false" />
-    </list>
+    <list default="true" id="e3b13ef3-1f66-49bb-8708-d6890d05925f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
