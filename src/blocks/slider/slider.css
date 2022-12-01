@@ -32,6 +32,10 @@
   cursor: pointer;
 }
 
+.slider__button:hover {
+  background-color: var(--colored-text);
+}
+
 .slider__button_type_right {
   background-image: url('../../images/feedback/toLeftArrow.svg');
   background-position: center;
