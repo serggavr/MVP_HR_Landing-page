@@ -160,3 +160,39 @@
   font-size: var(--l-text-size);
   line-height: var(--l-line-height);
 }
+
+@media screen and (max-width: 450px) {
+  .popup__container {
+    margin-bottom: 40px;
+    padding: 40px 15px;
+    max-height: 100%;
+  }
+
+  .popup__title {
+    margin-bottom: 25px;
+    font-size: var(--xxl-mobile-text-size);
+    line-height: var(--xxl-mobile-line-height);
+  }
+
+  .popup__subtitle {
+    margin-bottom: 15px;
+    font-size: var(--xl-mobile-text-size);
+    line-height: var(--xl-mobile-line-height);
+  }
+
+  .popup__input-label {
+    margin-bottom: 10px;
+  }
+
+  .popup__input {
+    margin-top: 5px;
+  }
+
+  .popup__inputs-row:nth-child(1), .popup__inputs-row:nth-child(4) {
+    flex-direction: column;
+  }
+
+  .popup__input_type_phone {
+    max-width: 100%;
+  }
+}
