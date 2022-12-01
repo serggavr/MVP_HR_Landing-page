@@ -5,36 +5,633 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="will be added later" />
+    <link rel="stylesheet" href="./pages/index.css" type="text/css"/>
     <title>MVP_HR_Landing-page</title>
   </head>
 
   <body class="body">
     <div class="page">
       <header class="header">
-        <!-- Оставил для примера, подключаем изображения через <%=require('./images/logo_theme_dark.svg')%> -->
-        <img
-          src="<%=require('./images/logo_theme_dark.svg')%>"
-          alt="any"
-          class="header__logo"
-        />
+        <div class="header__container">
+          <a class="header__logo-link" href="#">
+            <img
+              src="<%=require('./images/header/logo.svg')%>"
+              alt="Логотип"
+              class="header__logo"
+            />
+          </a>
+          <nav class="header__navbar" id="desktop-navbar">
+            <a class="header__link" href="#advantages">Преимущества</a>
+            <a class="header__link" href="#quiz">Квиз</a>
+            <a class="header__link" href="#feedback">Отзывы</a>
+            <a class="header__link" href="#vacancies">Сотрудничество</a>
+            <a class="header__link" href="#footer">Контакты</a>
+          </nav>
+          <a class="header__burger-button"></a>
+        </div>
+        <div class="header__burger-container">
+          <nav class="header__navbar" id="mobile-navbar">
+            <a class="header__link" href="#advantages">Преимущества</a>
+            <a class="header__link" href="#quiz">Квиз</a>
+            <a class="header__link" href="#feedback">Отзывы</a>
+            <a class="header__link" href="#vacancies">Сотрудничество</a>
+            <a class="header__link" href="#footer">Контакты</a>
+          </nav>
+        </div>
       </header>
 
-      <main class="content">
-        <section class="section">
-
+       <main class="main content">
+        <section class="section welcome">
+            <p class="welcome__text welcome__text_float" id="text-transform-up">Делитесь опытом в</p>
+            <div class="welcome__animation">
+              <span class="welcome__profession">
+                IT-профессии<br />
+                аналитике<br />
+                маркетинге<br />
+                дизайне<br />
+                разработке
+              </span>
+            </div>
+          <p class="welcome__text" id="text-transform-bot">и&nbsp;получайте&nbsp;доход</p>
+          <div class="welcome__main">
+            <div class="welcome__photo">
+              <a class="welcome__button animated-button" href="#vacancies">
+                Хочу делиться опытом
+              </a>
+              <div class="welcome__aside-bar">
+                <p class="welcome__description">
+                  Практикум растёт, поэтому мы всегда ищем специалистов
+                  в команду обучения студентов: ревьюеров, наставников.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
-      </main>
 
-      <footer class="footer">
+        <section class="advantages">
+          <div class="advantages__wrapper">
+            <h2 class="advantages__title">Работа с нами - это <span class="advantages__span">возможность</span></h2>
+            <div class="advantages__container">
+
+                <div class="advantages__card">
+                  <img class="advantages__img" src="<%=require('./images/Adv1.png')%>" alt="надпись на доске выйграть">
+                  <div class="advantages__subtitle">Дополнительного дохода</div>
+                  <p class="advantages__text">от 35 тыс. ₽ в&nbsp;месяц, удалённо и с&nbsp;гибким графиком.</p>
+                </div>
+                <div class="advantages__card">
+                  <img class="advantages__img" src="<%=require('./images/Adv2.png')%>" alt="четыре человека обсуждают что-то">
+                  <div class="advantages__subtitle">Давать и получать знания</div>
+                  <p class="advantages__text">делясь опытом со&nbsp;студентами и пройдя
+                    Школу наставников.</p>
+                </div>
+              <div class="advantages__card">
+                <img class="advantages__img" src="<%=require('./images/Adv3.png')%>" alt="молодой человек общается по видеосвязи">
+                <div class="advantages__subtitle">Развивать личный бренд</div>
+                <p class="advantages__text">публикуя статьи в&nbsp;нашем блоге и выступая спикером на&nbsp;мероприятиях Yandex.</p>
+              </div>
+              <div class="advantages__card">
+                <img class="advantages__img" src="<%=require('./images/Adv4.png')%>" alt="группа людей в офисе">
+                <div class="advantages__subtitle">Стать частью комьюнити EdTech</div>
+                <p class="advantages__text">обмениваясь опытом с&nbsp;экспертами в&nbsp;своей и смежных областях.</p>
+              </div>
+            </div>
+          </div>
+      </section>
+      
+      <section id="quiz" class="quiz section">
+        <h2 class="quiz__title">
+          Мы сделали <span class="quiz__title quiz__title_accent">тест</span> про наши роли
+        </h2>
+        <p class="quiz__description">
+          Чтобы показать вам обязанности наставника, ревьюера и предложить подходящий для&nbsp;вас вариант.
+        </p>
+        <div class="quiz__bar">
+          <span class="quiz__quantity"><span class="quiz__counter">0</span>/5</span>
+          <div class="quiz__progress-bar">
+            <div class="quiz__progress-line"></div>
+          </div>
+        </div>
+        <div class="quiz__card">
+          <img class="quiz__image" src="<%=require('./images/quiz/quiz-1.png')%>" alt="Картинка квиза">
+          <div class="quiz__textarea">
+            <p class="quiz__question">Наставник или ревьюер?</p>
+            <p class="quiz__question-description"></p>
+          </div>
+        </div>
+        <div class="quiz__buttons">
+          <button class="quiz__button quiz__button-first animated-button animated-black-button quiz__start quiz__button-visible">Начать тест</button>
+          <div class="quiz__buttons_transformed">
+            <a class="quiz__button quiz__vacancies animated-button animated-black-button" href="#vacancies">Посмотреть роли</a>
+            <button class="quiz__button quiz__reset animated-button animated-white-button">Заново</button>
+          </div>
+          <button class="quiz__button quiz__yes animated-button animated-black-button">Да</button>
+          <button class="quiz__button quiz__no animated-button animated-black-button">Нет</button>
+        </div>
+      </section>
+
+        <section id="feedback" class="section feedback">
+          <div class="feedback__wrapper">
+            <h2 class="section__title">Что <span class="text text_type_colored">говорят</span> о&nbsp;нас…</h2>
+
+            <div class="splide slider ">
+              <div class="slider__header">
+                <p class="feedback__text">Наши наставники и ревьюеры рассказывают свои истории о&nbsp;работе с&nbsp;нами.</p>
+                <div class="slider__buttons-container">
+                  <button class="slider__button slider__button-right slider__button_type_right"></button>
+                  <button class="slider__button slider__button-left slider__button_type_left"></button>
+                </div>
+              </div>
+
+              <div class="splide__track slider__container">
+                <ul class="splide__list slider__list">
+                  <li class="splide__slide slider__slide">
+                    <img class="slider__slide-img" src="<%=require('./images/feedback/1.jpg')%>" alt="Иван Иванов">
+                    <div class="slider__slide-text-container">
+                      <div class="slider__slide-text-container-header">
+                        <img class="slider__slide-img slider__slide-img-mobile" src="<%=require('./images/feedback/1.jpg')%>" alt="Иван Иванов">
+                        <div class="slider__slide-text-container-header-text-block">
+                          <h3 class="slider__slide-title slider__text">Максим Чечёнов</h3>
+                          <p class="slider__slide-subtitle slider__text">Наставник курса «Веб-разработчик»</p>
+                        </div>
+                      </div>
+                      <p class="slider__slide-text slider__text">
+                        Когда я учился писать код, не было онлайн-курсов и площадок с наставниками, 
+                        и было сложно ориентироваться, что реально важно знать и уметь, а что нет. 
+                        Сейчас я делюсь своим опытом и, мне кажется, делаю мир чуть-чуть лучше 😊
+                      </p>
+                    </div>
+                  </li>
+                  <li class="splide__slide slider__slide">
+                    <img class="slider__slide-img" src="<%=require('./images/feedback/2.jpg')%>" alt="Иван Иванов">
+                    <div class="slider__slide-text-container">
+                      <div class="slider__slide-text-container-header">
+                        <img class="slider__slide-img slider__slide-img-mobile" src="<%=require('./images/feedback/2.jpg')%>" alt="Иван Иванов">
+                        <div class="slider__slide-text-container-header-text-block">
+                          <h3 class="slider__slide-title slider__text">Толя Крестенко</h3>
+                          <p class="slider__slide-subtitle slider__text">Наставник курса «Data Science»</p>
+                        </div>
+                      </div>
+                      <p class="slider__slide-text slider__text">
+                        С Практикумом меня объединяют любовь к технологиям, вера в онлайн-образование 
+                        и желание помогать людям и покорять новые горизонты. Сам почти полностью осваивал 
+                        профессию онлайн, поэтому хочу и другим людям помочь в получении новых навыков.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="splide__slide slider__slide">
+                    <img class="slider__slide-img" src="<%=require('./images/feedback/3.jpg')%>" alt="Иван Иванов">
+                    <div class="slider__slide-text-container">
+                      <div class="slider__slide-text-container-header">
+                        <img class="slider__slide-img slider__slide-img-mobile" src="<%=require('./images/feedback/3.jpg')%>" alt="Иван Иванов">
+                        <div class="slider__slide-text-container-header-text-block">
+                          <h3 class="slider__slide-title slider__text">Надя Антонова</h3>
+                          <p class="slider__slide-subtitle slider__text">Наставник направления дизайн интерфейсов</p>
+                        </div>
+                      </div>
+                      <p class="slider__slide-text slider__text">
+                        Мне безумно нравится делиться знаниями, а ещё больше радуюсь, когда мои студенты 
+                        находят работу и успешно проходят испытательный срок
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+       <section class="faculties">
+        <div class="faculties__title">…и что <span class="faculties__span">мы</span> говорим о себе</div>
+        <div class="faculties__container">
+          <div class="faculties__box">
+            <p class="faculties__paragraph-title">О нас</p>
+          </div>
+          <div class="faculties__box">
+            <p class="faculties__paragraph">Яндекс Практикум — сервис онлайн-образования,
+              где каждая и каждый найдёт в&nbsp;себе силы изменить
+              свою профессиональную жизнь.</p>
+            <p class="faculties__paragraph">Мы верим, что освоить новый навык можно только
+              с&nbsp;помощью регулярных усилий и полного погружения в&nbsp;практику. 
+              В&nbsp;процессе обучения студенты сталкиваются со&nbsp;сложностями: 
+              не получается, непонятно, нет свободного времени, 
+              лень — всё как в жизни.</p>
+            <p class="faculties__paragraph">Наша миссия — помочь каждому преодолеть трудности и получить востребованные навыки. Во&nbsp;всём мире.</p>
+          </div>
+          <div class="faculties__box">
+           <p class="faculties__paragraph-title"> Наши факультеты</p>
+           </div>
+          <div class="faculties__box">
+            <ul class="faculties__list-item">
+            </ul>
+          </div>
+        </div>
+       </section>
+
+        <section id="vacancies" class="section vacancy">
+          <div class="vacancy__wrapper">
+            <h2 class="section__title"><span class="text text_type_colored">Кого </span>мы ищем</h2>
+            
+              <form class='search-form'>
+                <div class="search-form__filter-container">
+                  <div class="dropdown dropdown_type_faculty">
+
+                    <select class="dropdown__button dropdown__button_type_faculty">
+                      <option  value="" disabled selected hidden>Факультет</option>
+                      <option class="dropdown__content">Все</option>
+                      <option class="dropdown__content">Программирование</option>
+                      <option class="dropdown__content">Анализ данных</option>
+                      <option class="dropdown__content">Дизайн</option>
+                      <option class="dropdown__content">Маркетинг</option>
+                      <option class="dropdown__content">Менеджмент</option>
+                      <option class="dropdown__content">Английский</option>
+                    </select>
+                  </div>
+
+                  <div class="dropdown dropdown_type_role">
+                    <select class="dropdown__button dropdown__button_type_role">
+                      <option  value="" disabled selected hidden>Роль</option>
+                      <option class="dropdown__content">Все</option>
+                      <option class="dropdown__content">Наставник</option>
+                      <option class="dropdown__content">Ревьюер</option>
+                    </select>
+                  </div>
+
+                </div>
+                <div class='search-form__search-bar'>
+                  <img src="<%=require('./images/search-bar/search.svg')%>" alt="" class="search-form__search-bar-img">
+                  <input type='text' class='search-form__search-bar-input' placeholder='Поиск'>
+                  <Button type='submit' class='search-form__search-bar-button' disabled>Найти</Button>
+                </div>
+              </form>
+              <div class="vacancy__container">
+                <div class="vacancy-card">
+                  <div class="vacancy-card__info-container">
+                    <p class="vacancy-card__vacancy-name vacancy-card__text">Наставник</p>
+                    <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Миддл-фронтенд разработчик»</h3>
+                  </div>
+                  <div class="vacancy-card__footer">
+                    <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
+                    <div class="vacancy-card__footer-link-container">
+                      <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                      <a href="#" class="vacancy-card__see-more">
+                        <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="vacancy-card">
+                  <div class="vacancy-card__info-container">
+                    <p class="vacancy-card__vacancy-name vacancy-card__text">Ревьюер</p>
+                    <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Python‑разработчик» (резерв)</h3>
+                  </div>
+                  <div class="vacancy-card__footer">
+                    <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
+                    <div class="vacancy-card__footer-link-container">
+                      <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                      <a href="#" class="vacancy-card__see-more">
+                        <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="vacancy-card">
+                  <div class="vacancy-card__info-container">
+                    <p class="vacancy-card__vacancy-name vacancy-card__text">Ревьюер</p>
+                    <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Дизайнер интерфейсов»</h3>
+                  </div>
+                  <div class="vacancy-card__footer">
+                    <p class="vacancy-card__vacancy-direction vacancy-card__text">Дизайн</p>
+                    <div class="vacancy-card__footer-link-container">
+                      <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                      <a href="#" class="vacancy-card__see-more">
+                        <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="vacancy-card">
+                  <div class="vacancy-card__info-container">
+                    <p class="vacancy-card__vacancy-name vacancy-card__text">Наставник</p>
+                    <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Go-разработчик»</h3>
+                  </div>
+                  <div class="vacancy-card__footer">
+                    <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
+                    <div class="vacancy-card__footer-link-container">
+                      <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                      <a href="#" class="vacancy-card__see-more">
+                        <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="vacancy-card">
+                  <div class="vacancy-card__info-container">
+                    <p class="vacancy-card__vacancy-name vacancy-card__text">Ревьюер</p>
+                    <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «DevOps»</h3>
+                  </div>
+                  <div class="vacancy-card__footer">
+                    <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
+                    <div class="vacancy-card__footer-link-container">
+                      <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                      <a href="#" class="vacancy-card__see-more">
+                        <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="vacancy-card">
+                  <div class="vacancy-card__info-container">
+                    <p class="vacancy-card__vacancy-name vacancy-card__text">Наставник</p>
+                    <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Алгоритмы для разработчиков»</h3>
+                  </div>
+                  <div class="vacancy-card__footer">
+                    <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
+                    <div class="vacancy-card__footer-link-container">
+                      <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                      <a href="#" class="vacancy-card__see-more">
+                        <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            <button class="vacancy__load-more-button button button__load-more-button button_theme_light animated-button animated-white-button vacancy__text">Показать еще</button>
+            <div class="vacancy__feedback-container">
+              <p class="vacancy__feedback-text vacancy__text">Не нашли <span class="vacancy__text_type_colored"> подходящей </span>роли?</p>
+              
+              <button class="button button_placed_vacancy button_theme_dark animated-button animated-black-button button__open_feedback-popup">Связаться с нами</button>
+              <button class="button button_placed_vacancy button_theme_light animated-button animated-white-button button__open_subscribe-popup">Подписаться на обновления</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="section faq">
+          <div class="faq__title"><span class="faq__span">Отвечаем</span> на&nbsp;вопросы</div>
+          <ul class="faq__list-item">
+            <li class="faq__item">
+              <div class="faq__box">
+              <h3 class="faq__subtitle">Что делает наставник?</h3>
+              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
+              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
+            </div>
+
+              <ul class="faq__text">
+                <li class="faq__paragraph">• Курирует группу из 50–60 студентов на&nbsp;протяжении всего процесса обучения — в&nbsp;течение 10 месяцев;</li> 
+                <li class="faq__paragraph">• помогает разобраться с&nbsp;тем, что осталось непонятным, отвечает на&nbsp;вопросы в&nbsp;Slack;</li> 
+                <li class="faq__paragraph">• проводит групповые консультации, на&nbsp;которых разбирает со&nbsp;студентами сложные вопросы по&nbsp;теории;</li> 
+                <li class="faq__paragraph">• мотивирует и поддерживает во&nbsp;время обучения.</li>
+               </ul>
+            </li>
+            <li class="faq__item">
+              <div class="faq__box">
+              <h3 class="faq__subtitle">Что делает ревьюер?</h3>
+              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
+              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
+            </div>
+              <p class="faq__text">Проверяет выполненный студентом проект и даёт обратную связь. Именно ревьюер решает: зачесть задание или нет.
+                 Также он даёт советы по&nbsp;улучшению проекта, отмечает неточности, указывает на&nbsp;ошибки.</p>
+            </li>
+            <li class="faq__item">
+              <div class="faq__box">
+              <h3 class="faq__subtitle">Я подхожу. Что вы можете мне предложить?</h3>
+              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
+              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
+            </div>
+            <ul class="faq__text">
+              <li class="faq__paragraph">• Удалённую работу с&nbsp;частичной занятостью, объём работы определяется индивидуально;</li> 
+              <li class="faq__paragraph">• обучение азам коммуникации и грамотному подходу к&nbsp;проверке проектов;</li> 
+              <li class="faq__paragraph">• постоянную практику и углубление знаний;</li> 
+              <li class="faq__paragraph">• возможность стать частью сообщества аналитиков, делающих образование качественным и доступным;</li>
+              <li class="faq__paragraph">• возможность помочь начинающим специалистам усвоить важные базовые вещи и поверить в&nbsp;себя.</li> 
+             </ul>
+            </li>
+            <li class="faq__item">
+              <div class="faq__box">
+              <h3 class="faq__subtitle">Что такое Школа наставников и сколько времени она занимает?</h3>
+              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
+              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
+            </div>
+              <p class="faq__text">Школа наставников — это двухнедельный бесплатный интенсив по&nbsp;коммуникации и управлению командой для&nbsp;IT-&nbsp;специалистов.
+                 Вы узнаете, как передавать знания и опыт начинающим разработчикам и создавать условия для&nbsp;развития самостоятельности своих подопечных.
+                  Вас ждёт пять вебинаров в&nbsp;вечернее время продолжительностью 2,5 часа и небольшие домашние задания, рассчитанные на&nbsp;30–60 минут.</p>
+            </li>
+          </ul>
+        </section>
         
+      </main> 
+      <footer id="footer" class="footer">
+        <div class="footer__container">
+          <div class="footer__info-block">
+            <nav class="footer__nav-container">
+              <p class="footer__copyright-text footer__text">
+                © 2022 АНО ДПО «ШАД», ООО «Яндекс»
+              </p>
+              <ul class="footer__nav">
+                <li class="footer__nav-element">
+                  <a href="#" class="footer__text footer__link footer__nav-link animated-button">Помощь</a>
+                </li>
+                <li class="footer__nav-element">
+                  <a href="#vacancies" class="footer__nav-link footer__text footer__link animated-button">Вакансии</a>
+                </li>
+                <li class="footer__nav-element">
+                  <a href="#" class="footer__nav-link footer__text footer__link animated-button">Лицензия</a>
+                </li>
+                <li class="footer__nav-element">
+                  <a href="#feedback" class="footer__nav-link footer__text footer__link animated-button">Отзывы</a>
+                </li>
+                <li class="footer__nav-element">
+                  <a href="#" class="footer__nav-link footer__text footer__link animated-button">Правовая информация</a>
+                </li>
+                <li class="footer__nav-element">
+                  <a href="#" class="footer__nav-link footer__text footer__link animated-button">Для работодателей</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__an-offer-container">
+              <p class="footer__an-offer-text footer__text">
+                Информация на данной странице описывает возможные варианты
+                получения дополнительного дохода в месяц (т.н. подработка).
+                Не является предложением о работе. Размещенные объявления о
+                потребности в тех или иных услугах не являются вакансиями.
+              </p>
+              <p class="footer__an-offer-text footer__text">
+                Образовательные услуги оказываются АНО ДПО «ШАД».
+                ШАД — это
+                <a href="#" class="footer__an-offer-text footer__an-offer-link footer__text footer__link animated-button">Школа анализа данных</a>
+                , основанная Яндексом
+                и оказывающая образовательные услуги на основании
+                <a href="#" class="footer__an-offer-text footer__an-offer-link footer__text footer__link animated-button">Лицензии № 036031</a>
+                от 24 марта 2015 года.
+              </p>
+              <p class="footer__an-offer-text footer__text">
+                Сертификат о прохождении обучения по программе дополнительного
+                профессионального образования также выдается АНО ДПО «ШАД».
+              </p>
+            </div>
+          </div>
+            <ul class="footer__contacts-block">
+              <li class="footer__telephone-container">
+                <a href="#" class="footer__telephone footer__text footer__link">8 800 700-93-29</a>
+                <p class="footer__telephone-info footer__text">Звонок по России бесплатный</p>
+              </li>
+              <li class="footer__contacts-element">
+                <a href="#" class="footer__contacts-link animated-button">
+                  <svg class="footer__contacts-link-img animated-button" width="36" height="30" viewBox="0 0 36 30" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32.5177 1.09101C32.5177 1.09101 35.7552 -0.17149 35.4844 2.89434C35.3952 4.15684 34.5861 8.57601 33.9561 13.3552L31.7977 27.5135C31.7977 27.5135 31.6177 29.5877 29.9986 29.9485C28.3802 30.3085 25.9519 28.686 25.5019 28.3252C25.1419 28.0543 18.7569 23.996 16.5086 22.0127C15.8786 21.471 15.1586 20.3893 16.5986 19.1268L26.0411 10.1085C27.1202 9.02684 28.1994 6.50184 23.7027 9.56768L11.1111 18.1343C11.1111 18.1343 9.67191 19.0368 6.97441 18.2252L1.12775 16.421C1.12775 16.421 -1.03059 15.0685 2.65691 13.716C11.6511 9.47768 22.7136 5.14934 32.5161 1.09101H32.5177Z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__contacts-element">
+                <a href="#" class="footer__contacts-link animated-button">
+                  <svg class="footer__contacts-link-img animated-button" width="38" height="24" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M36.8672 2.3125C37.1453 1.43125 36.8672 0.790625 35.6367 0.790625H31.5453C30.5133 0.790625 30.0367 1.35156 29.7586 1.95156C29.7586 1.95156 27.6539 7.07656 24.7148 10.3992C23.7617 11.3602 23.325 11.6805 22.8086 11.6805C22.5305 11.6805 22.1727 11.3602 22.1727 10.4797V2.27109C22.1727 1.23047 21.8555 0.75 20.9812 0.75H14.5469C13.9109 0.75 13.5141 1.23047 13.5141 1.71094C13.5141 2.71172 14.9836 2.95234 15.1422 5.75469V11.8438C15.1422 13.1648 14.9078 13.4062 14.3875 13.4062C12.9977 13.4062 9.62187 8.24141 7.59688 2.35625C7.20312 1.19062 6.80313 0.75 5.77031 0.75H1.63984C0.448438 0.75 0.25 1.31016 0.25 1.91094C0.25 2.99219 1.63984 8.43672 6.72344 15.643C10.0992 20.5648 14.9047 23.2102 19.2336 23.2102C21.8555 23.2102 22.1727 22.6094 22.1727 21.6086V17.8852C22.1727 16.6844 22.4109 16.4844 23.2453 16.4844C23.8406 16.4844 24.9133 16.8039 27.3359 19.1664C30.1156 21.9688 30.5922 23.25 32.1414 23.25H36.232C37.4234 23.25 37.9797 22.6492 37.6617 21.4883C37.3047 20.3273 35.9539 18.6461 34.2063 16.6445C33.2531 15.5242 31.8234 14.2828 31.3867 13.682C30.7914 12.8813 30.95 12.5609 31.3867 11.8406C31.3469 11.8406 36.3516 4.71406 36.8672 2.30938"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__contacts-element">
+                <a href="#" class="footer__contacts-link footer__text footer__link animated-button">Журнал</a>
+              </li>
+            </ul>
+        </div>
       </footer>
     </div>
 
-    <template id="renameThis"> 
-      <li class="element">
-        <img src="#" alt="#" class="element__photo" />
+    <template id="vacancyCard"> 
+      <div class="vacancy-card">
+        <button class=" button button__type_close-more vacancy-card__close-more button_hidden"></button>
+        <div class="vacancy-card__info-container">
+          <p class="vacancy-card__vacancy-name vacancy-card__text"></p>
+          <h3 class="vacancy-card__vacancy-title vacancy-card__text"></h3>
+        </div>
+        <div class="vacancy-card__footer">
+          <p class="vacancy-card__vacancy-direction vacancy-card__text"></p>
+          <div class="vacancy-card__footer-link-container">
+            <p class="vacancy-card__vacancy-salary vacancy-card__text"></p>
+            <button class=" button button__type_see-more vacancy-card__see-more"></button>
+          </div>
+        </div>
+        <div class="vacancy-card__requirements-container vacancy-card__requirements-container-hiden">
+          <h3 class="vacancy-card__vacancy-title vacancy-card__vacancy-requirements-title vacancy-card__text"></h3>
+          <ul class="vacancy-card__requirements-list">
+            <li class="vacancy-card__requirements-list-element vacancy-card__text"></li>
+          </ul>
+          <div class="vacancy-card__requirements-footer">
+            <button class="button button_theme_dark vacancy-card__requirements-respond-button"></button>
+            <button class="button button_theme_light vacancy-card__requirements-share-button"></button>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template id="faculties-card">
+      <li class="faculties__items ">
+        <div class="faculties__item">
+          <h3 class="faculties__subtitle">Дизайн</h3>
+          <p class="faculties__link" >Развернуть</p>
+          <div class="faculties__close" >Закрыть</div>
+        </div>
+        <div class="faculties__box-hidden ">
+          <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у&nbsp;нас обучаются дизайнеры, UX-&nbsp;писатели и UX-&nbsp;исследователи.</p>
+          <p class="faculties__text">Учим работать с&nbsp;композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
+          <p class="faculties__text">Процесс строится на&nbsp;постоянной практике: реальные проекты или максимально приближенные к&nbsp;ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от&nbsp;специалистов.</p>
+          <div class="faculties__group">
+            <a href="https://practicum.yandex.ru/catalog/design/" class="faculties__button" target="_blank">Перейти к факультету</a>
+          </div>
+        </div>
       </li>
     </template>
 
+    <div class="popup popup_type_respond">
+      <div class="popup__container">
+        <button class="popup__close-button button button__type_close" type="button" ></button>
+        <form action="#" class="popup__form" name="edit-profile" >
+          <h2 class="popup__title popup__text">Нет подходящей роли?</h2>
+          <p class="popup__subtitle popup__text">Заполните форму и мы попробуем подобрать вам варианты</p>
+          <div class="popup__inputs-container">
+            <div class="popup__inputs-row">
+              <label class="popup__input-label popup__text">
+                ФИО
+                <input
+                  type="text"
+                  class="popup__input popup__input_type_username popup__text"
+                  required
+                  minlength="2"
+                  maxlength="40"
+                />
+              </label>
+              <label class="popup__input-label popup__text">
+                *Почта
+                <input
+                  type="email"
+                  class="popup__input popup__input_type_email popup__text"
+                  required
+                />
+              </label>
+            </div>
+            <div class="popup__inputs-row">
+              <label class="popup__input-label popup__text">
+                *Телефон или Telegram
+                <input
+                  type="text"
+                  class="popup__input popup__input_type_phone popup__input_size_half popup__text"
+                  required
+                />
+              </label>
+            </div>
+            <div class="popup__inputs-row">
+              <label class="popup__input-label popup__text">
+                *Ссылка на резюме (не забудьте открыть доступ к документу)
+                <input
+                  type="url"
+                  class="popup__input popup__input_type_description popup__text"
+                  name="popup__input_type_description"
+                  required
+                />
+              </label>
+            </div>
+            <div class="popup__inputs-row">
+              <label class="popup__input-label popup__text">
+                *Какая роль вам ближе
+                <select class="popup__select popup__select_type_role popup__text" required >
+                  <option  value="" disabled selected hidden>Роль</option>
+                  <option>Наставник</option>
+                  <option>Ревьюер</option>
+                </select>
+              </label>
+              <label class="popup__input-label popup__text">
+                *Выберите факультет
+                <select class="popup__select popup__select_type_faculty popup__text" required >
+                  <option  value="" disabled selected hidden>Факультет</option>
+                  <option>Факультет</option>
+                  <option>Факультет</option>
+                  <option>Факультет</option>
+                </select>
+              </label>
+            </div>
+            <div class="popup__inputs-row">
+              <label class="popup__input-label popup__text">
+                *Перечислите набор технологий, которыми вы владеете и уровень владения каждой
+                <textarea
+                  class="popup__textarea popup__text"
+                  required
+                ></textarea>
+              </label>
+            </div>
+            <div class="popup__checkbox-container">
+              <input
+                type="checkbox"
+                class="popup__checkbox"
+                required
+              />
+              <p class="popup__checkbox-description popup__text">
+                Я даю согласие АНО ДПО «ШАД» и ООО «ЯНДЕКС» на обработку указанных данных для целей рассмотрения анкеты и обратной связи по ней.
+              </p>
+            </div>
+          </div>
+          <input type="submit" class="popup__button button button_theme_dark button_placed_popup" value="Отправить" />
+        </form>
+      </div>
+    </div>
   </body>
 </html>
