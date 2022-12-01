@@ -1,0 +1,12 @@
+.animated-button {
+    transition: all 0.2s ease-in;
+}
+
+.animated-black-button:hover {
+    background-color: #5686E3;
+}
+
+.animated-white-button:hover {
+    background-color: black;
+    color: white;
+}

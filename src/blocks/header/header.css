@@ -1,3 +1,119 @@
 .header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
 }
 
+.header__container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 32px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.header__logo-link {
+    width: 212px;
+    height: 37px;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    transition: all 0.2s ease-in;
+}
+
+.header__link:hover {
+    color: #5686E3;
+}
+
+.header__link:checked {
+    color: #5686E3;
+}
+
+.header__burger-button {
+    width: 30px;
+    height: 30px;
+    background-image: url("../../images/header/burger.svg");
+    display: none;
+    cursor: pointer;
+}
+
+.header__burger-container {
+    display: none;
+    padding: 30px 15px;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 58px;
+    right: 0;
+    left: 0;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.header__burger-container_visible {
+    display: flex;
+}
+
+@media screen and (max-width: 450px) {
+    .header__container {
+        padding: 15px 15px;
+    }
+
+    #desktop-navbar {
+        display: none;
+    }
+
+    #mobile-navbar {
+        display: flex;
+        width: 100%;
+    }
+
+    .header__logo {
+        width: 152px;
+        height: 25px;
+    }
+
+    .header__logo-link {
+        width: 152px;
+        height: 25px;
+    }
+
+    .header__burger-button {
+        display: block;
+    }
+
+    .header__link {
+        color: #000000;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .header__link:hover {
+        color: black;
+        background-color: #EDF2F7;
+    }
+
+    .header__link:checked {
+        background-color: #EDF2F7;
+    }
+
+    .header__navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
