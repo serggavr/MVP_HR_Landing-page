@@ -4,6 +4,7 @@
 
 .animated-black-button:hover {
     background-color: #5686E3;
+    color: white;
 }
 
 .animated-white-button:hover {
