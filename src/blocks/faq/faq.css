@@ -56,7 +56,6 @@ border-radius: 10px
 
 .faq__arrow-down_hidden {
   display: none;
-  
 }
 
 .faq__arrow-down:hover {
@@ -100,6 +99,10 @@ border-radius: 10px
   margin-left: 5px;
 }
 
+.faq__box_opened {
+  background-color: white;
+}
+
 @media (max-width: 450px) {
   .faq {
     padding: 0 15px;
@@ -124,8 +127,6 @@ border-radius: 10px
     font-size: 22px;
     line-height: 25px;
   }
-
-  
 
   .faq__text {
     font-size: 18px;
