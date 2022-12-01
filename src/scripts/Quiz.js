@@ -27,15 +27,19 @@ export default () => {
 
 
   const nextStep = () => {
-    step++;
-    if (step <= 5) {
-      const currentQuestion = questions[step - 1];
+    if (mentorCount !== 0 || reviewerCount !== 0) {
+      step++;
+    }
+    if (step <= 4) {
+      const currentQuestion = questions[step];
       stepCounter.textContent = step;
       quizQuestion.textContent = currentQuestion.text;
       quizDescription.textContent = currentQuestion.description;
       quizImage.src = currentQuestion.image;
       progressLine.style.width = `${stepCounter.textContent * 20}%`;
     } else {
+      stepCounter.textContent = step;
+      progressLine.style.width = `${stepCounter.textContent * 20}%`;
       showResult();
     }
   };
@@ -69,14 +73,14 @@ export default () => {
   };
 
   const onYesClick = () => {
-    questions[step - 1].counterAdd === "reviewer"
+    questions[step].counterAdd === "reviewer"
       ? reviewerCount++
       : mentorCount++;
     nextStep();
   };
 
   const onNoClick = () => {
-    questions[step - 1].counterAdd === "mentor"
+    questions[step].counterAdd === "mentor"
       ? reviewerCount++
       : mentorCount++;
     nextStep();
