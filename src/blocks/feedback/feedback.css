@@ -1,5 +1,5 @@
 .feedback {
-  padding: 100px 100px;
+  padding: 100px 50px;
   background-color: var(--light-bg-color);
   max-width: 1210px;
 }
@@ -12,4 +12,10 @@
   color: var(--primary-text-color);
   font-size: var(--l-text-size);
   line-height: var(--l-line-height);
+}
+
+@media (max-width: 450px) {
+  .feedback {
+    padding: 40px 15px;
+  }
 }
