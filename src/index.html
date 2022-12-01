@@ -186,15 +186,13 @@
                       <div class="slider__slide-text-container-header">
                         <img class="slider__slide-img slider__slide-img-mobile" src="<%=require('./images/feedback/3.jpg')%>" alt="Иван Иванов">
                         <div class="slider__slide-text-container-header-text-block">
-                          <h3 class="slider__slide-title slider__text">Иван Иванов</h3>
+                          <h3 class="slider__slide-title slider__text">Надя Антонова</h3>
                           <p class="slider__slide-subtitle slider__text">Наставник направления дизайн интерфейсов</p>
                         </div>
                       </div>
                       <p class="slider__slide-text slider__text">
-                        Я в своем познании настолько преисполнился,
-                        что я как будто бы уже сто триллионов миллиардов
-                        лет проживаю на триллионах и триллионах таких же
-                        планет.
+                        Мне безумно нравится делиться знаниями, а ещё больше радуюсь, когда мои студенты 
+                        находят работу и успешно проходят испытательный срок
                       </p>
                     </div>
                   </li>
@@ -234,132 +232,133 @@
        </section>
 
         <section id="vacancies" class="section vacancy">
-          <h2 class="section__title"><span class="text text_type_colored">Кого </span>мы ищем</h2>
+          <div class="vacancy__wrapper">
+            <h2 class="section__title"><span class="text text_type_colored">Кого </span>мы ищем</h2>
             
-            <form class='search-form'>
-              <div class="search-form__filter-container">
-                <div class="dropdown dropdown_type_faculty">
+              <form class='search-form'>
+                <div class="search-form__filter-container">
+                  <div class="dropdown dropdown_type_faculty">
 
-                  <select value="Факультет" class="dropdown__button dropdown__button_type_faculty">
-                    <option  value="" disabled selected hidden>Факультет</option>
-                    <option class="dropdown__content">Все</option>
-                    <option class="dropdown__content">Программирование</option>
-                    <option class="dropdown__content">Анализ данных</option>
-                    <option class="dropdown__content">Дизайн</option>
-                    <option class="dropdown__content">Маркетинг</option>
-                    <option class="dropdown__content">Менеджмент</option>
-                    <option class="dropdown__content">Английский</option>
-                  </select>
-                </div>
+                    <select value="Факультет" class="dropdown__button dropdown__button_type_faculty">
+                      <option  value="" disabled selected hidden>Факультет</option>
+                      <option class="dropdown__content">Все</option>
+                      <option class="dropdown__content">Программирование</option>
+                      <option class="dropdown__content">Анализ данных</option>
+                      <option class="dropdown__content">Дизайн</option>
+                      <option class="dropdown__content">Маркетинг</option>
+                      <option class="dropdown__content">Менеджмент</option>
+                      <option class="dropdown__content">Английский</option>
+                    </select>
+                  </div>
 
-                <div class="dropdown dropdown_type_role">
-                  <select value="Роль" class="dropdown__button dropdown__button_type_role">
-                    <option  value="" disabled selected hidden>Роль</option>
-                    <option class="dropdown__content">Все</option>
-                    <option class="dropdown__content">Наставник</option>
-                    <option class="dropdown__content">Ревьюер</option>
-                  </select>
-                </div>
+                  <div class="dropdown dropdown_type_role">
+                    <select value="Роль" class="dropdown__button dropdown__button_type_role">
+                      <option  value="" disabled selected hidden>Роль</option>
+                      <option class="dropdown__content">Все</option>
+                      <option class="dropdown__content">Наставник</option>
+                      <option class="dropdown__content">Ревьюер</option>
+                    </select>
+                  </div>
 
-              </div>
-              <div class='search-form__search-bar'>
-                <img src="<%=require('./images/search-bar/search.svg')%>" alt="" class="search-form__search-bar-img">
-                <input type='text' class='search-form__search-bar-input' placeholder='Поиск'></input>
-                <Button type='submit'class='search-form__search-bar-button' disabled>Найти</Button>
-              </div>
-            </form>
-            <div class="vacancy__container">
-              <div class="vacancy-card">
-                <div class="vacancy-card__info-container">
-                  <p class="vacancy-card__vacancy-name vacancy-card__text">Наставник</p>
-                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Миддл-фронтенд разработчик»</h3>
                 </div>
-                <div class="vacancy-card__footer">
-                  <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
-                  <div class="vacancy-card__footer-link-container">
-                    <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__see-more">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
-                    </a>
+                <div class='search-form__search-bar'>
+                  <img src="<%=require('./images/search-bar/search.svg')%>" alt="" class="search-form__search-bar-img">
+                  <input type='text' class='search-form__search-bar-input' placeholder='Поиск'></input>
+                  <Button type='submit'class='search-form__search-bar-button' disabled>Найти</Button>
+                </div>
+              </form>
+              <div class="vacancy__container">
+                <div class="vacancy-card">
+                  <div class="vacancy-card__info-container">
+                    <p class="vacancy-card__vacancy-name vacancy-card__text">Наставник</p>
+                    <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Миддл-фронтенд разработчик»</h3>
+                  </div>
+                  <div class="vacancy-card__footer">
+                    <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
+                    <div class="vacancy-card__footer-link-container">
+                      <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                      <a href="#" class="vacancy-card__see-more">
+                        <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="vacancy-card">
+                  <div class="vacancy-card__info-container">
+                    <p class="vacancy-card__vacancy-name vacancy-card__text">Ревьюер</p>
+                    <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Python‑разработчик» (резерв)</h3>
+                  </div>
+                  <div class="vacancy-card__footer">
+                    <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
+                    <div class="vacancy-card__footer-link-container">
+                      <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                      <a href="#" class="vacancy-card__see-more">
+                        <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="vacancy-card">
+                  <div class="vacancy-card__info-container">
+                    <p class="vacancy-card__vacancy-name vacancy-card__text">Ревьюер</p>
+                    <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Дизайнер интерфейсов»</h3>
+                  </div>
+                  <div class="vacancy-card__footer">
+                    <p class="vacancy-card__vacancy-direction vacancy-card__text">Дизайн</p>
+                    <div class="vacancy-card__footer-link-container">
+                      <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                      <a href="#" class="vacancy-card__see-more">
+                        <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="vacancy-card">
+                  <div class="vacancy-card__info-container">
+                    <p class="vacancy-card__vacancy-name vacancy-card__text">Наставник</p>
+                    <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Go-разработчик»</h3>
+                  </div>
+                  <div class="vacancy-card__footer">
+                    <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
+                    <div class="vacancy-card__footer-link-container">
+                      <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                      <a href="#" class="vacancy-card__see-more">
+                        <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="vacancy-card">
+                  <div class="vacancy-card__info-container">
+                    <p class="vacancy-card__vacancy-name vacancy-card__text">Ревьюер</p>
+                    <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «DevOps»</h3>
+                  </div>
+                  <div class="vacancy-card__footer">
+                    <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
+                    <div class="vacancy-card__footer-link-container">
+                      <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                      <a href="#" class="vacancy-card__see-more">
+                        <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="vacancy-card">
+                  <div class="vacancy-card__info-container">
+                    <p class="vacancy-card__vacancy-name vacancy-card__text">Наставник</p>
+                    <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Алгоритмы для разработчиков»</h3>
+                  </div>
+                  <div class="vacancy-card__footer">
+                    <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
+                    <div class="vacancy-card__footer-link-container">
+                      <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
+                      <a href="#" class="vacancy-card__see-more">
+                        <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="vacancy-card">
-                <div class="vacancy-card__info-container">
-                  <p class="vacancy-card__vacancy-name vacancy-card__text">Ревьюер</p>
-                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Python‑разработчик» (резерв)</h3>
-                </div>
-                <div class="vacancy-card__footer">
-                  <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
-                  <div class="vacancy-card__footer-link-container">
-                    <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__see-more">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="vacancy-card">
-                <div class="vacancy-card__info-container">
-                  <p class="vacancy-card__vacancy-name vacancy-card__text">Ревьюер</p>
-                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Дизайнер интерфейсов»</h3>
-                </div>
-                <div class="vacancy-card__footer">
-                  <p class="vacancy-card__vacancy-direction vacancy-card__text">Дизайн</p>
-                  <div class="vacancy-card__footer-link-container">
-                    <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__see-more">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="vacancy-card">
-                <div class="vacancy-card__info-container">
-                  <p class="vacancy-card__vacancy-name vacancy-card__text">Наставник</p>
-                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Go-разработчик»</h3>
-                </div>
-                <div class="vacancy-card__footer">
-                  <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
-                  <div class="vacancy-card__footer-link-container">
-                    <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__see-more">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="vacancy-card">
-                <div class="vacancy-card__info-container">
-                  <p class="vacancy-card__vacancy-name vacancy-card__text">Ревьюер</p>
-                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «DevOps»</h3>
-                </div>
-                <div class="vacancy-card__footer">
-                  <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
-                  <div class="vacancy-card__footer-link-container">
-                    <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__see-more">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="vacancy-card">
-                <div class="vacancy-card__info-container">
-                  <p class="vacancy-card__vacancy-name vacancy-card__text">Наставник</p>
-                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Курс «Алгоритмы для разработчиков»</h3>
-                </div>
-                <div class="vacancy-card__footer">
-                  <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
-                  <div class="vacancy-card__footer-link-container">
-                    <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__see-more">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
             
             <button class="vacancy__load-more-button button button__load-more-button button_theme_light animated-button animated-white-button vacancy__text">Показать еще</button>
             <div class="vacancy__feedback-container">
@@ -368,6 +367,7 @@
               <button class="button button_placed_vacancy button_theme_dark animated-button animated-black-button button__open_feedback-popup">Связаться с нами</button>
               <button class="button button_placed_vacancy button_theme_light animated-button animated-white-button button__open_subscribe-popup">Подписаться на обновления</button>
             </div>
+          </div>
         </section>
 
         <section class="section faq">

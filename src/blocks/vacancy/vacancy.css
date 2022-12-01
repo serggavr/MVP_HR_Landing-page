@@ -1,11 +1,15 @@
 .vacancy {
-  box-sizing:border-box;
-  /* max-width: 1410px; */
-  padding: 100px;
+  max-width: 100%;
+  background-color: var(--light-bg-color);
+}
+
+.vacancy__wrapper {
+  margin: 0 auto;
+  max-width: 1110px;
+  padding: 100px 50px;
   display: flex;
   flex-direction: column;
   background-color: var(--light-bg-color);
-  border-radius: 10px;
 }
 
 .vacancy__text {
@@ -29,15 +33,6 @@
 }
 
 .vacancy__load-more-button {
-  /* width: 100%;
-  max-width: 350px;
-  align-self: center;
-  border: none;
-  background-color: var(--light-bg-color);
-  font-weight: 700;
-  font-size: var(--xl-text-size);
-  line-height: var(--xl-line-height);
-  cursor: pointer; */
   font-weight: 700;
   font-size: var(--l-text-size);
   line-height: var(--l-line-height);

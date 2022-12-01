@@ -1,12 +1,28 @@
 # MVP_HR_Landing-page
+#### Проект Лендинга команды №12 ('Six pistols')
 
-blocks - папка для css элементов.  
-images - папка для изображений, раскидываем по папкам. Имя папки должно быть аналогично имени элемента в котором изображение используется.  
-page/index.css - импортируем css стили через единый файл.  
-scripts/index.js - js тут.  
-utils/constants.js - константы сюда.  
-vendor/fonts - шрифты, пока не подключил те, которые буду в проекте.  
-normolize.css подключен.  
+Лендинг выполнен для разрешений:  
+Desktop - 1280 x 1024  
+Mobile - 450 x 900
+
+---
+Разработка:  
+- Гаврилов Сергей  
+- Латыпов Роман  
+- Наталья Валерьевна  
+
+Дизайн:  
+- Вихров Егор  
+- Волохов Антон  
+- Лебедева Надежда  
+---
+Ссылка на ph-pages:  
+[Лендинг](https://serggavr.github.io/MVP_HR_Landing-page/)  
+
+Ссылка на макет:  
+[Figma](https://www.figma.com/file/8R1wdnthus6PBZ5zS88aVx/Hackaton-Project?node-id=414%3A1951&t=npAotESGCcc7IUsU-1)
+
+---
 
 Установка:  
 ```npm install```
@@ -17,10 +33,38 @@ normolize.css подключен.
 Билд:  
 ```npm run build```
 
-Ссылки:  
-Макет Фигма: ...soon
 
+Технологии:
+- HTML  
+- CSS  
+- JS  
+- [splide.js](https://splidejs.com/)
+- Webpack  
 
+Зависимости webpack:
+```
+"devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "autoprefixer": "10.4.5",
+    "babel-loader": "^8.2.5",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "cssnano": "^5.1.9",
+    "gh-pages": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "postcss-loader": "^7.0.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "core-js": "^3.22.7"
+  }
+```
+---
 Вакансии добавлять в ```utils/constants.js```
 ```
 vacanciesList = [
