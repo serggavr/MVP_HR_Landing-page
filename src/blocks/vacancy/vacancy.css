@@ -66,6 +66,10 @@
     padding: 40px 15px;
   }
 
+  .vacancy__wrapper{
+    padding: 0;
+  }
+
   .vacancy__feedback-container {
     margin-top: 40px;
     flex-direction: column;
