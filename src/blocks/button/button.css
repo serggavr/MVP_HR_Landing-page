@@ -118,3 +118,17 @@
 .button_hidden {
   display: none;
 }
+
+@media (max-width: 450px) {
+  .button__load-more-button {
+    max-width: 100%;
+  }
+
+  .button_placed_vacancy {
+    max-width: 100%;
+  }
+
+  .button__type_see-more {
+    padding: 15px 15px;
+  }
+}

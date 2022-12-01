@@ -1,6 +1,7 @@
 import css from "../pages/index.css";
 import quiz from "./Quiz";
 import burger from "./Burger.js";
+
 import faq from "./Faq.js";
 import slider from "./Slider";
 
@@ -9,8 +10,8 @@ import PopupWithForm from './PopupWithForm.js';
 import faculties from "./Faculties";
 
 
+
 import { vacanciesList } from '../utils/constants';
-import dropdown from './Dropdown'
 import createVacancyCard from './CreateVacancyCard';
 import Section from './Section.js'
 
@@ -146,7 +147,6 @@ quiz();
 faculties();
 faq();
 slider();
-
 
 
 

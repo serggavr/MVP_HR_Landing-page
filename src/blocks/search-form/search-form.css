@@ -64,7 +64,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-radius: 10px;
   font-family: 'YS_Text';
   font-style: normal;
   color: var(--primary-text-color);
@@ -98,10 +97,23 @@
   width: 89px;
   height: 46px;
   border: none;
-  border-radius: 20px;
   background-color: var(--light-bg-color);
   font-family: 'YS_Text';
   font-style: normal;
   color: var(--primary-text-color);
   border-radius: 20px;
+}
+
+@media (max-width: 450px) {
+  .search-form {
+    margin-top: 25px;
+    flex-direction: column-reverse;
+    row-gap: 15px;
+  }
+
+  .search-form__search-bar {
+    width: auto;
+    max-width: 100%;
+    border-radius: 10px;
+  }
 }
