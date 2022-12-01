@@ -1,4 +1,10 @@
 .feedback {
+  max-width: 100%;
+  background-color: var(--light-bg-color);
+}
+
+.feedback__wrapper {
+  margin: 0 auto;
   padding: 100px 50px;
   background-color: var(--light-bg-color);
   max-width: 1210px;
