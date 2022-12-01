@@ -5,68 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="will be added later" />
-    <link rel="stylesheet" href="./pages/index.css" type="text/css"/>
     <title>MVP_HR_Landing-page</title>
   </head>
 
   <body class="body">
     <div class="page">
       <header class="header">
-        <div class="header__container">
-          <a class="header__logo-link" href="#">
-            <img
-              src="<%=require('./images/header/logo.svg')%>"
-              alt="Логотип"
-              class="header__logo"
-            />
-          </a>
-          <nav class="header__navbar" id="desktop-navbar">
-            <a class="header__link" href="#advantages">Преимущества</a>
-            <a class="header__link" href="#quiz">Квиз</a>
-            <a class="header__link" href="#feedback">Отзывы</a>
-            <a class="header__link" href="#vacancies">Сотрудничество</a>
-            <a class="header__link" href="#footer">Контакты</a>
-          </nav>
-          <a class="header__burger-button"></a>
-        </div>
-        <div class="header__burger-container">
-          <nav class="header__navbar" id="mobile-navbar">
-            <a class="header__link" href="#advantages">Преимущества</a>
-            <a class="header__link" href="#quiz">Квиз</a>
-            <a class="header__link" href="#feedback">Отзывы</a>
-            <a class="header__link" href="#vacancies">Сотрудничество</a>
-            <a class="header__link" href="#footer">Контакты</a>
-          </nav>
-        </div>
+        <!-- Оставил для примера, подключаем изображения через <%=require('./images/logo_theme_dark.svg')%> -->
+        <img
+          src="<%=require('./images/logo_theme_dark.svg')%>"
+          alt="any"
+          class="header__logo"
+        />
       </header>
 
-       <main class="main content">
-        <section class="section welcome">
-            <p class="welcome__text welcome__text_float" id="text-transform-up">Делитесь опытом в</p>
-            <div class="welcome__animation">
-              <span class="welcome__profession">
-                IT-профессии<br />
-                аналитике<br />
-                маркетинге<br />
-                дизайне<br />
-                разработке
-              </span>
-            </div>
-          <p class="welcome__text" id="text-transform-bot">и&nbsp;получайте&nbsp;доход</p>
-          <div class="welcome__main">
-            <div class="welcome__photo">
-              <a class="welcome__button animated-button" href="#vacancies">
-                Хочу делиться опытом
-              </a>
-              <div class="welcome__aside-bar">
-                <p class="welcome__description">
-                  Практикум растёт, поэтому мы всегда ищем специалистов
-                  в команду обучения студентов: ревьюеров, наставников.
-                </p>
-              </div>
-            </div>
-          </div>
+      <main class="content">
+        <section class="section">
+
         </section>
+      </main>
 
         <section class="advantages">
           <div class="advantages__wrapper">

@@ -1,10 +1,8 @@
 .slider {
-  /* max-width: 918px; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   background-color: var(--light-bg-color);
-  /* margin-right: -200px; */
 }
 
 .slider__text {
@@ -45,18 +43,6 @@
   background-repeat: no-repeat;
   background-size: 20px 10px;
 }
-
-/* .slider__button-img {
-  margin-top: 1px;
-}
-
-.slider__button-left-img {
-  margin-left: 3.5px;
-}
-
-.slider__button-right-img {
-  margin-right: 3.5px;
-} */
 
 .slider__header {
   display: flex;
@@ -168,7 +154,6 @@
     padding: 20px 15px;
     max-width: 270px;
     min-height: auto;
-    /* display: block; */
   }
 
   .slider__slide-img {

@@ -132,3 +132,4 @@ slider();
 
 
 
+console.log('loaded')
