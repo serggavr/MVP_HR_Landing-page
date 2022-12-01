@@ -21,6 +21,22 @@
   color: var(--primary-text-color);
 }
 
+/* .popup__close-button {
+  padding: 30px;
+  margin-top: 50px;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url('../../images/popup/excit.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--primary-bg-color);
+  cursor: pointer;
+  border: 2px solid #D9D9D9;
+  border-radius: 37.5px;
+  align-self: flex-end;
+} */
+
 .popup__title {
   max-width: 70%;
   margin-bottom: 68px;

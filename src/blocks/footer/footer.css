@@ -1,4 +1,7 @@
+
 .footer {
+  padding: 100px 0;
+  background-color: var(--primary-bg-color);
 }
 
 .footer__container {

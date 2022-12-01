@@ -2,16 +2,16 @@ export default class Section {
   constructor({
     renderer
   }, containerSelector) {
-    this._container = document.querySelector(containerSelector);
+    this.container = document.querySelector(containerSelector);
     this._renderer = renderer;
   }
 
   addItem(element) {
-    this._container.append(element)
+    this.container.append(element)
   }
 
   addItemToTopOfList(element) {
-    this._container.prepend(element)
+    this.container.prepend(element)
   }
 
  removeItems() {
