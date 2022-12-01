@@ -1,2 +1,9 @@
 .body {
 }
+
+.body_disabled {
+    position: relative;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 5;
+    overflow-y: hidden;
+}

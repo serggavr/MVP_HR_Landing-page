@@ -1,16 +1,12 @@
- /* main, footer {
+main, footer {
     position: relative;
     top: 120px;
-} */
-.page {
-    font-family: "YS Text", sans-serif;
 }
-
-.page_disabled {
-    position: relative;
-    background-color: rgba(0,0,0, 0.5);
-    z-index: 5;
-    overflow: hidden;
+.page {
+    /* font-family: "YS Text", sans-serif; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 

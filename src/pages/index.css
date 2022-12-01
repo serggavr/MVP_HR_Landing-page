@@ -10,6 +10,12 @@
 /* body */
 @import url("../blocks/body/body.css");
 
+/* main */
+@import url("../blocks/main/main.css");
+
+/* text */
+@import url("../blocks/text/text.css");
+
 /* page */
 @import url("../blocks/page/page.css");
 
@@ -26,6 +32,7 @@
 @import url(../blocks/vacancy-card/vacancy-card.css);
 @import url(../blocks/button/button.css);
 @import url(../blocks/faq/faq.css);
+@import url(../blocks/popup/popup.css);
 
 
 @import url(../blocks/dropdown/dropdown.css);
@@ -39,6 +46,7 @@
 
 /* elements */
 @import url("../blocks/elements/elements.css");
+@import url("../blocks/animated/animated.css");
 
 /* element */
 @import url("../blocks/element/element.css");

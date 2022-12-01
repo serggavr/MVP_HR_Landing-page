@@ -16,6 +16,7 @@ export default () => {
   const stepCounter = quizSection.querySelector(".quiz__counter");
   const progressLine = quizSection.querySelector(".quiz__progress-line");
   const quizQuestion = quizSection.querySelector(".quiz__question");
+  const quizFinalButtons = quizSection.querySelector(".quiz__buttons_transformed");
   const quizDescription = quizSection.querySelector(
     ".quiz__question-description"
   );
@@ -24,14 +25,16 @@ export default () => {
   let mentorCount = 0;
   let reviewerCount = 0;
 
+
   const nextStep = () => {
     step++;
     if (step <= 5) {
+      const currentQuestion = questions[step - 1];
       stepCounter.textContent = step;
-      quizQuestion.textContent = questions[step - 1].text;
-      quizImage.src = questions[step - 1].image;
+      quizQuestion.textContent = currentQuestion.text;
+      quizDescription.textContent = currentQuestion.description;
+      quizImage.src = currentQuestion.image;
       progressLine.style.width = `${stepCounter.textContent * 20}%`;
-      console.log(step, mentorCount, reviewerCount);
     } else {
       showResult();
     }
@@ -52,6 +55,7 @@ export default () => {
     noButton.classList.remove("quiz__button-visible");
     quizReset.classList.add("quiz__button-visible");
     quizVacancies.classList.add("quiz__button-visible");
+    quizFinalButtons.classList.add("quiz__buttons_transformed_visible");
   };
 
   const start = () => {
@@ -81,6 +85,7 @@ export default () => {
   const resetQuiz = () => {
     quizReset.classList.remove("quiz__button-visible");
     quizVacancies.classList.remove("quiz__button-visible");
+    quizFinalButtons.classList.remove("quiz__buttons_transformed_visible");
     quizDescription.textContent = "";
     start();
   };
