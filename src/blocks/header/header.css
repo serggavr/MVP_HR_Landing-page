@@ -50,6 +50,8 @@
     background-image: url("../../images/header/burger.svg");
     display: none;
     cursor: pointer;
+    border: none;
+    background-color: var(--primary-bg-color)
 }
 
 .header__burger-container {
