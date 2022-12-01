@@ -3,7 +3,7 @@ import quiz from "./Quiz";
 import burger from "./Burger.js";
 
 import faq from "./Faq.js";
-import slider from "./Slider";
+// import slider from "./Slider";
 
 
 import PopupWithForm from './PopupWithForm.js';

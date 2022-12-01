@@ -1,6 +1,6 @@
 .vacancy {
   box-sizing:border-box;
-  max-width: 1410px;
+  /* max-width: 1410px; */
   padding: 100px;
   display: flex;
   flex-direction: column;

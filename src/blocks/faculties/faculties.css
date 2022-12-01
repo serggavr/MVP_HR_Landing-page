@@ -250,8 +250,8 @@ display: none;
   }
 
   .faculties__paragraph {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 18px;
+line-height: 25px;
     margin-bottom: 10px;
   }
 
@@ -264,11 +264,11 @@ display: none;
     line-height: 20px;
   }
 
-  /* .faculties__close {
+  .faculties__close {
         font-size: 14px;
 line-height: 20px;
 
-    } */
+    }
 
   .faculties__items {
     /* border-bottom: none; */
@@ -277,10 +277,6 @@ line-height: 20px;
 
   .faculties__item {
     padding: 0;
-  }
-
-  .faculties__box-hidden {
-    border-top: 1px solid black;
   }
 
   .faculties__text {
