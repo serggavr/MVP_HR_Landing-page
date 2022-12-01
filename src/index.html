@@ -40,7 +40,7 @@
         </div>
       </header>
 
-      <main class="content">
+       <main class="main content">
         <section class="section welcome">
             <p class="welcome__text welcome__text_float" id="text-transform-up">Делитесь опытом в</p>
             <div class="welcome__animation">
@@ -54,11 +54,6 @@
             </div>
           <p class="welcome__text" id="text-transform-bot">и&nbsp;получайте&nbsp;доход</p>
           <div class="welcome__main">
-<!--            <img-->
-<!--                    src="<%=require('./images/welcome/pic-welcome.jpg')%>"-->
-<!--                    alt="Фото"-->
-<!--                    class="welcome__photo"-->
-<!--            />-->
             <div class="welcome__photo">
               <a class="welcome__button animated-button animated-black-button" href="#vacancies">
                 Хочу делиться опытом
@@ -72,7 +67,7 @@
             </div>
           </div>
         </section>
-        <!-- start Advantages  -->
+
         <section class="section advantages">
           <h2 class="advantages__title">Работа с нами - это <span class="advantages__span">возможность</span></h2>
           <div class="advantages__container">
@@ -100,8 +95,6 @@
           
         </div>
       </section>
-
-      <!-- end Advantages -->
       
       <section id="quiz" class="quiz section">
         <h2 class="quiz__title">
@@ -134,84 +127,79 @@
         </div>
     </section>
 
-        <!-- Feedback -->
-
         <section id="feedback" class="section feedback">
-          <h2 class="section__title">Что о нас говорят</h2>
-          <p class="feedback__text">Наши наставники и ревьюеры с разных факультетов,Наши наставники и ревьюеры с разных факультетов,</p>
-          <div class="slider">
-            <div class="slider__buttons-container">
-              <button class="slider__button slider__button-right">
-                <!-- <img src="./images/feedback/toLeftArrow.svg" alt="стрелка вправо" class="slider__button-right-img"> -->
-                <img src="<%=require('./images/feedback/toLeftArrow.svg')%>" alt="стрелка вправо" class="slider__button-img slider__button-right-img">
-              </button>
-              <button class="slider__button slider__button-left">
-                <!-- <img src="./images/feedback/toLeftArrow.svg" alt="стрелка влево" class="slider__button-left-img"> -->
-                <img src="<%=require('./images/feedback/toRightArrow.svg')%>" alt="стрелка влево" class="slider__button-img slider__button-left-img">
-              </button>
-            </div>
-            
-            <div class="slider__slide">
-              <!-- <img src="img1.jpg" alt="Иван Иванов"> -->
-              <img class="slider__slide-img" src="<%=require('./images/feedback/1.jpg')%>" alt="Иван Иванов">
-              <div class="slider__slide-text-container">
-                <h3 class="slider__slide-title slider__text">Иван Иванов</h3>
-                <p class="slider__slide-subtitle slider__text">Наставник направления дизайн интерфейсов</p>
-                <p class="slider__slide-text slider__text">
-                  Я в своем познании настолько преисполнился, 
-                  что я как будто бы уже сто триллионов миллиардов 
-                  лет проживаю на триллионах и триллионах таких же 
-                  планет.
-                </p>
+          <h2 class="section__title">Что <span class="text text_type_colored">говорят</span> о нас…</h2>
+
+          <div class="splide slider ">
+            <div class="slider__header">
+              <p class="feedback__text">Наши наставники и ревьюеры рассказывают свои истории о работе с нами.</p>
+              <div class="slider__buttons-container">
+                <button class="slider__button slider__button-right slider__button_type_right">
+                </button>
+                <button class="slider__button slider__button-left slider__button_type_left">
+                </button>
               </div>
             </div>
-          
-            <!-- <div class="slider__slide">
-              <img src="img1.jpg" alt="Иван Иванов">
-              <img class="slider__slide-img" src="<%=require('./images/feedback/2.jpg')%>" alt="Петр Петров">
-              <div class="slider__slide-text-container">
-                <h3 class="slider__slide-title slider__text">Петр Петров</h3>
-                <p class="slider__slide-subtitle slider__text">Наставник направления дизайн интерфейсов</p>
-                <p class="slider__slide-text slider__text">
-                  И я в своем познании настолько преисполнился, 
-                  что я как будто бы уже сто триллионов миллиардов 
-                  лет проживаю на триллионах и триллионах таких же 
-                  планет.
-                </p>
-              </div>
-            </div> -->
-          
-            <!-- <div class="slider__slide">
-              <img src="img1.jpg" alt="Иван Иванов">
-              <img class="slider__slide-img" src="<%=require('./images/feedback/3.jpg')%>" alt="Александр Александров">
-              <div class="slider__slide-text-container">
-                <h3 class="slider__slide-title slider__text">Александр Александров</h3>
-                <p class="slider__slide-subtitle slider__text">Наставник направления web-разработка</p>
-                <p class="slider__slide-text slider__text">
-                  И я тоже в своем познании настолько преисполнился, 
-                  что я как будто бы уже сто триллионов миллиардов 
-                  лет проживаю на триллионах и триллионах таких же 
-                  планет.
-                </p>
-              </div>
-            </div> -->
 
-            <ul class="slider__dots-container">
-              <div class="slider__dot"></div>
-              <div class="slider__dot slider__dot-active"></div>
-              <div class="slider__dot"></div>
-            </ul>
-
+            <div class="splide__track slider__container">
+              <ul class="splide__list slider__list">
+                <li class="splide__slide slider__slide">
+                  <img class="slider__slide-img" src="<%=require('./images/feedback/1.jpg')%>" alt="Иван Иванов">
+                  <div class="slider__slide-text-container">
+                    <div class="slider__slide-text-container-header">
+                      <img class="slider__slide-img slider__slide-img-mobile" src="<%=require('./images/feedback/1.jpg')%>" alt="Иван Иванов">
+                      <div class="slider__slide-text-container-header-text-block">
+                        <h3 class="slider__slide-title slider__text">Максим Чечёнов</h3>
+                        <p class="slider__slide-subtitle slider__text">Наставник курса «Веб-разработчик»</p>
+                      </div>
+                    </div>
+                    <p class="slider__slide-text slider__text">
+                      Когда я учился писать код, не было онлайн-курсов и площадок с наставниками, 
+                      и было сложно ориентироваться, что реально важно знать и уметь, а что нет. 
+                      Сейчас я делюсь своим опытом и, мне кажется, делаю мир чуть-чуть лучше 😊
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide slider__slide">
+                  <img class="slider__slide-img" src="<%=require('./images/feedback/2.jpg')%>" alt="Иван Иванов">
+                  <div class="slider__slide-text-container">
+                    <div class="slider__slide-text-container-header">
+                      <img class="slider__slide-img slider__slide-img-mobile" src="<%=require('./images/feedback/2.jpg')%>" alt="Иван Иванов">
+                      <div class="slider__slide-text-container-header-text-block">
+                        <h3 class="slider__slide-title slider__text">Толя Крестенко</h3>
+                        <p class="slider__slide-subtitle slider__text">Наставник курса «Data Science»</p>
+                      </div>
+                    </div>
+                    <p class="slider__slide-text slider__text">
+                      С Практикумом меня объединяют любовь к технологиям, вера в онлайн-образование 
+                      и желание помогать людям и покорять новые горизонты. Сам почти полностью осваивал 
+                      профессию онлайн, поэтому хочу и другим людям помочь в получении новых навыков.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide slider__slide">
+                  <img class="slider__slide-img" src="<%=require('./images/feedback/3.jpg')%>" alt="Иван Иванов">
+                  <div class="slider__slide-text-container">
+                    <div class="slider__slide-text-container-header">
+                      <img class="slider__slide-img slider__slide-img-mobile" src="<%=require('./images/feedback/3.jpg')%>" alt="Иван Иванов">
+                      <div class="slider__slide-text-container-header-text-block">
+                        <h3 class="slider__slide-title slider__text">Иван Иванов</h3>
+                        <p class="slider__slide-subtitle slider__text">Наставник направления дизайн интерфейсов</p>
+                      </div>
+                    </div>
+                    <p class="slider__slide-text slider__text">
+                      Я в своем познании настолько преисполнился,
+                      что я как будто бы уже сто триллионов миллиардов
+                      лет проживаю на триллионах и триллионах таких же
+                      планет.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            <div>
           </div>
-
         </section>
 
-        <!-- end Feedback -->
-
-       
-        
-
-        <!-- Faculties -->
        <section class="section faculties">
         <div class="faculties__title">…и что <span class="faculties__span">мы</span> говорим о себе</div>
         <div class="faculties__container">
@@ -234,129 +222,16 @@
            </div>
           <div class="faculties__box">
             <ul class="faculties__list-item">
-             <li class="faculties__items ">
-               <div class="faculties__item">
-                 <h3 class="faculties__subtitle">Дизайн</h3>
-       <p class="faculties__link" >Развернуть</p>
-                  <div class="faculties__close" >Скрыть</div>
-               </div>                <div class="faculties__box-hidden ">
-                 <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
-                                <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
-                 <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
-                 <div class="faculties__group">
-                   <a href="https://practicum.yandex.ru/catalog/design/" class="faculties__button" target="_blank">Перейти к факультету</a>
-                 </div>
-               </div>
-              </li>
-              <li class="faculties__items ">
-                <div class="faculties__item">
-              <h3 class="faculties__subtitle">Программирование </h3>
-              <p class="faculties__link" >Развернуть</p>
-              <div class="faculties__close " >Скрыть</div>
-            </div>
-           <div class="faculties__box-hidden ">
-              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
-              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
-              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
-              <div class="faculties__group">
-                <a href="https://practicum.yandex.ru/catalog/programming/" class="faculties__button" target="_blank">Перейти к факультету</a>
-              </div>
-            </div>
-            </li>
-             <li class="faculties__items">
-                <div class="faculties__item">
-              <h3 class="faculties__subtitle">Анализ данных</h3>
-              <p class="faculties__link" >Развернуть</p>
-              <div class="faculties__close " >Скрыть</div>
-            </div>
-           <div class="faculties__box-hidden">
-              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
-              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
-              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
-              <div class="faculties__group">
-               <a href="https://practicum.yandex.ru/catalog/data-analysis/" class="faculties__button" target="_blank">Перейти к факультету</a>
-             </div>
-           </div>
-           </li>
-             <li class="faculties__items">
-               <div class="faculties__item">
-             <h3 class="faculties__subtitle">Маркетинг</h3>
-             <p class="faculties__link" >Развернуть</p>
-             <div class="faculties__close" >Скрыть</div>
-           </div>
-           <div class="faculties__box-hidden">
-              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
-              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
-              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
-              <div class="faculties__group">
-               <a href="https://practicum.yandex.ru/catalog/marketing/" class="faculties__button" target="_blank">Перейти к факультету</a>
-             </div>
-           </div>
-            </li>
-              <li class="faculties__items">
-                <div class="faculties__item">
-              <h3 class="faculties__subtitle">Менеджмент</h3>
-              <p class="faculties__link" >Развернуть</p>
-              <div class="faculties__close" >Скрыть</div>
-            </div>
-            <div class="faculties__box-hidden ">
-              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
-              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
-              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
-              <div class="faculties__group">
-                <a href="https://practicum.yandex.ru/catalog/management/" class="faculties__button" target="_blank">Перейти к факультету</a>
-              </div>-->
-            </div>
-            </li>
-              <li class="faculties__items">
-                <div class="faculties__item">
-              <h3 class="faculties__subtitle">Английский язык</h3>
-              <p class="faculties__link" >Развернуть</p>
-              <div class="faculties__close" >Скрыть</div>
-            </div>
-            <div class="faculties__box-hidden ">
-              <p class="faculties__text">Направление подойдёт как новичкам, так и практикующим профессионалам — у нас обучаются дизайнеры, UX-писатели и UX-исследователи.</p>
-              <p class="faculties__text">Учим работать с композицией, цветом, типографикой, текстом, исследованиями так, чтобы приносить пользу и пользователям, и бизнесу.</p>
-              <p class="faculties__text">Процесс строится на постоянной практике: реальные проекты или максимально приближенные к ним учебные задачи, ТЗ, дедлайны и развёрнутая обратная связь от специалистов.</p>
-              <div class="faculties__group">
-                <a href="https://practicum.yandex.ru/english/" class="faculties__button" target="_blank">Перейти к факультету</a>
-            </div>
-              </div>
-           </li>
-          </ul>
-            </div>
+
+            </ul>
+          </div>
           
         </div>
        </section>
-        <!-- end Faculties -->
 
         <section id="vacancies" class="section vacancy">
-          <h2 class="section__title">Кого мы ищем</h2>
+          <h2 class="section__title"><span class="text text_type_colored">Кого </span>мы ищем</h2>
             
-            <!-- <form class='search-form'>
-              <div class="search-form__container search-form__container_placed_header">
-                <div class="search-form__filter-container search-form__filter-container_placed_header">
-                  <input type="button" value="Наставник" class="search-form__filter-button"></input>
-                  <input type="button" value="Ревьюер" class="search-form__filter-button"></input>
-                </div>
-                <div class='search-form__search-bar'>
-                  <img src="<%=require('./images/search-bar/search.svg')%>" alt="" class="search-form__search-bar-img">
-                  <input type='text' class='search-form__input' placeholder='Искать вакансию'></input>
-                  <Button type='submit'class='search-form__button'>Найти</Button>
-                </div>
-              </div>
-              <div class="search-form__header-container search-form__container_placed_footer">
-                <div class="search-form__filter-container">
-                  <input type="button" value="Все" class="search-form__filter-button search-form__filter-button-active"></input>
-                  <input type="button" value="Программирование" class="search-form__filter-button"></input>
-                  <input type="button" value="Дизайн" class="search-form__filter-button"></input>
-                  <input type="button" value="Анализ данных" class="search-form__filter-button"></input>
-                  <input type="button" value="Менеджмент" class="search-form__filter-button"></input>
-                  <input type="button" value="Маркетинг" class="search-form__filter-button"></input>
-                </div>
-              </div>
-            </form> -->
-
             <form class='search-form'>
               <div class="search-form__filter-container">
                 <div class="dropdown dropdown_type_faculty">
@@ -385,8 +260,8 @@
               </div>
               <div class='search-form__search-bar'>
                 <img src="<%=require('./images/search-bar/search.svg')%>" alt="" class="search-form__search-bar-img">
-                <input type='text' class='search-form__search-bar-input' placeholder='Искать вакансию'></input>
-                <Button type='submit'class='search-form__search-bar-button'>Найти</Button>
+                <input type='text' class='search-form__search-bar-input' placeholder='Поиск'></input>
+                <Button type='submit'class='search-form__search-bar-button' disabled>Найти</Button>
               </div>
             </form>
             <div class="vacancy__container">
@@ -399,24 +274,11 @@
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
                   <div class="vacancy-card__footer-link-container">
                     <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__link">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
+                    <a href="#" class="vacancy-card__see-more">
+                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
                     </a>
                   </div>
                 </div>
-                <!-- <div class="vacancy-card__requirements-container vacancy-card__requirements-container-hiden">
-                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Требования</h3>
-                  <ul class="vacancy-card__requirements-list">
-                    <li class="vacancy-card__requirements-list-element vacancy-card__text">Опыт бэкенд-разработки на Python от 3-х лет.   </li>
-                    <li class="vacancy-card__requirements-list-element vacancy-card__text">Владеете Django и другими фреймворками, знаете ООП, базовые алгоритмы и структуры данных.</li>
-                    <li class="vacancy-card__requirements-list-element vacancy-card__text">Работали с GIT, СУБД SQL, Docker.</li>
-                    <li class="vacancy-card__requirements-list-element vacancy-card__text">Готовы посвящать проекту от 10 часов в неделю.</li>
-                  </ul>
-                  <div class="vacancy-card__requirements-footer">
-                    <button class="button button_theme_dark vacancy-card__requirements-respond-button">Откликнуться</button>
-                    <button class="button button_theme_light vacancy-card__requirements-share-button">Поделиться вакансией</button>
-                  </div>
-                </div> -->
               </div>
               <div class="vacancy-card">
                 <div class="vacancy-card__info-container">
@@ -427,8 +289,8 @@
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
                   <div class="vacancy-card__footer-link-container">
                     <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__link">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
+                    <a href="#" class="vacancy-card__see-more">
+                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
                     </a>
                   </div>
                 </div>
@@ -442,8 +304,8 @@
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Дизайн</p>
                   <div class="vacancy-card__footer-link-container">
                     <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__link">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
+                    <a href="#" class="vacancy-card__see-more">
+                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
                     </a>
                   </div>
                 </div>
@@ -457,8 +319,8 @@
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
                   <div class="vacancy-card__footer-link-container">
                     <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__link">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
+                    <a href="#" class="vacancy-card__see-more">
+                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
                     </a>
                   </div>
                 </div>
@@ -472,8 +334,8 @@
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
                   <div class="vacancy-card__footer-link-container">
                     <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__link">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
+                    <a href="#" class="vacancy-card__see-more">
+                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
                     </a>
                   </div>
                 </div>
@@ -487,23 +349,23 @@
                   <p class="vacancy-card__vacancy-direction vacancy-card__text">Программирование</p>
                   <div class="vacancy-card__footer-link-container">
                     <p class="vacancy-card__vacancy-salary vacancy-card__text">~ 45 тыс. рублей в месяц</p>
-                    <a href="#" class="vacancy-card__link">
-                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__link-img">
+                    <a href="#" class="vacancy-card__see-more">
+                      <img src="<%=require('./images/vacancy/arrow.svg')%>" alt="arrow" class="vacancy-card__see-more-img">
                     </a>
                   </div>
                 </div>
               </div>
             </div>
             
-            <button class="vacancy__load-more-button vacancy__text">Смотреть еще</button>
+            <button class="vacancy__load-more-button button button__load-more-button vacancy__text">Показать еще</button>
             <div class="vacancy__feedback-container">
-              <p class="vacancy__feedback-text vacancy__text">Не нашли подходящей вакансии?</p>
-              <button class="button button_placed_vacancy button_theme_dark">Связаться с нами</button>
-              <button class="button button_placed_vacancy button_theme_light">Подписаться на вакансии</button>
+              <p class="vacancy__feedback-text vacancy__text">Не нашли <span class="vacancy__text_type_colored"> подходящей </span>роли?</p>
+              
+              <button class="button button_placed_vacancy button_theme_dark button__open_feedback-popup">Связаться с нами</button>
+              <button class="button button_placed_vacancy button_theme_light button__open_subscribe-popup">Подписаться на обновления</button>
             </div>
         </section>
 
-        <!-- FAQ -->
         <section class="section faq">
           <div class="faq__title"><span class="faq__span">Отвечаем</span> на вопросы</div>
           <ul class="faq__list-item">
@@ -555,12 +417,8 @@
             </li>
           </ul>
         </section>
-
-
-
-        <!-- end FAQ -->
         
-      </main>
+      </main> 
       <footer id="footer" class="footer">
         <div class="footer__container">
           <div class="footer__info-block">
@@ -611,28 +469,26 @@
               </p>
             </div>
           </div>
-          <!-- <div class="footer__contacts-block"></div> -->
-          <ul class="footer__contacts-block">
-            <li class="footer__telephone-container">
-              <a href="#" class="footer__telephone footer__text footer__link">8-800-700-93-29</a>
-              <p class="footer__telephone-info footer__text">Звонок по России бесплатный</p>
-            </li>
-            <li class="footer__contacts-element">
-              <a href="#" class="footer__contacts-link">
-                <img src="<%=require('./images/footer/telegram.svg')%>" alt="телеграм" class="footer__contacts-link-img">
-                <!-- <img src="./images/footer/telegram.svg" alt="телеграм" class="footer__contacts-link-img"> -->
-              </a>
-            </li>
-            <li class="footer__contacts-element">
-              <a href="#" class="footer__contacts-link">
-                <img src="<%=require('./images/footer/vk.svg')%>" alt="вконтакте" class="footer__contacts-link-img">
-                <!-- <img src="./images/footer/vk.svg" alt="вконтакте" class="footer__contacts-link-img"> -->
-              </a>
-            </li>
-            <li class="footer__contacts-element">
-              <a href="#" class="footer__contacts-link footer__text footer__link">Журнал</a>
-            </li>
-          </ul>
+          <!-- <div class="footer__contacts-block"> -->
+            <ul class="footer__contacts-block">
+              <li class="footer__telephone-container">
+                <a href="#" class="footer__telephone footer__text footer__link">8 800 700-93-29</a>
+                <p class="footer__telephone-info footer__text">Звонок по России бесплатный</p>
+              </li>
+              <li class="footer__contacts-element">
+                <a href="#" class="footer__contacts-link">
+                  <img src="<%=require('./images/footer/telegram_dark.svg')%>" alt="телеграм" class="footer__contacts-link-img">
+                </a>
+              </li>
+              <li class="footer__contacts-element">
+                <a href="#" class="footer__contacts-link">
+                  <img src="<%=require('./images/footer/vk_dark.svg')%>" alt="вконтакте" class="footer__contacts-link-img">
+                </a>
+              </li>
+              <li class="footer__contacts-element">
+                <a href="#" class="footer__contacts-link footer__text footer__link">Журнал</a>
+              </li>
+            </ul>
         </div>
       </footer>
     </div>
@@ -646,6 +502,7 @@
 
     <template id="vacancyCard"> 
       <div class="vacancy-card">
+        <button class=" button button__type_close-more vacancy-card__close-more button_hidden"></button>
         <div class="vacancy-card__info-container">
           <p class="vacancy-card__vacancy-name vacancy-card__text"></p>
           <h3 class="vacancy-card__vacancy-title vacancy-card__text"></h3>
@@ -654,6 +511,7 @@
           <p class="vacancy-card__vacancy-direction vacancy-card__text"></p>
           <div class="vacancy-card__footer-link-container">
             <p class="vacancy-card__vacancy-salary vacancy-card__text"></p>
+            <button class=" button button__type_see-more vacancy-card__see-more"></button>
           </div>
         </div>
         <div class="vacancy-card__requirements-container vacancy-card__requirements-container-hiden">

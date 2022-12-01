@@ -26,9 +26,14 @@
   width: 100%;
 }
 
+.button_placed_vacancy {
+  width: 100%;
+  max-width: 280px;
+}
+
 .button_theme_light:hover {
   background-color: #000000;
-  color: #D9D9D9;
+  color: #FFFFFF;
 }
 
 
@@ -52,6 +57,78 @@
   align-self: flex-end;
 }
 
+.button__type_see-more {
+  box-sizing: border-box;
+  padding: 30px;
+  width: 20px;
+  height: 20px;
+  background-image: url('../../images/vacancy/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 37.5px;
+  align-self: flex-end;
+  background-color: var(--primary-bg-color);
+}
+
+.button__type_close-more {
+  position: absolute;
+  top:20px;
+  box-sizing: border-box;
+  padding: 30px;
+  width: 20px;
+  height: 20px;
+  background-image: url('../../images/popup/excit.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 37.5px;
+  align-self: flex-end;
+  background-color: var(--primary-bg-color);
+}
+
+.button__load-more-button {
+  width: 100%;
+  max-width: 350px;
+  align-self: center;
+  border: none;
+  /* background-color: var(--light-bg-color); */
+  cursor: pointer;
+  background-color: var(--primary-bg-color);
+  border: 1px solid var(--primary-bg-color);
+}
+
+.button__load-more-button:hover {
+  background-color: var(--light-bg-color);
+  border: 1px solid #000000;
+}
+
 .button__type_close:hover {
   background-color: var(--primary-bg-color);
+}
+
+.button__type_see-more:hover {
+  background-color: var(--light-bg-color)
+}
+
+.button__type_close-more:hover {
+  background-color: var(--light-bg-color)
+}
+
+.button_hidden {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .button__load-more-button {
+    max-width: 100%;
+  }
+
+  .button_placed_vacancy {
+    max-width: 100%;
+  }
+
+  .button__type_see-more {
+    padding: 15px 15px;
+  }
 }

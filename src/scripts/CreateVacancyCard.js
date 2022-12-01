@@ -1,11 +1,12 @@
-export default function createVacancyCard (vacancyData, vacancyCardTemplateSelector, handleClickRespondButton) {
+export default function createVacancyCard (vacancyData, vacancyCardTemplateSelector, vacancyCardContainer, handleClickRespondButton, handleClickShareButton) {
   const vacancyCard = document.querySelector(vacancyCardTemplateSelector).content.querySelector(".vacancy-card").cloneNode(true)
   
   const vacancyName = vacancyCard.querySelector('.vacancy-card__vacancy-name')
   const vacancyCourse = vacancyCard.querySelector('.vacancy-card__vacancy-title')
   const vacancyDirection = vacancyCard.querySelector('.vacancy-card__vacancy-direction')
   const vacancySalary = vacancyCard.querySelector('.vacancy-card__vacancy-salary')
-  // const vacancyLink = vacancyCard.querySelector('.vacancy-card__link')
+  const vacancySeeMore = vacancyCard.querySelector('.vacancy-card__see-more')
+  const vacancyCloseSeeMore = vacancyCard.querySelector('.vacancy-card__close-more')
   const vacancyInfoContainer = vacancyCard.querySelector('.vacancy-card__info-container')
   const vacancyFooter = vacancyCard.querySelector('.vacancy-card__footer')
 
@@ -22,7 +23,6 @@ export default function createVacancyCard (vacancyData, vacancyCardTemplateSelec
   vacancyCourse.innerHTML = vacancyData.course
   vacancyDirection.innerHTML = vacancyData.faculty
   vacancySalary.innerHTML = vacancyData.sаlary
-  // vacancyLink.src = vacancyData.link
   
   vacancyRequirementsTitle.innerHTML = 'Требования'
   vacancyRequirementRespondButton.innerHTML = 'Откликнуться'
@@ -35,30 +35,33 @@ export default function createVacancyCard (vacancyData, vacancyCardTemplateSelec
     vacancyRequirementsList.append(vacancyRequirementsListElement.cloneNode(true))
   })
 
-  vacancyCard.addEventListener('click', (e) => {
-    if (!e.target.className.includes('button')) {
-      vacancyRequirementsContainer.classList.toggle('vacancy-card__requirements-container-hidden')
-    // vacancyInfoContainer.classList.toggle('vacancy-card__info-container-hidden')
-    // vacancyFooter.classList.toggle('vacancy-card__footer-hidden')
-      for (let sibling of vacancyCard.parentNode.children) {
+  const showMoreVacancyInfo = () => {
+    vacancyRequirementsContainer.classList.toggle('vacancy-card__requirements-container-hidden')
+      for (let sibling of vacancyCardContainer.children) {
         sibling.classList.toggle('vacancy-card-hidden');
       }
       showMoreVacancyButton.classList.toggle('vacancy__load-more-button-hidden')
       vacancyCard.classList.toggle('vacancy-card-hidden')
-      // vacancyName.scrollIntoView()
-    }
+  }
+
+  vacancySeeMore.addEventListener('click', (e) => {
+    showMoreVacancyInfo()
+    vacancyCloseSeeMore.classList.toggle('button_hidden')
+    vacancySeeMore.classList.toggle('button_hidden')
   })
 
-  // vacancyRequirementRespondButton.addEventListener('click', () => {
-    // console.log('popup opened')
-    // const requirementPopup = document.querySelector('.popup_type_respond')
-    // const requirementPopupOpenClass = 'popup_opened'
-    // requirementPopup.classList.toggle(requirementPopupOpenClass)
-    // handleClickRespondButton()
-  // })
+  vacancyCloseSeeMore.addEventListener('click', (e) => {
+    showMoreVacancyInfo()
+    vacancyCloseSeeMore.classList.toggle('button_hidden')
+    vacancySeeMore.classList.toggle('button_hidden')
+  })
 
   vacancyRequirementRespondButton.addEventListener('click', () => {
     handleClickRespondButton()
+  })
+
+  vacancyRequirementShareButton.addEventListener('click', () => {
+    handleClickShareButton()
   })
 
   return(vacancyCard)

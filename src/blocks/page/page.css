@@ -3,7 +3,10 @@ main, footer {
     top: 120px;
 }
 .page {
-    font-family: "YS Text", sans-serif;
+    /* font-family: "YS Text", sans-serif; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 

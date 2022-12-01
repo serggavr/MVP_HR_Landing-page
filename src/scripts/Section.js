@@ -18,7 +18,10 @@ export default class Section {
     this.container.replaceChildren([])
   }
 
-  renderItems(items, amount) {
+  renderItems(items, amount, noFoundTextBlock) {
+    if (items.length === 0) {
+      console.log('ноль')
+    }
     const amountRenderedItems = this.container.children.length
 
     if (amountRenderedItems + amount >= items.length) {

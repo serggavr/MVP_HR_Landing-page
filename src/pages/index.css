@@ -10,6 +10,12 @@
 /* body */
 @import url("../blocks/body/body.css");
 
+/* main */
+@import url("../blocks/main/main.css");
+
+/* text */
+@import url("../blocks/text/text.css");
+
 /* page */
 @import url("../blocks/page/page.css");
 
@@ -39,11 +45,7 @@
 @import url("../blocks/header/header.css");
 
 /* elements */
-@import url("../blocks/elements/elements.css");
 @import url("../blocks/animated/animated.css");
-
-/* element */
-@import url("../blocks/element/element.css");
 
 /* footer */
 @import url("../blocks/footer/footer.css");
