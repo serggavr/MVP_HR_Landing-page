@@ -40,7 +40,7 @@
         </div>
       </header>
 
-      <main class="content">
+       <main class="main content">
         <section class="section welcome">
             <p class="welcome__text welcome__text_float" id="text-transform-up">Делитесь опытом в</p>
             <div class="welcome__animation">
@@ -68,7 +68,6 @@
           </div>
         </section>
 
-        <!-- start Advantages  -->
         <section class="section advantages">
           <h2 class="advantages__title">Работа с нами - это <span class="advantages__span">возможность</span></h2>
           <div class="advantages__container">
@@ -96,8 +95,6 @@
           
         </div>
       </section>
-
-      <!-- end Advantages -->
       
       <section id="quiz" class="quiz section">
         <h2 class="quiz__title">
@@ -130,32 +127,20 @@
         </div>
     </section>
 
-        <!-- Feedback -->
-
         <section id="feedback" class="section feedback">
           <h2 class="section__title">Что <span class="text text_type_colored">говорят</span> о нас…</h2>
-          <!-- <p class="feedback__text">Наши наставники и ревьюеры с разных факультетов,Наши наставники и ревьюеры с разных факультетов,</p> -->
 
           <div class="splide slider ">
             <div class="slider__header">
               <p class="feedback__text">Наши наставники и ревьюеры с разных факультетов,Наши наставники и ревьюеры с разных факультетов,</p>
               <div class="slider__buttons-container">
                 <button class="slider__button slider__button-right slider__button_type_right">
-                  <!-- <img src="<%=require('./images/feedback/toLeftArrow.svg')%>" alt="стрелка вправо" class="slider__button-img slider__button-right-img"> -->
                 </button>
                 <button class="slider__button slider__button-left slider__button_type_left">
-                  <!-- <img src="<%=require('./images/feedback/toRightArrow.svg')%>" alt="стрелка влево" class="slider__button-img slider__button-left-img"> -->
                 </button>
               </div>
             </div>
-            <!-- <div class="slider__buttons-container">
-              <button class="slider__button slider__button-right">
-                <img src="<%=require('./images/feedback/toLeftArrow.svg')%>" alt="стрелка вправо" class="slider__button-img slider__button-right-img">
-              </button>
-              <button class="slider__button slider__button-left">
-                <img src="<%=require('./images/feedback/toRightArrow.svg')%>" alt="стрелка влево" class="slider__button-img slider__button-left-img">
-              </button>
-            </div> -->
+
             <div class="splide__track slider__container">
               <ul class="splide__list slider__list">
                 <li class="splide__slide slider__slide">
@@ -199,21 +184,11 @@
                 </li>
               </ul>
             <div>
-<!--            <ul class="slider__dots-container">-->
-<!--              <div class="slider__dot"></div>-->
-<!--              <div class="slider__dot slider__dot-active"></div>-->
-<!--              <div class="slider__dot"></div>-->
-<!--            </ul>-->
+
               <ul class="splide__pagination"></ul>
           </div>
         </section>
 
-        <!-- end Feedback -->
-
-
-        
-
-        <!-- Faculties -->
        <section class="section faculties">
         <div class="faculties__title">И что мы говорим о себе</div>
         <div class="faculties__container">
@@ -242,34 +217,9 @@
           
         </div>
        </section>
-        <!-- end Faculties -->
 
         <section id="vacancies" class="section vacancy">
           <h2 class="section__title">Кого мы ищем</h2>
-            
-            <!-- <form class='search-form'>
-              <div class="search-form__container search-form__container_placed_header">
-                <div class="search-form__filter-container search-form__filter-container_placed_header">
-                  <input type="button" value="Наставник" class="search-form__filter-button"></input>
-                  <input type="button" value="Ревьюер" class="search-form__filter-button"></input>
-                </div>
-                <div class='search-form__search-bar'>
-                  <img src="<%=require('./images/search-bar/search.svg')%>" alt="" class="search-form__search-bar-img">
-                  <input type='text' class='search-form__input' placeholder='Искать вакансию'></input>
-                  <Button type='submit'class='search-form__button'>Найти</Button>
-                </div>
-              </div>
-              <div class="search-form__header-container search-form__container_placed_footer">
-                <div class="search-form__filter-container">
-                  <input type="button" value="Все" class="search-form__filter-button search-form__filter-button-active"></input>
-                  <input type="button" value="Программирование" class="search-form__filter-button"></input>
-                  <input type="button" value="Дизайн" class="search-form__filter-button"></input>
-                  <input type="button" value="Анализ данных" class="search-form__filter-button"></input>
-                  <input type="button" value="Менеджмент" class="search-form__filter-button"></input>
-                  <input type="button" value="Маркетинг" class="search-form__filter-button"></input>
-                </div>
-              </div>
-            </form> -->
 
             <form class='search-form'>
               <div class="search-form__filter-container">
@@ -318,19 +268,6 @@
                     </a>
                   </div>
                 </div>
-                <!-- <div class="vacancy-card__requirements-container vacancy-card__requirements-container-hiden">
-                  <h3 class="vacancy-card__vacancy-title vacancy-card__text">Требования</h3>
-                  <ul class="vacancy-card__requirements-list">
-                    <li class="vacancy-card__requirements-list-element vacancy-card__text">Опыт бэкенд-разработки на Python от 3-х лет.   </li>
-                    <li class="vacancy-card__requirements-list-element vacancy-card__text">Владеете Django и другими фреймворками, знаете ООП, базовые алгоритмы и структуры данных.</li>
-                    <li class="vacancy-card__requirements-list-element vacancy-card__text">Работали с GIT, СУБД SQL, Docker.</li>
-                    <li class="vacancy-card__requirements-list-element vacancy-card__text">Готовы посвящать проекту от 10 часов в неделю.</li>
-                  </ul>
-                  <div class="vacancy-card__requirements-footer">
-                    <button class="button button_theme_dark vacancy-card__requirements-respond-button">Откликнуться</button>
-                    <button class="button button_theme_light vacancy-card__requirements-share-button">Поделиться вакансией</button>
-                  </div>
-                </div> -->
               </div>
               <div class="vacancy-card">
                 <div class="vacancy-card__info-container">
@@ -418,7 +355,6 @@
             </div>
         </section>
 
-        <!-- FAQ -->
         <section class="section faq">
           <div class="faq__title">Ответы на частые вопросы</div>
           <ul class="faq__list-item">
@@ -479,12 +415,8 @@
             </li>
           </ul>
         </section>
-
-
-
-        <!-- end FAQ -->
         
-      </main>
+      </main> 
       <footer id="footer" class="footer">
         <div class="footer__container">
           <div class="footer__info-block">
@@ -535,28 +467,26 @@
               </p>
             </div>
           </div>
-          <!-- <div class="footer__contacts-block"></div> -->
-          <ul class="footer__contacts-block">
-            <li class="footer__telephone-container">
-              <a href="#" class="footer__telephone footer__text footer__link">8-800-700-93-29</a>
-              <p class="footer__telephone-info footer__text">Звонок по России бесплатный</p>
-            </li>
-            <li class="footer__contacts-element">
-              <a href="#" class="footer__contacts-link">
-                <img src="<%=require('./images/footer/telegram_dark.svg')%>" alt="телеграм" class="footer__contacts-link-img">
-                <!-- <img src="./images/footer/telegram.svg" alt="телеграм" class="footer__contacts-link-img"> -->
-              </a>
-            </li>
-            <li class="footer__contacts-element">
-              <a href="#" class="footer__contacts-link">
-                <img src="<%=require('./images/footer/vk_dark.svg')%>" alt="вконтакте" class="footer__contacts-link-img">
-                <!-- <img src="./images/footer/vk.svg" alt="вконтакте" class="footer__contacts-link-img"> -->
-              </a>
-            </li>
-            <li class="footer__contacts-element">
-              <a href="#" class="footer__contacts-link footer__text footer__link">Журнал</a>
-            </li>
-          </ul>
+          <!-- <div class="footer__contacts-block"> -->
+            <ul class="footer__contacts-block">
+              <li class="footer__telephone-container">
+                <a href="#" class="footer__telephone footer__text footer__link">8 800 700-93-29</a>
+                <p class="footer__telephone-info footer__text">Звонок по России бесплатный</p>
+              </li>
+              <li class="footer__contacts-element">
+                <a href="#" class="footer__contacts-link">
+                  <img src="<%=require('./images/footer/telegram_dark.svg')%>" alt="телеграм" class="footer__contacts-link-img">
+                </a>
+              </li>
+              <li class="footer__contacts-element">
+                <a href="#" class="footer__contacts-link">
+                  <img src="<%=require('./images/footer/vk_dark.svg')%>" alt="вконтакте" class="footer__contacts-link-img">
+                </a>
+              </li>
+              <li class="footer__contacts-element">
+                <a href="#" class="footer__contacts-link footer__text footer__link">Журнал</a>
+              </li>
+            </ul>
         </div>
       </footer>
     </div>
