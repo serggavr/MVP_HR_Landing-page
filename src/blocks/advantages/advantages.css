@@ -87,13 +87,14 @@
 @media (max-width: 450px) {
   .advantages {
     margin: 40px 0;
-    padding: 0 0 0 15px;
+    padding: 0 15px 0 15px;
   }
 
   .advantages__title {
     padding: 0 15px 0 0;
     font-size: 30px;
     line-height: 35px;
+    margin-bottom: 30px;
   }
 
   .advantages__span {
@@ -110,17 +111,15 @@
     scroll-snap-type: x mandatory;
   }
 
-  /* .advantages__column {
-        flex-direction: row;
-        margin: 0;
-        justify-content: center;
-  scroll-snap-type: x mandatory;
-    } */
-
   .advantages__card {
     width: 100%;
     margin-right: 15px;
   }
+
+  .advantages__card:last-of-type {
+    margin-right: 0;
+  }
+
 
   .advantages__img {
     width: 215px;

@@ -213,7 +213,7 @@
 
         <!-- Faculties -->
        <section class="section faculties">
-        <div class="faculties__title">И что мы говорим о себе</div>
+        <div class="faculties__title">…и что <span class="faculties__span">мы</span> говорим о себе</div>
         <div class="faculties__container">
           <div class="faculties__box">
             <p class="faculties__paragraph-title">О нас</p>
@@ -505,62 +505,53 @@
 
         <!-- FAQ -->
         <section class="section faq">
-          <div class="faq__title">Ответы на частые вопросы</div>
+          <div class="faq__title"><span class="faq__span">Отвечаем</span> на вопросы</div>
           <ul class="faq__list-item">
             <li class="faq__item">
               <div class="faq__box">
-              <h3 class="faq__subtitle">Что делают наставник и преподаватель?</h3>
+              <h3 class="faq__subtitle">Что делает наставник?</h3>
               <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
               <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
             </div>
-              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
-                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
+              <ul class="faq__text faq__text_visible">
+                <li class="faq__paragraph">• Курирует группу из 50–60 студентов на протяжении всего процесса обучения — в течение 10 месяцев;</li> 
+                <li class="faq__paragraph">• помогает разобраться с тем, что осталось непонятным, отвечает на вопросы в Slack;</li> 
+                <li class="faq__paragraph">• проводит групповые консультации, на которых разбирает со студентами сложные вопросы по теории;</li> 
+                <li class="faq__paragraph">• мотивирует и поддерживает во время обучения.</li>
+               </ul>
             </li>
             <li class="faq__item">
               <div class="faq__box">
-              <h3 class="faq__subtitle">Я хочу стать наставником / преподавателем. Меня возьмут?</h3>
+              <h3 class="faq__subtitle">Что делает ревьюер?</h3>
               <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
               <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
             </div>
-              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
-                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
-            </li>
-            <li class="faq__item">
-              <div class="faq__box">
-              <h3 class="faq__subtitle">Что такое Школа наставников и сколько времени она занимает?</h3>
-              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
-              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
-            </div>
-              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
-                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
-            </li>
-            <li class="faq__item">
-              <div class="faq__box">
-              <h3 class="faq__subtitle">Что делает код-ревьюер?</h3>
-              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
-              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
-            </div>
-              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
-                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
-            </li>
-            <li class="faq__item">
-              <div class="faq__box">
-              <h3 class="faq__subtitle">Я хочу стать код-ревьюером. Меня возьмут?</h3>
-              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
-              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
-            </div>
-              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
-                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
+              <p class="faq__text">Проверяет выполненный студентом проект и даёт обратную связь. Именно ревьюер решает: зачесть задание или нет.
+                 Также он даёт советы по улучшению проекта, отмечает неточности, указывает на ошибки.</p>
             </li>
             <li class="faq__item">
               <div class="faq__box">
               <h3 class="faq__subtitle">Я подхожу. Что вы можете мне предложить?</h3>
               <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
               <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
-            </div
-            >
-              <p class="faq__text">Наставник совместно с преподавателем помогает студентам учиться: отвечают на вопросы и помогают
-                 с трудностями на протяжении 6 месяцев обучения. Наставник проводит групповые вебинары, преподаватель общается в чатах со студентами в Slack.</p>
+            </div>
+            <ul class="faq__text">
+              <li class="faq__paragraph">• Удалённую работу с частичной занятостью, объём работы определяется индивидуально;</li> 
+              <li class="faq__paragraph">• обучение азам коммуникации и грамотному подходу к проверке проектов;</li> 
+              <li class="faq__paragraph">• постоянную практику и углубление знаний;</li> 
+              <li class="faq__paragraph">• возможность стать частью сообщества аналитиков, делающих образование качественным и доступным;</li>
+              <li class="faq__paragraph">• возможность помочь начинающим специалистам усвоить важные базовые вещи и поверить в себя.</li> 
+             </ul>
+            </li>
+            <li class="faq__item">
+              <div class="faq__box">
+              <h3 class="faq__subtitle">Что такое Школа наставников и сколько времени она занимает?</h3>
+              <img src="<%=require('./images/arrow_down.svg')%>" alt="стрелка вниз" class="faq__arrow-down">
+              <img src="<%=require('./images/arrow_up.svg')%>" alt="стрелка вверх" class="faq__arrow-up">
+            </div>
+              <p class="faq__text faq__text_visible">Школа наставников — это двухнедельный бесплатный интенсив по коммуникации и управлению командой для IT-специалистов.
+                 Вы узнаете, как передавать знания и опыт начинающим разработчикам и создавать условия для развития самостоятельности своих подопечных.
+                  Вас ждёт пять вебинаров в вечернее время продолжительностью 2,5 часа и небольшие домашние задания, рассчитанные на 30–60 минут.</p>
             </li>
           </ul>
         </section>

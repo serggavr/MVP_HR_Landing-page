@@ -1,7 +1,7 @@
 import css from "../pages/index.css";
 import quiz from "./Quiz";
 import burger from "./Burger.js";
-import faq from "./Faq.js";
+//import faq from "./Faq.js";
 
 import PopupWithForm from './PopupWithForm.js';
 import faculties from "./Faculties";
