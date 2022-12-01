@@ -1,6 +1,7 @@
 .faculties {
   margin: 100px auto;
   padding: 0 50px;
+  max-width: 1110px;
 }
 
 .faculties__title {
