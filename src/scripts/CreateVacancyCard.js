@@ -26,7 +26,7 @@ export default function createVacancyCard (vacancyData, vacancyCardTemplateSelec
   
   vacancyRequirementsTitle.innerHTML = 'Требования'
   vacancyRequirementRespondButton.innerHTML = 'Откликнуться'
-  vacancyRequirementShareButton.innerHTML = 'Поделиться вакансией'
+  vacancyRequirementShareButton.innerHTML = 'поделиться предложением'
 
   vacancyRequirementsContainer.classList.add('vacancy-card__requirements-container-hidden')
 
