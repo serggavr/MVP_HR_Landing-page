@@ -8,13 +8,7 @@
   --secondary-text-color: #FFF;
   --transparent-text-color: rgba(0, 0, 0, 0.6);
   --colored-text: #5686e3;
-  /* text size */
-  /* size 18 weight 400 line-height 25 */
-  /* size 16 weight 700 line-height 20 */
-  /* size 20 weight 400 line-height 26 */
-  /* size 32 weight 700 line-height 40 */
-  /* size 65 weight 700 line-height 80 */
-  /* size 50 weight 700 line-height 60 */
+ 
   --xxxl-text-size: 65px;
   --xxl-text-size: 50px;
   --xl-text-size: 32px;
@@ -22,7 +16,6 @@
   --m-text-size: 18px;
   --s-text-size: 16px;
 
-  /* --xxxl-mobile-text-size: 65px; */
   --xxl-mobile-text-size: 30px;
   --xl-mobile-text-size: 18px;
   --l-mobile-text-size: 14px;
@@ -34,7 +27,6 @@
   --m-line-height: 25px;
   --s-line-height: 20px;
 
-  /* --xxxl-mobile-line-height: 80px; */
   --xxl-mobile-line-height: 35px;
   --xl-mobile-line-height: 25px;
   --l-mobile-line-height: 20px;
