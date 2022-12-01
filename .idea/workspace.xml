@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a0ca45e-a028-4556-b35c-8ff71d17a1ff" name="Changes" comment="fix blocks width">
+    <list default="true" id="1a0ca45e-a028-4556-b35c-8ff71d17a1ff" name="Changes" comment="add hovers footer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/footer/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/footer/telegram_dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/footer/telegram_dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/footer/vk_dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/footer/vk_dark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/advantages/advantages.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/advantages/advantages.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/body/body.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/body/body.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/button/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/button/button.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -233,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669919786268</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="add hovers footer">
+      <created>1669921492353</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1669921492353</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,7 +280,8 @@
     <MESSAGE value="fix quiz logic" />
     <MESSAGE value="fix visibility faq" />
     <MESSAGE value="fix blocks width" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix blocks width" />
+    <MESSAGE value="add hovers footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add hovers footer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
