@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a0ca45e-a028-4556-b35c-8ff71d17a1ff" name="Changes" comment="fix visibility faq">
+    <list default="true" id="1a0ca45e-a028-4556-b35c-8ff71d17a1ff" name="Changes" comment="fix blocks width">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/advantages/advantages.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/advantages/advantages.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/footer/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/footer/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/quiz/quiz.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/quiz/quiz.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/welcome/welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/welcome/welcome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/footer/telegram_dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/footer/telegram_dark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/footer/vk_dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/footer/vk_dark.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -228,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669918580573</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fix blocks width">
+      <created>1669919786268</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1669919786268</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +272,8 @@
     <MESSAGE value="fix workspace" />
     <MESSAGE value="fix quiz logic" />
     <MESSAGE value="fix visibility faq" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix visibility faq" />
+    <MESSAGE value="fix blocks width" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix blocks width" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
