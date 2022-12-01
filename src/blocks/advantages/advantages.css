@@ -1,5 +1,4 @@
 .advantages {
-  /* width: 100%; */
   padding: 70px 50px;
   background-color: #edf2f7;
 }
@@ -71,17 +70,11 @@
 
 @media (max-width: 930px) {
   .advantages__container {
-    /* flex-direction: column; */
     flex-direction: row;
     margin: 0;
     justify-content: center;
     scroll-snap-type: x mandatory;
   }
-
-  /* .advantages__card {
-        margin: 0 auto 115px auto;
-        width: 100%;
-      } */
 }
 
 @media (max-width: 450px) {
@@ -119,7 +112,6 @@
   .advantages__card:last-of-type {
     margin-right: 0;
   }
-
 
   .advantages__img {
     width: 215px;
