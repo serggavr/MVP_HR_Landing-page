@@ -19,7 +19,7 @@ export default () => {
     const next = document.querySelector('.slider__button-left');
     const prev = document.querySelector('.slider__button-right');
 
-    next.addEventListener("click", () => splide.go( '>' ));
-    prev.addEventListener("click", () => splide.go( '<' ));
+    next.addEventListener('click', () => splide.go( '>' ));
+    prev.addEventListener('click', () => splide.go( '<' ));
 }
 
