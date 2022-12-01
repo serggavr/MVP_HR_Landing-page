@@ -31,7 +31,7 @@
   max-width: 280px;
 }
 
-.button_theme_light:hover {
+/* .button_theme_light:hover {
   background-color: #000000;
   color: #FFFFFF;
 }
@@ -40,7 +40,7 @@
 .button_theme_dark:hover {
   background-color: var(--primary-bg-color);
   color: #000000;
-}
+} */
 
 .button__type_close {
   box-sizing: border-box;
