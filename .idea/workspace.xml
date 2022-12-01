@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ee89ff54-9561-4fcc-971e-d57a710c8e0f" name="Changes" comment="fix quiz block">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/faq/faq.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/faq/faq.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/Faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Faq.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
