@@ -1,5 +1,6 @@
 .quiz {
     padding: 70px 50px;
+    box-sizing: border-box;
 }
 
 .quiz__title {

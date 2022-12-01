@@ -1,6 +1,11 @@
 .advantages {
-  padding: 70px 50px;
+  padding: 70px 165px;
   background-color: #edf2f7;
+}
+
+.advantages__wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
 .advantages__title {
