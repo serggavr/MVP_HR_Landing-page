@@ -13,11 +13,11 @@
 }
 
 .faq__span {
-    color: #5686e3;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 60px;
+  color: #5686e3;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
 }
 
 .faq__list-item {
@@ -26,12 +26,11 @@
 
 .faq__item {
   list-style: none;
-  border: 1px solid #D9D9D9;
-  /* border-radius: 20px; */
+  border: 1px solid #edf2f7;
   margin-bottom: 15px;
   padding: 40px 30px;
-  background-color: #EDF2F7;
-border-radius: 10px
+  background-color: #edf2f7;
+  border-radius: 10px;
 }
 
 .faq__box {
@@ -69,7 +68,6 @@ border-radius: 10px
 
 .faq__arrow-up_active {
   display: block;
-
 }
 
 .faq__arrow-up:hover {
@@ -117,7 +115,7 @@ border-radius: 10px
   .faq__span {
     font-size: 30px;
     line-height: 35px;
-}
+  }
 
   .faq__item {
     padding: 20px 15px;

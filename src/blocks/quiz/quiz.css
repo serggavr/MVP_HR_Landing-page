@@ -72,7 +72,7 @@
 
 .quiz__buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -85,12 +85,17 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    margin-top: 40px;
+    margin-top: 30px;
     display: none;
     cursor: pointer;
     margin-right: 15px;
-    max-width: 540px;
+    /* max-width: 540px; */
     width: 100%;
+}
+
+.quiz__button-first {
+    font-size: 32px;
+    line-height: 40px;
 }
 
 .quiz__button:last-of-type {
@@ -124,6 +129,7 @@
     display: flex;
     flex-direction: column;
     max-width: 500px;
+    width: 100%;
 }
 
 .quiz__question-description {
