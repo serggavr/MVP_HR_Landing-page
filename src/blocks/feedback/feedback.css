@@ -24,4 +24,8 @@
   .feedback {
     padding: 40px 15px;
   }
+
+  .feedback__wrapper {
+    padding: 0 15px;
+  }
 }
