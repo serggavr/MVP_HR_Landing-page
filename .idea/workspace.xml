@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a0ca45e-a028-4556-b35c-8ff71d17a1ff" name="Changes" comment="fix workspace">
+    <list default="true" id="1a0ca45e-a028-4556-b35c-8ff71d17a1ff" name="Changes" comment="fix quiz logic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/quiz/quiz.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/quiz/quiz.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/Quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Quiz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/header/header.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669911736970</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="fix quiz logic">
+      <created>1669912426052</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1669912426052</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +246,8 @@
     <MESSAGE value="fix faculties click area and content" />
     <MESSAGE value="fix welcome button color" />
     <MESSAGE value="fix workspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix workspace" />
+    <MESSAGE value="fix quiz logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix quiz logic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
