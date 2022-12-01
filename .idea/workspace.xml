@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a0ca45e-a028-4556-b35c-8ff71d17a1ff" name="Changes" comment="fix faculties width">
+    <list default="true" id="1a0ca45e-a028-4556-b35c-8ff71d17a1ff" name="Changes" comment="fix hover buttons and advantages mobile width">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/advantages/advantages.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/advantages/advantages.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/animated/animated.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/animated/animated.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/dropdown/dropdown.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/dropdown/dropdown.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669923136467</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="fix hover buttons and advantages mobile width">
+      <created>1669924100765</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1669924100765</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +276,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix page disable" />
     <MESSAGE value="fix html view" />
     <MESSAGE value="add mobile welcome" />
     <MESSAGE value="add mobile quiz" />
@@ -295,7 +300,8 @@
     <MESSAGE value="add hovers footer" />
     <MESSAGE value="fix advantages width and text" />
     <MESSAGE value="fix faculties width" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix faculties width" />
+    <MESSAGE value="fix hover buttons and advantages mobile width" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix hover buttons and advantages mobile width" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
