@@ -7,8 +7,6 @@ export default function createVacancyCard (vacancyData, vacancyCardTemplateSelec
   const vacancySalary = vacancyCard.querySelector('.vacancy-card__vacancy-salary')
   const vacancySeeMore = vacancyCard.querySelector('.vacancy-card__see-more')
   const vacancyCloseSeeMore = vacancyCard.querySelector('.vacancy-card__close-more')
-  const vacancyInfoContainer = vacancyCard.querySelector('.vacancy-card__info-container')
-  const vacancyFooter = vacancyCard.querySelector('.vacancy-card__footer')
 
   const vacancyRequirementsContainer = vacancyCard.querySelector('.vacancy-card__requirements-container')
   const vacancyRequirementsTitle = vacancyCard.querySelector('.vacancy-card__vacancy-requirements-title')

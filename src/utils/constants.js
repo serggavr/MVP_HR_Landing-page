@@ -4,8 +4,6 @@ import image3 from "../images/quiz/quiz-3.png";
 import image4 from "../images/quiz/quiz-4.png";
 import image5 from "../images/quiz/quiz-5.png";
 
-
-
 export const questions = [
   {
     text: "Я хочу проверять работы студентов и оценивать их",
