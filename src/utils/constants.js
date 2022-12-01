@@ -230,4 +230,4 @@ export const faculties = [
     {name:'Менеджмент'},
     {name:'Английский язык'}
 ]
->>>>>>> 1e6d438525ae4d011ed389180e8cd7c576b1a28f
+

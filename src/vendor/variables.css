@@ -22,10 +22,20 @@
   --m-text-size: 18px;
   --s-text-size: 16px;
 
+  /* --xxxl-mobile-text-size: 65px; */
+  --xxl-mobile-text-size: 30px;
+  --xl-mobile-text-size: 18px;
+  --l-mobile-text-size: 14px;
+
   --xxxl-line-height: 80px;
   --xxl-line-height: 60px;
   --xl-line-height: 40px;
   --l-line-height: 26px;
   --m-line-height: 25px;
   --s-line-height: 20px;
+
+  /* --xxxl-mobile-line-height: 80px; */
+  --xxl-mobile-line-height: 35px;
+  --xl-mobile-line-height: 25px;
+  --l-mobile-line-height: 20px;
 }

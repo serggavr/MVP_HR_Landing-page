@@ -57,3 +57,14 @@
   text-decoration: none;
   display: block;
 }
+
+@media (max-width: 450px) {
+  .dropdown {
+    width: 100%;
+  }
+  .dropdown__button {
+    width: 100%;
+    font-size: var(--l-mobile-text-size);
+    line-height: var(--l-mobile-line-height);
+  }
+}
