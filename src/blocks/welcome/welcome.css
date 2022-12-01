@@ -71,8 +71,8 @@
 }
 
 .welcome__button:hover {
-    background-color: #D9D9D9;
-    color: black;
+    color: white;
+    background-color: #5686e3;
 }
 
 .welcome__animation {
