@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee89ff54-9561-4fcc-971e-d57a710c8e0f" name="Changes" comment="fix faculties click area and content">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/welcome/welcome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/welcome/welcome.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+    <list default="true" id="ee89ff54-9561-4fcc-971e-d57a710c8e0f" name="Changes" comment="fix welcome button color">
+      <change beforePath="$PROJECT_DIR$/src/scripts/Faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/Faq.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669909005799</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="fix welcome button color">
+      <created>1669909336660</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1669909336660</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +229,8 @@
     <MESSAGE value="add swiper script" />
     <MESSAGE value="fix faq background and arrow" />
     <MESSAGE value="fix faculties click area and content" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix faculties click area and content" />
+    <MESSAGE value="fix welcome button color" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix welcome button color" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
