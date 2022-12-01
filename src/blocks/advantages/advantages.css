@@ -88,6 +88,10 @@
     padding: 0 15px 0 15px;
   }
 
+  .advantages__wrapper {
+    padding: 0;
+  }
+
   .advantages__title {
     padding: 0 15px 0 0;
     font-size: 30px;
