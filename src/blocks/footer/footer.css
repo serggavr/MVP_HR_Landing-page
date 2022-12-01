@@ -1,7 +1,7 @@
 
 .footer {
   padding: 100px 0;
-  background-color: var(--secondary-bg-color);
+  background-color: var(--primary-bg-color);
 }
 
 .footer__container {
@@ -17,7 +17,7 @@
   margin: 0;
   font-family: 'YS_Text';
   font-style: normal;
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
 }
 
 .footer__link {
