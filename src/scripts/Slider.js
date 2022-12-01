@@ -5,10 +5,14 @@ import '@splidejs/splide/css';
 export default () => {
     const splide = new Splide( '.splide', {
         arrows: false,
-        type   : 'loop',
         padding: { right: '0px' },
+        type   : 'loop',
         lazyLoad: 'nearby',
         wheel    : true,
+        classes: {
+          pagination: 'slider__pagination-wrapper',
+          page      : 'slider__dot',
+        },
     } );
     splide.mount();
 
