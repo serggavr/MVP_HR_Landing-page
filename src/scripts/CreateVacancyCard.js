@@ -1,5 +1,5 @@
 export default function createVacancyCard (vacancyData, vacancyCardTemplateSelector, vacancyCardContainer, handleClickRespondButton, handleClickShareButton) {
-  const vacancyCard = document.querySelector(vacancyCardTemplateSelector).content.querySelector(".vacancy-card").cloneNode(true)
+  const vacancyCard = document.querySelector(vacancyCardTemplateSelector).content.querySelector('.vacancy-card').cloneNode(true)
   
   const vacancyName = vacancyCard.querySelector('.vacancy-card__vacancy-name')
   const vacancyCourse = vacancyCard.querySelector('.vacancy-card__vacancy-title')

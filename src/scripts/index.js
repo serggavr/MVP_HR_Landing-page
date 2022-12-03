@@ -1,10 +1,10 @@
-import css from "../pages/index.css";
-import quiz from "./Quiz";
-import burger from "./Burger.js";
-import faq from "./Faq.js";
-import slider from "./Slider";
+import css from '../pages/index.css';
+import quiz from './Quiz';
+import burger from './Burger.js';
+import faq from './Faq.js';
+import slider from './Slider';
 import PopupWithForm from './PopupWithForm.js';
-import faculties from "./Faculties";
+import faculties from './Faculties';
 import { vacanciesList } from '../utils/constants';
 import createVacancyCard from './CreateVacancyCard';
 import Section from './Section.js'
@@ -25,8 +25,8 @@ const dropdownTypeRoleButton = document.querySelector(dropdownButtonTypeRoleSele
 const buttonOpenFeedback = document.querySelector(buttonOpenFeedbackSelector)
 const buttonOpenSubscribe = document.querySelector(buttonOpenSubscribeSelector)
 const vacancyCardContainer = document.querySelector(vacanciesContainerSelector)
-const bottomText = document.querySelector("#text-transform-bot");
-const upperText = document.querySelector("#text-transform-up");
+const bottomText = document.querySelector('#text-transform-bot');
+const upperText = document.querySelector('#text-transform-up');
 const screenWidth = window.screen.width;
 let filteredVacanciesList = []
 
@@ -120,8 +120,8 @@ vacanciesCardsList.renderItems(applyFilters(vacanciesList), 6)
 
 
 if (screenWidth <= 450) {
-  upperText.textContent = "Делись опытом в"
-  bottomText.textContent = "и\u00A0получай доход"
+  upperText.textContent = 'Делись опытом в'
+  bottomText.textContent = 'и\u00A0получай доход'
 }
 
 burger();
