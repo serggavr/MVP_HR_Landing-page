@@ -1,0 +1,31 @@
+.feedback {
+  max-width: 100%;
+  background-color: var(--light-bg-color);
+}
+
+.feedback__wrapper {
+  margin: 0 auto;
+  padding: 100px 50px;
+  background-color: var(--light-bg-color);
+  max-width: 1110px;
+}
+
+.feedback__text {
+  max-width: 633px;
+  margin: 20px 0 30px;
+  font-family: 'YS_Text';
+  font-style: normal;
+  color: var(--primary-text-color);
+  font-size: var(--l-text-size);
+  line-height: var(--l-line-height);
+}
+
+@media (max-width: 450px) {
+  .feedback {
+    padding: 40px 15px;
+  }
+
+  .feedback__wrapper {
+    padding: 0 15px;
+  }
+}

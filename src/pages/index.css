@@ -1,0 +1,72 @@
+/* normalize */
+@import url('../vendor/normalize.css');
+
+/* fonts */
+@import url('../vendor/fonts.css');
+
+/* variables */
+@import url('../utils/variables.css');
+
+/* body */
+@import url('../blocks/body/body.css');
+
+/* main */
+@import url('../blocks/main/main.css');
+
+/* text */
+@import url('../blocks/text/text.css');
+
+/* page */
+@import url('../blocks/page/page.css');
+
+/* section */
+@import url('../blocks/section/section.css');
+
+/* button */
+@import url('../blocks/button/button.css');
+
+/* welcome */
+@import url('../blocks/welcome/welcome.css');
+
+/* quize */
+@import url('../blocks/quiz/quiz.css');
+
+/* advantages */
+@import url('../blocks/advantages/advantages.css');
+
+/* faculties */
+@import url('../blocks/faculties/faculties.css');
+
+/* vacancy */
+@import url('../blocks/vacancy/vacancy.css');
+
+/* search-form */
+@import url('../blocks/search-form/search-form.css');
+
+/* vacancy-card */
+@import url('../blocks/vacancy-card/vacancy-card.css');
+
+/* faq */
+@import url('../blocks/faq/faq.css');
+
+/* popup */
+@import url('../blocks/popup/popup.css');
+
+/* dropdown */
+@import url('../blocks/dropdown/dropdown.css');
+
+/* welcome */
+@import url('../blocks/feedback/feedback.css');
+
+/* welcome */
+@import url('../blocks/slider/slider.css');
+
+/* header  */
+@import url('../blocks/header/header.css');
+
+/* elements */
+@import url('../blocks/animated/animated.css');
+
+/* footer */
+@import url('../blocks/footer/footer.css');
+

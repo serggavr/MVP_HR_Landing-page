@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'YS_Text';
+  src: url('./fonts/YS-Text/YS-Text-Bold.woff2') format('woff2'),
+    url('./fonts/YS-Text/YS-Text-Bold.woff') format('woff'),
+    url('./fonts/YS-Text/YS-Text-Bold.ttf') format('ttf');
+  font-weight: 700;
+}
+
+/* @font-face {
+  font-family: 'YS_Text';
+  src: url('./fonts/YS-Text/YS-Text-Medium-Regular.woff2') format('woff2'),
+    url('./fonts/YS-Text/YS-Text-Medium-Regular.woff') format('woff'),
+    url('./fonts/YS-Text/YS-Text-Medium-Regular.ttf') format('ttf');
+  font-weight: 500;
+} */
+
+@font-face {
+  font-family: 'YS_Text';
+  src: url('./fonts/YS-Text/YS-Text-Regular.woff2') format('woff2'),
+    url('./fonts/YS-Text/YS-Text-Regular.woff') format('woff'),
+    url('./fonts/YS-Text/YS-Text-Regular.ttf') format('ttf');
+  font-weight: 400;
+}
+
+/* /// нужно будет подключить woff2 */
